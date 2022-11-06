@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{ef42618d-9acd-481c-b62f-5ba88506820a}">
+		<property name="name">
+			<value>TestLocalParameterContinuous</value>
+		</property>
+		<relationship name="folder">
+			<destination>{47505370-c167-4188-b449-ede0add3b8f9}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{f23ac419-0e28-4446-969c-ffbe5be22eb3}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{f23ac419-0e28-4446-969c-ffbe5be22eb3}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

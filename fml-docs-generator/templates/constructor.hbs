@@ -1,0 +1,42 @@
+
+`{{constructor_name}}({{#each constructor_parameters as |p|}}{{p.name}}{{#unless @last}}, {{/unless}}{{/each}}) constructor`
+
+**Parameters:**
+
+{{#if constructor_parameters}}
+| Name | Type | Description |
+|:-|:-|:-|
+{{#each constructor_parameters as |p|}}
+| `{{p.name}}{{#if p.default_value}} = {{p.default_value}}{{/if}}` | `{{p.type}}` | {{p.description}} |
+{{/each}}
+{{else}}
+> (none)
+{{/if}}
+
+{{#if constructor_fmod_docs_link}}FMOD API documentation: [{{constructor_fmod_docs_link}}]({{constructor_fmod_docs_link}}){{/if}}
+
+---
+
+{{#each constructor_methods as |m|}}
+
+## .{{m.name}}({{#each m.parameters as |p|}}{{p.name}}{{#unless @last}}, {{/unless}}{{/each}}) :id={{m.name}}
+
+**Parameters:**
+
+{{#if m.parameters}}
+> | Name | Type | Description |
+  |:-|:-|:-|
+{{#each m.parameters as |p|}}
+  | `{{p.name}}{{#if p.default_value}} = {{p.default_value}}{{/if}}` | `{{p.type}}` | {{p.description}} |
+{{/each}}
+{{else}}
+> (none)
+{{/if}}
+
+**Returns:** `{{m.return_type}}`
+
+{{#if m.fmod_docs_link}}FMOD API documentation: [{{m.fmod_docs_link}}]({{m.fmod_docs_link}}){{/if}}
+
+---
+
+{{/each}}

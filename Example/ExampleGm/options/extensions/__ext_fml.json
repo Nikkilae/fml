@@ -1,0 +1,9 @@
+{
+  "extensionId": {
+    "name": "__ext_fml",
+    "path": "extensions/__ext_fml/__ext_fml.yy"
+  },
+  "resourceVersion": "1.0",
+  "resourceType": "GMExtensionConfigSet",
+  "configurables": null
+}

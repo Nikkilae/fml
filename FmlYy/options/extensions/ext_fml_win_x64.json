@@ -1,0 +1,9 @@
+{
+  "extensionId": {
+    "name": "ext_fml_win_x64",
+    "path": "extensions/ext_fml_win_x64/ext_fml_win_x64.yy"
+  },
+  "resourceVersion": "1.0",
+  "resourceType": "GMExtensionConfigSet",
+  "configurables": null
+}
