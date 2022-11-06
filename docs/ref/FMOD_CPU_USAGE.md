@@ -3,9 +3,9 @@
 
 **Parameters:**
 
-> (none)
+(none)
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_cpu_usage](https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_cpu_usage)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_cpu_usage](https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_cpu_usage)
 
 ---
 
@@ -23,6 +23,10 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-common.html
 
 
 
+<br/><br/>
+
+---
+
 `void FMOD_CPU_USAGE_deserialize(FMOD_CPU_USAGE usage, buffer buf)`
 
 **Parameters:**
@@ -35,3 +39,7 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-common.html
 **Returns:** `void`
 
 
+
+<br/><br/>
+
+---

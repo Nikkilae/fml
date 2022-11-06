@@ -12,30 +12,36 @@
 ---
 
 
-## .toString() :id=toString
+### `.toString() :id=toString`
 
 **Parameters:**
 
-> (none)
+(none)
 
 **Returns:** `string`
 
 
 
+<br/><br/>
+
 ---
 
 
-`function&lt;FML_RESULT, void&gt;? fml_set_error_callback(function&lt;FML_RESULT, void&gt;? callback)`
+`function<FML_RESULT, void>? fml_set_error_callback(function<FML_RESULT, void>? callback)`
 
 **Parameters:**
 
 > | Name | Type | Description |
   |:-|:-|:-|
-  | `callback` | `function&lt;FML_RESULT, void&gt;?` |  |
+  | `callback` | `function<FML_RESULT, void>?` |  |
 
-**Returns:** `function&lt;FML_RESULT, void&gt;?`
+**Returns:** `function<FML_RESULT, void>?`
 
 
+
+<br/><br/>
+
+---
 
 `string fml_get_result_string(FML_RESULT result)`
 
@@ -48,3 +54,7 @@
 **Returns:** `string`
 
 
+
+<br/><br/>
+
+---

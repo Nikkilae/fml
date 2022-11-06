@@ -1,5 +1,5 @@
 
-`{{return_type}} {{name}}({{#each parameters as |p|}}{{p.type}} {{p.name}}{{#unless @last}}, {{/unless}}{{/each}})`
+`{{{return_type}}} {{name}}({{#each parameters as |p|}}{{{p.type}}} {{p.name}}{{#unless @last}}, {{/unless}}{{/each}})`
 
 **Parameters:**
 
@@ -7,10 +7,14 @@
 > | Name | Type | Description |
   |:-|:-|:-|
 {{#each parameters as |p|}}
-  | `{{p.name}}{{#if p.default_value}} = {{p.default_value}}{{/if}}` | `{{p.type}}` | {{p.description}} |
+  | `{{p.name}}{{#if p.default_value}} = {{p.default_value}}{{/if}}` | `{{{p.type}}}` | {{p.description}} |
 {{/each}}
 {{/if}}
 
-**Returns:** `{{return_type}}`
+**Returns:** `{{{return_type}}}`
 
-{{#if fmod_docs_link}}FMOD API documentation: [{{fmod_docs_link}}]({{fmod_docs_link}}){{/if}}
+{{#if fmod_docs_link}}FMOD API documentation:<br/>[{{fmod_docs_link}}]({{fmod_docs_link}}){{/if}}
+
+<br/><br/>
+
+---

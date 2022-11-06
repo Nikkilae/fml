@@ -3,9 +3,9 @@
 
 **Parameters:**
 
-> (none)
+(none)
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-common.html#fmod_studio_parameter_id](https://www.fmod.com/docs/2.02/api/studio-api-common.html#fmod_studio_parameter_id)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-common.html#fmod_studio_parameter_id](https://www.fmod.com/docs/2.02/api/studio-api-common.html#fmod_studio_parameter_id)
 
 ---
 
@@ -23,6 +23,10 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-common.ht
 
 
 
+<br/><br/>
+
+---
+
 `void FMOD_STUDIO_PARAMETER_ID_deserialize(FMOD_STUDIO_PARAMETER_ID parameter_id, buffer buf)`
 
 **Parameters:**
@@ -36,6 +40,10 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-common.ht
 
 
 
+<br/><br/>
+
+---
+
 `pointer FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(FMOD_STUDIO_PARAMETER_ID parameter_id)`
 
 **Parameters:**
@@ -47,3 +55,7 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-common.ht
 **Returns:** `pointer`
 
 
+
+<br/><br/>
+
+---

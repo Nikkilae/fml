@@ -3,9 +3,9 @@
 
 **Parameters:**
 
-> (none)
+(none)
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_3d_attributes](https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_3d_attributes)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_3d_attributes](https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_3d_attributes)
 
 ---
 
@@ -23,6 +23,10 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-common.html
 
 
 
+<br/><br/>
+
+---
+
 `void FMOD_3D_ATTRIBUTES_deserialize(FMOD_3D_ATTRIBUTES attributes, buffer buf)`
 
 **Parameters:**
@@ -36,6 +40,10 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-common.html
 
 
 
+<br/><br/>
+
+---
+
 `pointer FMOD_3D_ATTRIBUTES_as_buf_ptr(FMOD_3D_ATTRIBUTES attributes)`
 
 **Parameters:**
@@ -47,3 +55,7 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-common.html
 **Returns:** `pointer`
 
 
+
+<br/><br/>
+
+---

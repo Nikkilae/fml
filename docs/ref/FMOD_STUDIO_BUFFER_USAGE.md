@@ -3,9 +3,9 @@
 
 **Parameters:**
 
-> (none)
+(none)
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_buffer_usage](https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_buffer_usage)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_buffer_usage](https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_buffer_usage)
 
 ---
 
@@ -23,6 +23,10 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 
 
+<br/><br/>
+
+---
+
 `void FMOD_STUDIO_BUFFER_USAGE_deserialize(FMOD_STUDIO_BUFFER_USAGE usage, buffer buf)`
 
 **Parameters:**
@@ -35,3 +39,7 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 **Returns:** `void`
 
 
+
+<br/><br/>
+
+---

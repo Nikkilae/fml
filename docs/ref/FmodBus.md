@@ -3,274 +3,308 @@
 
 **Parameters:**
 
-> (none)
+(none)
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html](https://www.fmod.com/docs/2.02/api/studio-api-bus.html)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html](https://www.fmod.com/docs/2.02/api/studio-api-bus.html)
 
 ---
 
 
-## .is_valid(error) :id=is_valid
+### `.is_valid(error) :id=is_valid`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_isvalid](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_isvalid)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_isvalid](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_isvalid)
+
+<br/><br/>
 
 ---
 
 
-## .get_id(out_guid, error) :id=get_id
+### `.get_id(out_guid, error) :id=get_id`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `out_guid = undefined` | `FMOD_GUID?` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `FMOD_GUID`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getid](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getid)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getid](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getid)
+
+<br/><br/>
 
 ---
 
 
-## .get_path(error) :id=get_path
+### `.get_path(error) :id=get_path`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `string`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getpath](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getpath)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getpath](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getpath)
+
+<br/><br/>
 
 ---
 
 
-## .get_volume(out_struct, error) :id=get_volume
+### `.get_volume(out_struct, error) :id=get_volume`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `out_struct = undefined` | `struct?` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `struct`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getvolume](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getvolume)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getvolume](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getvolume)
+
+<br/><br/>
 
 ---
 
 
-## .set_volume(volume, error) :id=set_volume
+### `.set_volume(volume, error) :id=set_volume`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `volume` | `number` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setvolume](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setvolume)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setvolume](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setvolume)
+
+<br/><br/>
 
 ---
 
 
-## .get_paused(error) :id=get_paused
+### `.get_paused(error) :id=get_paused`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getpaused](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getpaused)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getpaused](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getpaused)
+
+<br/><br/>
 
 ---
 
 
-## .set_paused(paused, error) :id=set_paused
+### `.set_paused(paused, error) :id=set_paused`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `paused` | `bool` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setpaused](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setpaused)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setpaused](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setpaused)
+
+<br/><br/>
 
 ---
 
 
-## .get_mute(error) :id=get_mute
+### `.get_mute(error) :id=get_mute`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getmute](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getmute)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getmute](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getmute)
+
+<br/><br/>
 
 ---
 
 
-## .set_mute(mute, error) :id=set_mute
+### `.set_mute(mute, error) :id=set_mute`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `mute` | `bool` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setmute](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setmute)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setmute](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setmute)
+
+<br/><br/>
 
 ---
 
 
-## .stop_all_events(mode, error) :id=stop_all_events
+### `.stop_all_events(mode, error) :id=stop_all_events`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `mode` | `FMOD_STUDIO_STOP_MODE` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_stopallevents](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_stopallevents)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_stopallevents](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_stopallevents)
+
+<br/><br/>
 
 ---
 
 
-## .get_port_index(error) :id=get_port_index
+### `.get_port_index(error) :id=get_port_index`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `int`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getportindex](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getportindex)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getportindex](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getportindex)
+
+<br/><br/>
 
 ---
 
 
-## .set_port_index(index, error) :id=set_port_index
+### `.set_port_index(index, error) :id=set_port_index`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `index` | `int` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setportindex](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setportindex)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setportindex](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setportindex)
+
+<br/><br/>
 
 ---
 
 
-## .lock_channel_group(error) :id=lock_channel_group
+### `.lock_channel_group(error) :id=lock_channel_group`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_lockchannelgroup](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_lockchannelgroup)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_lockchannelgroup](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_lockchannelgroup)
+
+<br/><br/>
 
 ---
 
 
-## .unlock_channel_group(error) :id=unlock_channel_group
+### `.unlock_channel_group(error) :id=unlock_channel_group`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_unlockchannelgroup](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_unlockchannelgroup)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_unlockchannelgroup](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_unlockchannelgroup)
+
+<br/><br/>
 
 ---
 
 
-## .get_channel_group(out_channel_group, error) :id=get_channel_group
+### `.get_channel_group(out_channel_group, error) :id=get_channel_group`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `out_channel_group = undefined` | `FmodChannelGroup?` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `FmodChannelGroup`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getchannelgroup](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getchannelgroup)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getchannelgroup](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getchannelgroup)
+
+<br/><br/>
 
 ---
 
 
-## .get_cpu_usage(out_struct, error) :id=get_cpu_usage
+### `.get_cpu_usage(out_struct, error) :id=get_cpu_usage`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `out_struct = undefined` | `struct?` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `struct`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getcpuusage](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getcpuusage)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getcpuusage](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getcpuusage)
+
+<br/><br/>
 
 ---
 
 
-## .get_memory_usage(out_usage, error) :id=get_memory_usage
+### `.get_memory_usage(out_usage, error) :id=get_memory_usage`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `out_usage = undefined` | `FMOD_STUDIO_MEMORY_USAGE?` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `FMOD_STUDIO_MEMORY_USAGE`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getmemoryusage](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getmemoryusage)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getmemoryusage](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getmemoryusage)
+
+<br/><br/>
 
 ---
 

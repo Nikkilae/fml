@@ -3,50 +3,54 @@
 
 **Parameters:**
 
-> (none)
+(none)
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html](https://www.fmod.com/docs/2.02/api/studio-api-system.html)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html](https://www.fmod.com/docs/2.02/api/studio-api-system.html)
 
 ---
 
 
-## .set_advanced_settings(settings, error) :id=set_advanced_settings
+### `.set_advanced_settings(settings, error) :id=set_advanced_settings`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `settings` | `FMOD_STUDIO_ADVANCEDSETTINGS` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setadvancedsettings](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setadvancedsettings)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setadvancedsettings](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setadvancedsettings)
+
+<br/><br/>
 
 ---
 
 
-## .get_advanced_settings(out_settings, error) :id=get_advanced_settings
+### `.get_advanced_settings(out_settings, error) :id=get_advanced_settings`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `out_settings = undefined` | `FMOD_STUDIO_ADVANCEDSETTINGS?` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `FMOD_STUDIO_ADVANCEDSETTINGS`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getadvancedsettings](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getadvancedsettings)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getadvancedsettings](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getadvancedsettings)
+
+<br/><br/>
 
 ---
 
 
-## .initialize(max_channels, studio_flags, core_flags, error) :id=initialize
+### `.initialize(max_channels, studio_flags, core_flags, error) :id=initialize`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `max_channels` | `int` |  |
   | `studio_flags` | `int` | A bitmask of FMOD_STUDIO_INIT_xx values. |
@@ -55,107 +59,121 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_initialize](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_initialize)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_initialize](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_initialize)
+
+<br/><br/>
 
 ---
 
 
-## .release(error) :id=release
+### `.release(error) :id=release`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_release](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_release)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_release](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_release)
+
+<br/><br/>
 
 ---
 
 
-## .is_valid(error) :id=is_valid
+### `.is_valid(error) :id=is_valid`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_isvalid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_isvalid)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_isvalid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_isvalid)
+
+<br/><br/>
 
 ---
 
 
-## .update(error) :id=update
+### `.update(error) :id=update`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_update](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_update)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_update](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_update)
+
+<br/><br/>
 
 ---
 
 
-## .flush_commands(error) :id=flush_commands
+### `.flush_commands(error) :id=flush_commands`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_flushcommands](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_flushcommands)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_flushcommands](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_flushcommands)
+
+<br/><br/>
 
 ---
 
 
-## .flush_sample_loading(error) :id=flush_sample_loading
+### `.flush_sample_loading(error) :id=flush_sample_loading`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_flushsampleloading](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_flushsampleloading)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_flushsampleloading](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_flushsampleloading)
+
+<br/><br/>
 
 ---
 
 
-## .get_core_system(out_system, error) :id=get_core_system
+### `.get_core_system(out_system, error) :id=get_core_system`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `out_system = undefined` | `FmodSystem` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `FmodSystem`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getcoresystem](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getcoresystem)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getcoresystem](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getcoresystem)
+
+<br/><br/>
 
 ---
 
 
-## .get_event(path, out_event_description, error) :id=get_event
+### `.get_event(path, out_event_description, error) :id=get_event`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `path` | `string` |  |
   | `out_event_description = undefined` | `FmodEventDescription?` |  |
@@ -163,16 +181,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `FmodEventDescription`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getevent](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getevent)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getevent](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getevent)
+
+<br/><br/>
 
 ---
 
 
-## .get_bus(path, out_bus, error) :id=get_bus
+### `.get_bus(path, out_bus, error) :id=get_bus`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `path` | `string` |  |
   | `out_bus = undefined` | `FmodBus?` |  |
@@ -180,16 +200,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `FmodBus`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbus](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbus)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbus](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbus)
+
+<br/><br/>
 
 ---
 
 
-## .get_vca(path, out_vca, error) :id=get_vca
+### `.get_vca(path, out_vca, error) :id=get_vca`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `path` | `string` |  |
   | `out_vca = undefined` | `FmodVca?` |  |
@@ -197,16 +219,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `FmodVca`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getvca](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getvca)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getvca](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getvca)
+
+<br/><br/>
 
 ---
 
 
-## .get_bank(path, out_bank, error) :id=get_bank
+### `.get_bank(path, out_bank, error) :id=get_bank`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `path` | `string` |  |
   | `out_bank = undefined` | `FmodBank?` |  |
@@ -214,16 +238,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `FmodBank`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbank](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbank)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbank](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbank)
+
+<br/><br/>
 
 ---
 
 
-## .get_event_by_id(guid, out_event_description, error) :id=get_event_by_id
+### `.get_event_by_id(guid, out_event_description, error) :id=get_event_by_id`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `guid` | `FMOD_GUID` |  |
   | `out_event_description = undefined` | `FmodEventDescription?` |  |
@@ -231,16 +257,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `FmodEventDescription`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_geteventbyid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_geteventbyid)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_geteventbyid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_geteventbyid)
+
+<br/><br/>
 
 ---
 
 
-## .get_bus_by_id(guid, out_bus, error) :id=get_bus_by_id
+### `.get_bus_by_id(guid, out_bus, error) :id=get_bus_by_id`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `guid` | `FMOD_GUID` |  |
   | `out_bus = undefined` | `FmodBus?` |  |
@@ -248,16 +276,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `FmodBus`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbusbyid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbusbyid)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbusbyid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbusbyid)
+
+<br/><br/>
 
 ---
 
 
-## .get_vca_by_id(guid, out_vca, error) :id=get_vca_by_id
+### `.get_vca_by_id(guid, out_vca, error) :id=get_vca_by_id`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `guid` | `FMOD_GUID` |  |
   | `out_vca = undefined` | `FmodVca?` |  |
@@ -265,16 +295,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `FmodVca`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getvcabyid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getvcabyid)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getvcabyid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getvcabyid)
+
+<br/><br/>
 
 ---
 
 
-## .get_bank_by_id(guid, out_bank, error) :id=get_bank_by_id
+### `.get_bank_by_id(guid, out_bank, error) :id=get_bank_by_id`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `guid` | `FMOD_GUID` |  |
   | `out_bank = undefined` | `FmodBank?` |  |
@@ -282,29 +314,33 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `FmodBank`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbankbyid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbankbyid)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbankbyid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbankbyid)
+
+<br/><br/>
 
 ---
 
 
-## ._get_sound_info() :id=_get_sound_info
+### `._get_sound_info() :id=_get_sound_info`
 
 **Parameters:**
 
-> (none)
+(none)
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getsoundinfo](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getsoundinfo)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getsoundinfo](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getsoundinfo)
+
+<br/><br/>
 
 ---
 
 
-## .get_parameter_description_by_name(name, out_description, error) :id=get_parameter_description_by_name
+### `.get_parameter_description_by_name(name, out_description, error) :id=get_parameter_description_by_name`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `name` | `string` |  |
   | `out_description = undefined` | `FMOD_STUDIO_PARAMETER_DESCRIPTION?` |  |
@@ -312,16 +348,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `FMOD_STUDIO_PARAMETER_DESCRIPTION`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptionbyname](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptionbyname)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptionbyname](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptionbyname)
+
+<br/><br/>
 
 ---
 
 
-## .get_parameter_description_by_id(param_id, out_description, error) :id=get_parameter_description_by_id
+### `.get_parameter_description_by_id(param_id, out_description, error) :id=get_parameter_description_by_id`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `param_id` | `FMOD_STUDIO_PARAMETER_ID` |  |
   | `out_description = undefined` | `FMOD_STUDIO_PARAMETER_DESCRIPTION?` |  |
@@ -329,16 +367,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `FMOD_STUDIO_PARAMETER_DESCRIPTION`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptionbyid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptionbyid)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptionbyid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptionbyid)
+
+<br/><br/>
 
 ---
 
 
-## .get_parameter_label_by_name(name, label_index, error) :id=get_parameter_label_by_name
+### `.get_parameter_label_by_name(name, label_index, error) :id=get_parameter_label_by_name`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `name` | `string` |  |
   | `label_index` | `int` |  |
@@ -346,16 +386,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `string`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterlabelbyname](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterlabelbyname)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterlabelbyname](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterlabelbyname)
+
+<br/><br/>
 
 ---
 
 
-## .get_parameter_label_by_id(parameter_id, label_index, error) :id=get_parameter_label_by_id
+### `.get_parameter_label_by_id(parameter_id, label_index, error) :id=get_parameter_label_by_id`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `parameter_id` | `FMOD_STUDIO_PARAMETER_ID` |  |
   | `label_index` | `int` |  |
@@ -363,16 +405,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `string`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterlabelbyid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterlabelbyid)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterlabelbyid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterlabelbyid)
+
+<br/><br/>
 
 ---
 
 
-## .get_parameter_by_id(parameter_id, out_struct, error) :id=get_parameter_by_id
+### `.get_parameter_by_id(parameter_id, out_struct, error) :id=get_parameter_by_id`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `parameter_id` | `FMOD_STUDIO_PARAMETER_ID` |  |
   | `out_struct = undefined` | `struct?` |  |
@@ -380,16 +424,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `struct`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterbyid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterbyid)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterbyid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterbyid)
+
+<br/><br/>
 
 ---
 
 
-## .set_parameter_by_id(parameter_id, value, ignore_seek_speed, error) :id=set_parameter_by_id
+### `.set_parameter_by_id(parameter_id, value, ignore_seek_speed, error) :id=set_parameter_by_id`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `parameter_id` | `FMOD_STUDIO_PARAMETER_ID` |  |
   | `value` | `number` |  |
@@ -398,16 +444,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbyid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbyid)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbyid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbyid)
+
+<br/><br/>
 
 ---
 
 
-## .set_parameter_by_id_with_label(parameter_id, label, ignore_seek_speed, error) :id=set_parameter_by_id_with_label
+### `.set_parameter_by_id_with_label(parameter_id, label, ignore_seek_speed, error) :id=set_parameter_by_id_with_label`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `parameter_id` | `FMOD_STUDIO_PARAMETER_ID` |  |
   | `label` | `string` |  |
@@ -416,16 +464,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbyidwithlabel](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbyidwithlabel)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbyidwithlabel](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbyidwithlabel)
+
+<br/><br/>
 
 ---
 
 
-## .set_parameters_by_ids(parameter_ids, values, ignore_seek_speed, error) :id=set_parameters_by_ids
+### `.set_parameters_by_ids(parameter_ids, values, ignore_seek_speed, error) :id=set_parameters_by_ids`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `parameter_ids` | `FMOD_STUDIO_PARAMETER_ID[]` |  |
   | `values` | `number[]` |  |
@@ -434,16 +484,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparametersbyids](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparametersbyids)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparametersbyids](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparametersbyids)
+
+<br/><br/>
 
 ---
 
 
-## .get_parameter_by_name(name, out_struct, error) :id=get_parameter_by_name
+### `.get_parameter_by_name(name, out_struct, error) :id=get_parameter_by_name`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `name` | `string` |  |
   | `out_struct = undefined` | `struct?` |  |
@@ -451,16 +503,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `struct`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterbyname](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterbyname)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterbyname](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterbyname)
+
+<br/><br/>
 
 ---
 
 
-## .set_parameter_by_name(name, value, ignore_seek_speed, error) :id=set_parameter_by_name
+### `.set_parameter_by_name(name, value, ignore_seek_speed, error) :id=set_parameter_by_name`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `name` | `string` |  |
   | `value` | `number` |  |
@@ -469,16 +523,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbyname](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbyname)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbyname](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbyname)
+
+<br/><br/>
 
 ---
 
 
-## .set_parameter_by_name_with_label(name, label, ignore_seek_speed, error) :id=set_parameter_by_name_with_label
+### `.set_parameter_by_name_with_label(name, label, ignore_seek_speed, error) :id=set_parameter_by_name_with_label`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `name` | `string` |  |
   | `label` | `string` |  |
@@ -487,16 +543,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbynamewithlabel](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbynamewithlabel)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbynamewithlabel](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbynamewithlabel)
+
+<br/><br/>
 
 ---
 
 
-## .lookup_id(path, out_guid, error) :id=lookup_id
+### `.lookup_id(path, out_guid, error) :id=lookup_id`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `path` | `string` |  |
   | `out_guid = undefined` | `FMOD_GUID?` |  |
@@ -504,63 +562,71 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `FMOD_GUID`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_lookupid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_lookupid)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_lookupid](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_lookupid)
+
+<br/><br/>
 
 ---
 
 
-## .lookup_path(guid, error) :id=lookup_path
+### `.lookup_path(guid, error) :id=lookup_path`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `guid` | `FMOD_GUID` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `string`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_lookuppath](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_lookuppath)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_lookuppath](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_lookuppath)
+
+<br/><br/>
 
 ---
 
 
-## .get_num_listeners(error) :id=get_num_listeners
+### `.get_num_listeners(error) :id=get_num_listeners`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `int`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getnumlisteners](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getnumlisteners)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getnumlisteners](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getnumlisteners)
+
+<br/><br/>
 
 ---
 
 
-## .set_num_listeners(num_listeners, error) :id=set_num_listeners
+### `.set_num_listeners(num_listeners, error) :id=set_num_listeners`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `num_listeners` | `int` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setnumlisteners](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setnumlisteners)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setnumlisteners](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setnumlisteners)
+
+<br/><br/>
 
 ---
 
 
-## .get_listener_attributes(listener, out_attributes, out_attenuation_position, error) :id=get_listener_attributes
+### `.get_listener_attributes(listener, out_attributes, out_attenuation_position, error) :id=get_listener_attributes`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `listener` | `int` |  |
   | `out_attributes = undefined` | `FMOD_3D_ATTRIBUTES?` |  |
@@ -569,16 +635,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `FMOD_3D_ATTRIBUTES`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getlistenerattributes](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getlistenerattributes)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getlistenerattributes](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getlistenerattributes)
+
+<br/><br/>
 
 ---
 
 
-## .set_listener_attributes(listener, attributes, attenuation_position, error) :id=set_listener_attributes
+### `.set_listener_attributes(listener, attributes, attenuation_position, error) :id=set_listener_attributes`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `listener` | `int` |  |
   | `attributes` | `FMOD_3D_ATTRIBUTES` |  |
@@ -587,32 +655,36 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setlistenerattributes](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setlistenerattributes)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setlistenerattributes](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setlistenerattributes)
+
+<br/><br/>
 
 ---
 
 
-## .get_listener_weight(listener, error) :id=get_listener_weight
+### `.get_listener_weight(listener, error) :id=get_listener_weight`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `listener` | `int` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `number`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getlistenerweight](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getlistenerweight)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getlistenerweight](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getlistenerweight)
+
+<br/><br/>
 
 ---
 
 
-## .set_listener_weight(listener, weight, error) :id=set_listener_weight
+### `.set_listener_weight(listener, weight, error) :id=set_listener_weight`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `listener` | `int` |  |
   | `weight` | `number` |  |
@@ -620,16 +692,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setlistenerweight](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setlistenerweight)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setlistenerweight](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setlistenerweight)
+
+<br/><br/>
 
 ---
 
 
-## .load_bank_file(filename, flags, out_bank, error) :id=load_bank_file
+### `.load_bank_file(filename, flags, out_bank, error) :id=load_bank_file`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `filename` | `string` |  |
   | `flags` | `int` | A bitmask of FMOD_STUDIO_LOAD_BANK_xx values. |
@@ -638,16 +712,18 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `FmodBank`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadbankfile](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadbankfile)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadbankfile](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadbankfile)
+
+<br/><br/>
 
 ---
 
 
-## .load_bank_memory(bank_buffer, buffer_length, mode, flags, out_bank, error) :id=load_bank_memory
+### `.load_bank_memory(bank_buffer, buffer_length, mode, flags, out_bank, error) :id=load_bank_memory`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `bank_buffer` | `buffer` |  |
   | `buffer_length` | `int` |  |
@@ -658,164 +734,186 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `FmodBank`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadbankmemory](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadbankmemory)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadbankmemory](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadbankmemory)
+
+<br/><br/>
 
 ---
 
 
-## ._load_bank_custom() :id=_load_bank_custom
+### `._load_bank_custom() :id=_load_bank_custom`
 
 **Parameters:**
 
-> (none)
+(none)
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadbankcustom](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadbankcustom)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadbankcustom](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadbankcustom)
+
+<br/><br/>
 
 ---
 
 
-## .unload_all(error) :id=unload_all
+### `.unload_all(error) :id=unload_all`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `FmodBank`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_unloadall](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_unloadall)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_unloadall](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_unloadall)
+
+<br/><br/>
 
 ---
 
 
-## .get_buffer_usage(out_usage, error) :id=get_buffer_usage
+### `.get_buffer_usage(out_usage, error) :id=get_buffer_usage`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `out_usage = undefined` | `FMOD_STUDIO_BUFFER_USAGE?` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `FMOD_STUDIO_BUFFER_USAGE`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbufferusage](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbufferusage)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbufferusage](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbufferusage)
+
+<br/><br/>
 
 ---
 
 
-## .reset_buffer_usage(error) :id=reset_buffer_usage
+### `.reset_buffer_usage(error) :id=reset_buffer_usage`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_resetbufferusage](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_resetbufferusage)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_resetbufferusage](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_resetbufferusage)
+
+<br/><br/>
 
 ---
 
 
-## ._register_plugin() :id=_register_plugin
+### `._register_plugin() :id=_register_plugin`
 
 **Parameters:**
 
-> (none)
+(none)
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_registerplugin](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_registerplugin)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_registerplugin](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_registerplugin)
+
+<br/><br/>
 
 ---
 
 
-## .unregister_plugin(name, error) :id=unregister_plugin
+### `.unregister_plugin(name, error) :id=unregister_plugin`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `name` | `string` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_unregisterplugin](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_unregisterplugin)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_unregisterplugin](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_unregisterplugin)
+
+<br/><br/>
 
 ---
 
 
-## .get_bank_count(error) :id=get_bank_count
+### `.get_bank_count(error) :id=get_bank_count`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `int`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbankcount](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbankcount)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbankcount](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbankcount)
+
+<br/><br/>
 
 ---
 
 
-## .get_bank_list(error) :id=get_bank_list
+### `.get_bank_list(error) :id=get_bank_list`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `FmodBank[]`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbanklist](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbanklist)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbanklist](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbanklist)
+
+<br/><br/>
 
 ---
 
 
-## .get_parameter_description_count(error) :id=get_parameter_description_count
+### `.get_parameter_description_count(error) :id=get_parameter_description_count`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `int`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptioncount](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptioncount)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptioncount](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptioncount)
+
+<br/><br/>
 
 ---
 
 
-## .get_parameter_description_list(error) :id=get_parameter_description_list
+### `.get_parameter_description_list(error) :id=get_parameter_description_list`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `FMOD_STUDIO_PARAMETER_DESCRIPTION[]`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptionlist](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptionlist)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptionlist](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptionlist)
+
+<br/><br/>
 
 ---
 
 
-## .start_command_capture(filename, flags, error) :id=start_command_capture
+### `.start_command_capture(filename, flags, error) :id=start_command_capture`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `filename` | `string` |  |
   | `flags` | `int` |  |
@@ -823,31 +921,35 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_startcommandcapture](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_startcommandcapture)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_startcommandcapture](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_startcommandcapture)
+
+<br/><br/>
 
 ---
 
 
-## .stop_command_capture(error) :id=stop_command_capture
+### `.stop_command_capture(error) :id=stop_command_capture`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_stopcommandcapture](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_stopcommandcapture)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_stopcommandcapture](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_stopcommandcapture)
+
+<br/><br/>
 
 ---
 
 
-## .load_command_replay(error, flags, out_command_replay, error) :id=load_command_replay
+### `.load_command_replay(error, flags, out_command_replay, error) :id=load_command_replay`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `error = undefined` | `string` |  |
   | `flags` | `int` |  |
@@ -856,59 +958,67 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `FmodCommandReplay`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadcommandreplay](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadcommandreplay)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadcommandreplay](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadcommandreplay)
+
+<br/><br/>
 
 ---
 
 
-## .set_callback(callback, callback_mask, error) :id=set_callback
+### `.set_callback(callback, callback_mask, error) :id=set_callback`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
-  | `callback` | `function&lt;int, int, int?, void&gt;` |  |
+  | `callback` | `function<int, int, int?, void>` |  |
   | `callback_mask = FMOD_STUDIO_SYSTEM_CALLBACK_ALL` | `int` | A bitmask of FMOD_STUDIO_SYSTEM_CALLBACK_xx values. |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setcallback](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setcallback)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setcallback](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setcallback)
+
+<br/><br/>
 
 ---
 
 
-## ._get_user_data() :id=_get_user_data
+### `._get_user_data() :id=_get_user_data`
 
 **Parameters:**
 
-> (none)
+(none)
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getuserdata](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getuserdata)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getuserdata](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getuserdata)
+
+<br/><br/>
 
 ---
 
 
-## ._set_user_data() :id=_set_user_data
+### `._set_user_data() :id=_set_user_data`
 
 **Parameters:**
 
-> (none)
+(none)
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setuserdata](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setuserdata)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setuserdata](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setuserdata)
+
+<br/><br/>
 
 ---
 
 
-## .get_cpu_usage(out_studio_usage, out_core_usage, error) :id=get_cpu_usage
+### `.get_cpu_usage(out_studio_usage, out_core_usage, error) :id=get_cpu_usage`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `out_studio_usage = undefined` | `FMOD_STUDIO_CPU_USAGE?` |  |
   | `out_core_usage = undefined` | `FMOD_CPU_USAGE?` |  |
@@ -916,23 +1026,27 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getcpuusage](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getcpuusage)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getcpuusage](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getcpuusage)
+
+<br/><br/>
 
 ---
 
 
-## .get_memory_usage(out_usage, error) :id=get_memory_usage
+### `.get_memory_usage(out_usage, error) :id=get_memory_usage`
 
 **Parameters:**
 
-> | Name | Type | Description |
+| Name | Type | Description |
   |:-|:-|:-|
   | `out_usage = undefined` | `FMOD_STUDIO_MEMORY_USAGE?` |  |
   | `error = undefined` | `FmlError?` |  |
 
 **Returns:** `FMOD_STUDIO_MEMORY_USAGE`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getmemoryusage](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getmemoryusage)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getmemoryusage](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getmemoryusage)
+
+<br/><br/>
 
 ---
 
@@ -949,4 +1063,8 @@ FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.ht
 
 **Returns:** `FmodStudioSystem`
 
-FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_create](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_create)
+FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_create](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_create)
+
+<br/><br/>
+
+---
