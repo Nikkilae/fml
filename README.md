@@ -15,7 +15,7 @@ There are two separate documentations depending on what you're looking for:
 
 ---
 
-Feature requests, bug reports and questions: [Issues](/issues)
+Feature requests, bug reports and questions: [Issues](https://github.com/Nikkilae/fml/issues)
 
 ---
 
