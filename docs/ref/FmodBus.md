@@ -5,7 +5,7 @@
 
 > (none)
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html](https://www.fmod.com/docs/2.02/api/studio-api-bus.html)
 
 ---
 
@@ -20,7 +20,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_isvalid](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_isvalid)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_isvalid](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_isvalid)
 
 ---
 
@@ -36,7 +36,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FMOD_GUID`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getid](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getid)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getid](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getid)
 
 ---
 
@@ -51,7 +51,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `string`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getpath](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getpath)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getpath](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getpath)
 
 ---
 
@@ -67,7 +67,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `struct`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getvolume](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getvolume)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getvolume](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getvolume)
 
 ---
 
@@ -83,7 +83,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_setvolume](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_setvolume)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setvolume](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setvolume)
 
 ---
 
@@ -98,7 +98,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getpaused](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getpaused)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getpaused](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getpaused)
 
 ---
 
@@ -114,7 +114,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_setpaused](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_setpaused)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setpaused](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setpaused)
 
 ---
 
@@ -129,7 +129,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getmute](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getmute)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getmute](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getmute)
 
 ---
 
@@ -145,7 +145,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_setmute](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_setmute)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setmute](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setmute)
 
 ---
 
@@ -161,7 +161,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_stopallevents](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_stopallevents)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_stopallevents](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_stopallevents)
 
 ---
 
@@ -176,7 +176,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `int`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getportindex](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getportindex)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getportindex](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getportindex)
 
 ---
 
@@ -192,7 +192,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_setportindex](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_setportindex)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setportindex](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setportindex)
 
 ---
 
@@ -207,7 +207,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_lockchannelgroup](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_lockchannelgroup)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_lockchannelgroup](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_lockchannelgroup)
 
 ---
 
@@ -222,7 +222,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_unlockchannelgroup](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_unlockchannelgroup)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_unlockchannelgroup](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_unlockchannelgroup)
 
 ---
 
@@ -238,7 +238,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FmodChannelGroup`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getchannelgroup](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getchannelgroup)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getchannelgroup](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getchannelgroup)
 
 ---
 
@@ -254,7 +254,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `struct`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getcpuusage](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getcpuusage)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getcpuusage](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getcpuusage)
 
 ---
 
@@ -270,7 +270,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FMOD_STUDIO_MEMORY_USAGE`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getmemoryusage](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bus.html#studio_bus_getmemoryusage)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getmemoryusage](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getmemoryusage)
 
 ---
 

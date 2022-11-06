@@ -1,5 +1,5 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-common.html#fmod_cpu_usage
+/// https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_cpu_usage
 function FMOD_CPU_USAGE() constructor
 {
     dsp = 0;            /// @is {number}

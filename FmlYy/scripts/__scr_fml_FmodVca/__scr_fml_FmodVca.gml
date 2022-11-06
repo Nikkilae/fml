@@ -1,10 +1,10 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-vca.html
+/// https://www.fmod.com/docs/2.02/api/studio-api-vca.html
 function FmodVca() constructor
 {
     vca_index = 0;  /// @is {int}
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-vca.html#studio_vca_isvalid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_isvalid
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static is_valid = function(error = undefined)
@@ -15,7 +15,7 @@ function FmodVca() constructor
         return (res == FML_RESULT.OK) ? bool(buffer_peek(out_buf, 0, buffer_bool)) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-vca.html#studio_vca_getid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_getid
     /// @param {FMOD_GUID?} out_guid = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {FMOD_GUID}
@@ -33,7 +33,7 @@ function FmodVca() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-vca.html#studio_vca_getpath
+    /// https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_getpath
     /// @param {FmlError?} error = undefined
     /// @returns {string}
     static get_path = function(error = undefined)
@@ -57,7 +57,7 @@ function FmodVca() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-vca.html#studio_vca_getvolume
+    /// https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_getvolume
     /// @param {struct?} out_struct = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {struct}
@@ -78,7 +78,7 @@ function FmodVca() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-vca.html#studio_vca_setvolume
+    /// https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_setvolume
     /// @param {number} volume
     /// @param {FmlError?} error = undefined
     /// @returns {bool}

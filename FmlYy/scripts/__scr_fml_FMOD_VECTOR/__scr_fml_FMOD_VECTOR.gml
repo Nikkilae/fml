@@ -1,5 +1,5 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-common.html#fmod_vector
+/// https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_vector
 /// @param {number} x = 0
 /// @param {number} y = 0
 /// @param {number} z = 0

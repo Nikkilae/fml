@@ -1,5 +1,5 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventdescription.html#fmod_studio_user_property
+/// https://www.fmod.com/docs/2.02/api/studio-api-eventdescription.html#fmod_studio_user_property
 function FMOD_STUDIO_USER_PROPERTY() constructor
 {
     name = "";                                      /// @is {string}

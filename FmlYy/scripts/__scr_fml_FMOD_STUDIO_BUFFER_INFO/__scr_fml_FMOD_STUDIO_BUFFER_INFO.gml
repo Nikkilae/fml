@@ -1,5 +1,5 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#fmod_studio_buffer_info
+/// https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_buffer_info
 function FMOD_STUDIO_BUFFER_INFO() constructor
 {
     currentusage = 0;   /// @is {number}

@@ -1,5 +1,5 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-common.html#fmod_studio_memory_usage
+/// https://www.fmod.com/docs/2.02/api/studio-api-common.html#fmod_studio_memory_usage
 function FMOD_STUDIO_MEMORY_USAGE() constructor
 {
     exclusive = 0;  /// @is {number}

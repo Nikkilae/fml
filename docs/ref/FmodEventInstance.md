@@ -5,7 +5,7 @@
 
 > (none)
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html)
 
 ---
 
@@ -20,7 +20,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_isvalid](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_isvalid)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_isvalid](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_isvalid)
 
 ---
 
@@ -36,7 +36,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FmodEventDescription`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getdescription](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getdescription)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getdescription](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getdescription)
 
 ---
 
@@ -52,7 +52,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `struct`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getvolume](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getvolume)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getvolume](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getvolume)
 
 ---
 
@@ -68,7 +68,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setvolume](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setvolume)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setvolume](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setvolume)
 
 ---
 
@@ -84,7 +84,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `struct`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getpitch](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getpitch)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getpitch](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getpitch)
 
 ---
 
@@ -100,7 +100,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setpitch](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setpitch)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setpitch](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setpitch)
 
 ---
 
@@ -116,7 +116,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FMOD_3D_ATTRIBUTES`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_get3dattributes](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_get3dattributes)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_get3dattributes](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_get3dattributes)
 
 ---
 
@@ -132,7 +132,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_set3dattributes](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_set3dattributes)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_set3dattributes](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_set3dattributes)
 
 ---
 
@@ -147,7 +147,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `int`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getlistenermask](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getlistenermask)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getlistenermask](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getlistenermask)
 
 ---
 
@@ -163,7 +163,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setlistenermask](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setlistenermask)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setlistenermask](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setlistenermask)
 
 ---
 
@@ -179,7 +179,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `number`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getproperty](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getproperty)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getproperty](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getproperty)
 
 ---
 
@@ -196,7 +196,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setproperty](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setproperty)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setproperty](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setproperty)
 
 ---
 
@@ -212,7 +212,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `number`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getreverblevel](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getreverblevel)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getreverblevel](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getreverblevel)
 
 ---
 
@@ -229,7 +229,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setreverblevel](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setreverblevel)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setreverblevel](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setreverblevel)
 
 ---
 
@@ -244,7 +244,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getpaused](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getpaused)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getpaused](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getpaused)
 
 ---
 
@@ -260,7 +260,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setpaused](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setpaused)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setpaused](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setpaused)
 
 ---
 
@@ -275,7 +275,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_start](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_start)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_start](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_start)
 
 ---
 
@@ -291,7 +291,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_stop](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_stop)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_stop](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_stop)
 
 ---
 
@@ -306,7 +306,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `number`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_gettimelineposition](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_gettimelineposition)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_gettimelineposition](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_gettimelineposition)
 
 ---
 
@@ -322,7 +322,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_settimelineposition](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_settimelineposition)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_settimelineposition](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_settimelineposition)
 
 ---
 
@@ -337,7 +337,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FMOD_STUDIO_PLAYBACK_STATE`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getplaybackstate](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getplaybackstate)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getplaybackstate](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getplaybackstate)
 
 ---
 
@@ -353,7 +353,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FmodChannelGroup`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getchannelgroup](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getchannelgroup)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getchannelgroup](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getchannelgroup)
 
 ---
 
@@ -369,7 +369,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `struct`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getminmaxdistance](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getminmaxdistance)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getminmaxdistance](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getminmaxdistance)
 
 ---
 
@@ -384,7 +384,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_release](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_release)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_release](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_release)
 
 ---
 
@@ -399,7 +399,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_isvirtual](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_isvirtual)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_isvirtual](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_isvirtual)
 
 ---
 
@@ -416,7 +416,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `struct`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getparameterbyid](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getparameterbyid)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getparameterbyid](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getparameterbyid)
 
 ---
 
@@ -434,7 +434,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setparameterbyid](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setparameterbyid)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setparameterbyid](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setparameterbyid)
 
 ---
 
@@ -452,7 +452,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setparameterbyidwithlabel](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setparameterbyidwithlabel)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setparameterbyidwithlabel](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setparameterbyidwithlabel)
 
 ---
 
@@ -470,7 +470,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setparametersbyids](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setparametersbyids)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setparametersbyids](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setparametersbyids)
 
 ---
 
@@ -487,7 +487,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `struct`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getparameterbyname](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getparameterbyname)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getparameterbyname](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getparameterbyname)
 
 ---
 
@@ -505,7 +505,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setparameterbyname](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setparameterbyname)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setparameterbyname](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setparameterbyname)
 
 ---
 
@@ -523,7 +523,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setparameterbynamewithlabel](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setparameterbynamewithlabel)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setparameterbynamewithlabel](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setparameterbynamewithlabel)
 
 ---
 
@@ -538,7 +538,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_keyoff](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_keyoff)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_keyoff](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_keyoff)
 
 ---
 
@@ -554,7 +554,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `struct`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getcpuusage](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getcpuusage)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getcpuusage](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getcpuusage)
 
 ---
 
@@ -570,7 +570,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FMOD_STUDIO_MEMORY_USAGE`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getmemoryusage](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getmemoryusage)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getmemoryusage](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getmemoryusage)
 
 ---
 
@@ -587,7 +587,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setcallback](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setcallback)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setcallback](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setcallback)
 
 ---
 
@@ -600,7 +600,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getuserdata](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_getuserdata)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getuserdata](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getuserdata)
 
 ---
 
@@ -613,7 +613,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setuserdata](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-eventinstance.html#studio_eventinstance_setuserdata)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setuserdata](https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setuserdata)
 
 ---
 

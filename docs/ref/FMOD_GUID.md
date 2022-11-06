@@ -5,7 +5,7 @@
 
 > (none)
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-common.html#fmod_guid](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-common.html#fmod_guid)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_guid](https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_guid)
 
 ---
 

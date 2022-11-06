@@ -5,7 +5,7 @@
 
 > (none)
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-system.html#fmod_studio_cpu_usage](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-system.html#fmod_studio_cpu_usage)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_cpu_usage](https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_cpu_usage)
 
 ---
 

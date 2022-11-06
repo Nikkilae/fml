@@ -5,7 +5,7 @@
 
 > (none)
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html](https://www.fmod.com/docs/2.02/api/studio-api-bank.html)
 
 ---
 
@@ -20,7 +20,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_isvalid](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_isvalid)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_isvalid](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_isvalid)
 
 ---
 
@@ -36,7 +36,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FMOD_GUID`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getid](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getid)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getid](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getid)
 
 ---
 
@@ -51,7 +51,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `string`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getpath](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getpath)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getpath](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getpath)
 
 ---
 
@@ -66,7 +66,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_unload](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_unload)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_unload](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_unload)
 
 ---
 
@@ -81,7 +81,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_loadsampledata](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_loadsampledata)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_loadsampledata](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_loadsampledata)
 
 ---
 
@@ -96,7 +96,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_unloadsampledata](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_unloadsampledata)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_unloadsampledata](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_unloadsampledata)
 
 ---
 
@@ -111,7 +111,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FMOD_STUDIO_LOADING_STATE`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getloadingstate](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getloadingstate)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getloadingstate](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getloadingstate)
 
 ---
 
@@ -126,7 +126,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FMOD_STUDIO_LOADING_STATE`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getsampleloadingstate](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getsampleloadingstate)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getsampleloadingstate](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getsampleloadingstate)
 
 ---
 
@@ -141,7 +141,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `int`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getstringcount](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getstringcount)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getstringcount](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getstringcount)
 
 ---
 
@@ -158,7 +158,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `string`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getstringinfo](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getstringinfo)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getstringinfo](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getstringinfo)
 
 ---
 
@@ -173,7 +173,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `int`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_geteventcount](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_geteventcount)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_geteventcount](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_geteventcount)
 
 ---
 
@@ -188,7 +188,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FmodEventDescription[]`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_geteventlist](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_geteventlist)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_geteventlist](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_geteventlist)
 
 ---
 
@@ -203,7 +203,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `int`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getbuscount](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getbuscount)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getbuscount](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getbuscount)
 
 ---
 
@@ -218,7 +218,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FmodBus[]`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getbuslist](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getbuslist)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getbuslist](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getbuslist)
 
 ---
 
@@ -233,7 +233,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `int`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getvcacount](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getvcacount)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getvcacount](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getvcacount)
 
 ---
 
@@ -248,7 +248,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FmodVca[]`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getvcalist](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getvcalist)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getvcalist](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getvcalist)
 
 ---
 
@@ -261,7 +261,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getuserdata](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_getuserdata)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getuserdata](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getuserdata)
 
 ---
 
@@ -274,7 +274,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_setuserdata](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-bank.html#studio_bank_setuserdata)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_setuserdata](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_setuserdata)
 
 ---
 

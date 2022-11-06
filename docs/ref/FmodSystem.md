@@ -5,7 +5,7 @@
 
 > (none)
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html](https://www.fmod.com/docs/2.02/api/core-api-system.html)
 
 ---
 
@@ -20,7 +20,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_release](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_release)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_release](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_release)
 
 ---
 
@@ -36,7 +36,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setoutput](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setoutput)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setoutput](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setoutput)
 
 ---
 
@@ -51,7 +51,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FMOD_OUTPUTTYPE`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getoutput](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getoutput)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getoutput](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getoutput)
 
 ---
 
@@ -66,7 +66,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `int`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getnumdrivers](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getnumdrivers)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnumdrivers](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnumdrivers)
 
 ---
 
@@ -83,7 +83,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FML_DRIVER_INFO`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getdriverinfo](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getdriverinfo)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdriverinfo](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdriverinfo)
 
 ---
 
@@ -99,7 +99,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setdriver](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setdriver)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setdriver](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setdriver)
 
 ---
 
@@ -114,7 +114,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `int`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getdriver](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getdriver)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdriver](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdriver)
 
 ---
 
@@ -130,7 +130,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setsoftwarechannels](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setsoftwarechannels)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setsoftwarechannels](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setsoftwarechannels)
 
 ---
 
@@ -145,7 +145,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `int`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getsoftwarechannels](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getsoftwarechannels)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getsoftwarechannels](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getsoftwarechannels)
 
 ---
 
@@ -163,7 +163,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setsoftwareformat](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setsoftwareformat)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setsoftwareformat](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setsoftwareformat)
 
 ---
 
@@ -179,7 +179,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FML_SOFTWARE_FORMAT`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getsoftwareformat](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getsoftwareformat)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getsoftwareformat](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getsoftwareformat)
 
 ---
 
@@ -196,7 +196,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setdspbuffersize](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setdspbuffersize)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setdspbuffersize](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setdspbuffersize)
 
 ---
 
@@ -212,7 +212,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FML_DSP_BUFFER_SIZE`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getdspbuffersize](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getdspbuffersize)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdspbuffersize](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdspbuffersize)
 
 ---
 
@@ -225,7 +225,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setfilesystem](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setfilesystem)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setfilesystem](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setfilesystem)
 
 ---
 
@@ -251,7 +251,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setadvancedsettings](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setadvancedsettings)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setadvancedsettings](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setadvancedsettings)
 
 ---
 
@@ -264,7 +264,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getadvancedsettings](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getadvancedsettings)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getadvancedsettings](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getadvancedsettings)
 
 ---
 
@@ -281,7 +281,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setcallback](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setcallback)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setcallback](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setcallback)
 
 ---
 
@@ -294,7 +294,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setpluginpath](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setpluginpath)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setpluginpath](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setpluginpath)
 
 ---
 
@@ -307,7 +307,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_loadplugin](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_loadplugin)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_loadplugin](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_loadplugin)
 
 ---
 
@@ -320,7 +320,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_unloadplugin](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_unloadplugin)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_unloadplugin](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_unloadplugin)
 
 ---
 
@@ -333,7 +333,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getnumnestedplugins](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getnumnestedplugins)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnumnestedplugins](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnumnestedplugins)
 
 ---
 
@@ -346,7 +346,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getnestedplugin](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getnestedplugin)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnestedplugin](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnestedplugin)
 
 ---
 
@@ -359,7 +359,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getnumplugins](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getnumplugins)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnumplugins](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnumplugins)
 
 ---
 
@@ -372,7 +372,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getpluginhandle](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getpluginhandle)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getpluginhandle](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getpluginhandle)
 
 ---
 
@@ -385,7 +385,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getplugininfo](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getplugininfo)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getplugininfo](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getplugininfo)
 
 ---
 
@@ -398,7 +398,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setoutputbyplugin](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setoutputbyplugin)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setoutputbyplugin](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setoutputbyplugin)
 
 ---
 
@@ -411,7 +411,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getoutputbyplugin](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getoutputbyplugin)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getoutputbyplugin](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getoutputbyplugin)
 
 ---
 
@@ -424,7 +424,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_createdspbyplugin](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_createdspbyplugin)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createdspbyplugin](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createdspbyplugin)
 
 ---
 
@@ -437,7 +437,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getdspinfobyplugin](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getdspinfobyplugin)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdspinfobyplugin](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdspinfobyplugin)
 
 ---
 
@@ -450,7 +450,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_registercodec](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_registercodec)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_registercodec](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_registercodec)
 
 ---
 
@@ -463,7 +463,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_registerdsp](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_registerdsp)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_registerdsp](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_registerdsp)
 
 ---
 
@@ -476,7 +476,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_registeroutput](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_registeroutput)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_registeroutput](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_registeroutput)
 
 ---
 
@@ -493,7 +493,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_init](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_init)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_init](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_init)
 
 ---
 
@@ -508,7 +508,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_close](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_close)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_close](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_close)
 
 ---
 
@@ -523,7 +523,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_update](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_update)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_update](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_update)
 
 ---
 
@@ -536,7 +536,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setspeakerposition](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setspeakerposition)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setspeakerposition](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setspeakerposition)
 
 ---
 
@@ -549,7 +549,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getspeakerposition](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getspeakerposition)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getspeakerposition](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getspeakerposition)
 
 ---
 
@@ -562,7 +562,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setstreambuffersize](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setstreambuffersize)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setstreambuffersize](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setstreambuffersize)
 
 ---
 
@@ -575,7 +575,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getstreambuffersize](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getstreambuffersize)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getstreambuffersize](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getstreambuffersize)
 
 ---
 
@@ -593,7 +593,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_set3dsettings](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_set3dsettings)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_set3dsettings](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_set3dsettings)
 
 ---
 
@@ -609,7 +609,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FML_3D_SETTINGS`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_get3dsettings](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_get3dsettings)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_get3dsettings](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_get3dsettings)
 
 ---
 
@@ -622,7 +622,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_set3dnumlisteners](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_set3dnumlisteners)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_set3dnumlisteners](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_set3dnumlisteners)
 
 ---
 
@@ -635,7 +635,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_get3dnumlisteners](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_get3dnumlisteners)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_get3dnumlisteners](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_get3dnumlisteners)
 
 ---
 
@@ -648,7 +648,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_set3dlistenerattributes](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_set3dlistenerattributes)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_set3dlistenerattributes](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_set3dlistenerattributes)
 
 ---
 
@@ -661,7 +661,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_get3dlistenerattributes](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_get3dlistenerattributes)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_get3dlistenerattributes](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_get3dlistenerattributes)
 
 ---
 
@@ -674,7 +674,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_set3drolloffcallback](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_set3drolloffcallback)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_set3drolloffcallback](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_set3drolloffcallback)
 
 ---
 
@@ -687,7 +687,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_mixersuspend](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_mixersuspend)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_mixersuspend](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_mixersuspend)
 
 ---
 
@@ -700,7 +700,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_mixerresume](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_mixerresume)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_mixerresume](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_mixerresume)
 
 ---
 
@@ -713,7 +713,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getdefaultmixmatrix](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getdefaultmixmatrix)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdefaultmixmatrix](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdefaultmixmatrix)
 
 ---
 
@@ -726,7 +726,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getspeakermodechannels](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getspeakermodechannels)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getspeakermodechannels](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getspeakermodechannels)
 
 ---
 
@@ -741,7 +741,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `int`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getversion](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getversion)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getversion](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getversion)
 
 ---
 
@@ -754,7 +754,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getoutputhandle](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getoutputhandle)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getoutputhandle](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getoutputhandle)
 
 ---
 
@@ -767,7 +767,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getchannelsplaying](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getchannelsplaying)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getchannelsplaying](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getchannelsplaying)
 
 ---
 
@@ -780,7 +780,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getcpuusage](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getcpuusage)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getcpuusage](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getcpuusage)
 
 ---
 
@@ -793,7 +793,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getfileusage](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getfileusage)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getfileusage](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getfileusage)
 
 ---
 
@@ -806,7 +806,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_createsound](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_createsound)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createsound](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createsound)
 
 ---
 
@@ -819,7 +819,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_createstream](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_createstream)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createstream](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createstream)
 
 ---
 
@@ -832,7 +832,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_createdsp](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_createdsp)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createdsp](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createdsp)
 
 ---
 
@@ -845,7 +845,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_createdspbytype](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_createdspbytype)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createdspbytype](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createdspbytype)
 
 ---
 
@@ -858,7 +858,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_createchannelgroup](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_createchannelgroup)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createchannelgroup](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createchannelgroup)
 
 ---
 
@@ -871,7 +871,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_createsoundgroup](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_createsoundgroup)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createsoundgroup](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createsoundgroup)
 
 ---
 
@@ -884,7 +884,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_createreverb3d](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_createreverb3d)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createreverb3d](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createreverb3d)
 
 ---
 
@@ -897,7 +897,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_playsound](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_playsound)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_playsound](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_playsound)
 
 ---
 
@@ -910,7 +910,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_playdsp](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_playdsp)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_playdsp](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_playdsp)
 
 ---
 
@@ -923,7 +923,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getchannel](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getchannel)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getchannel](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getchannel)
 
 ---
 
@@ -936,7 +936,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getdspinfobytype](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getdspinfobytype)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdspinfobytype](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdspinfobytype)
 
 ---
 
@@ -949,7 +949,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getmasterchannelgroup](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getmasterchannelgroup)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getmasterchannelgroup](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getmasterchannelgroup)
 
 ---
 
@@ -962,7 +962,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getmastersoundgroup](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getmastersoundgroup)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getmastersoundgroup](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getmastersoundgroup)
 
 ---
 
@@ -988,7 +988,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_detachchannelgroupfromport](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_detachchannelgroupfromport)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_detachchannelgroupfromport](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_detachchannelgroupfromport)
 
 ---
 
@@ -1001,7 +1001,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setreverbproperties](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setreverbproperties)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setreverbproperties](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setreverbproperties)
 
 ---
 
@@ -1014,7 +1014,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getreverbproperties](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getreverbproperties)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getreverbproperties](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getreverbproperties)
 
 ---
 
@@ -1027,7 +1027,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_lockdsp](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_lockdsp)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_lockdsp](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_lockdsp)
 
 ---
 
@@ -1040,7 +1040,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_unlockdsp](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_unlockdsp)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_unlockdsp](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_unlockdsp)
 
 ---
 
@@ -1053,7 +1053,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getrecordnumdrivers](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getrecordnumdrivers)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getrecordnumdrivers](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getrecordnumdrivers)
 
 ---
 
@@ -1066,7 +1066,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getrecorddriverinfo](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getrecorddriverinfo)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getrecorddriverinfo](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getrecorddriverinfo)
 
 ---
 
@@ -1079,7 +1079,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getrecordposition](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getrecordposition)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getrecordposition](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getrecordposition)
 
 ---
 
@@ -1092,7 +1092,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_recordstart](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_recordstart)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_recordstart](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_recordstart)
 
 ---
 
@@ -1105,7 +1105,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_recordstop](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_recordstop)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_recordstop](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_recordstop)
 
 ---
 
@@ -1118,7 +1118,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_isrecording](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_isrecording)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_isrecording](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_isrecording)
 
 ---
 
@@ -1131,7 +1131,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_creategeometry](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_creategeometry)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_creategeometry](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_creategeometry)
 
 ---
 
@@ -1144,7 +1144,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setgeometrysettings](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setgeometrysettings)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setgeometrysettings](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setgeometrysettings)
 
 ---
 
@@ -1157,7 +1157,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getgeometrysettings](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getgeometrysettings)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getgeometrysettings](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getgeometrysettings)
 
 ---
 
@@ -1170,7 +1170,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_loadgeometry](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_loadgeometry)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_loadgeometry](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_loadgeometry)
 
 ---
 
@@ -1183,7 +1183,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getgeometryocclusion](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getgeometryocclusion)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getgeometryocclusion](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getgeometryocclusion)
 
 ---
 
@@ -1196,7 +1196,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setnetworkproxy](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setnetworkproxy)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setnetworkproxy](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setnetworkproxy)
 
 ---
 
@@ -1209,7 +1209,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getnetworkproxy](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getnetworkproxy)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnetworkproxy](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnetworkproxy)
 
 ---
 
@@ -1222,7 +1222,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setnetworktimeout](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setnetworktimeout)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setnetworktimeout](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setnetworktimeout)
 
 ---
 
@@ -1235,7 +1235,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getnetworktimeout](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getnetworktimeout)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnetworktimeout](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnetworktimeout)
 
 ---
 
@@ -1248,7 +1248,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setuserdata](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_setuserdata)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setuserdata](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setuserdata)
 
 ---
 
@@ -1261,7 +1261,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `void`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getuserdata](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_getuserdata)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getuserdata](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getuserdata)
 
 ---
 
@@ -1278,4 +1278,4 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FmodSystem`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_create](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-system.html#system_create)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-system.html#system_create](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_create)

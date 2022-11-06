@@ -1,5 +1,5 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_create
+/// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_create
 /// @param {int?} header_version = FMOD_VERSION
 /// @param {FmodStudioSystem?} out_studio_system = undefined
 /// @param {FmlError?} error = undefined
@@ -17,12 +17,12 @@ function FmodStudioSystem_Create(header_version = FMOD_VERSION, out_studio_syste
     return undefined;
 }
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html
+/// https://www.fmod.com/docs/2.02/api/studio-api-system.html
 function FmodStudioSystem() constructor
 {
     studio_system_index = 0;  /// @is {int}
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_setadvancedsettings
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setadvancedsettings
     /// @param {FMOD_STUDIO_ADVANCEDSETTINGS} settings
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
@@ -34,7 +34,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getadvancedsettings
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getadvancedsettings
     /// @param {FMOD_STUDIO_ADVANCEDSETTINGS?} out_settings = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {FMOD_STUDIO_ADVANCEDSETTINGS}
@@ -62,7 +62,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_initialize
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_initialize
     /// @param {int} max_channels
     /// @param {int} studio_flags   A bitmask of FMOD_STUDIO_INIT_xx values.
     /// @param {int} core_flags     A bitmask of FMOD_INIT_xx values.
@@ -75,7 +75,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_release
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_release
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static release = function(error = undefined)
@@ -85,7 +85,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_isvalid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_isvalid
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static is_valid = function(error = undefined)
@@ -96,7 +96,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK) ? bool(buffer_peek(out_buf, 0, buffer_bool)) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_update
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_update
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static update = function(error = undefined)
@@ -106,7 +106,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_flushcommands
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_flushcommands
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static flush_commands = function(error = undefined)
@@ -116,7 +116,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_flushsampleloading
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_flushsampleloading
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static flush_sample_loading = function(error = undefined)
@@ -126,7 +126,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getcoresystem
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getcoresystem
     /// @param {FmodSystem} out_system = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {FmodSystem}
@@ -143,7 +143,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getevent
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getevent
     /// @param {string} path
     /// @param {FmodEventDescription?} out_event_description = undefined
     /// @param {FmlError?} error = undefined
@@ -161,7 +161,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getbus
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbus
     /// @param {string} path
     /// @param {FmodBus?} out_bus = undefined
     /// @param {FmlError?} error = undefined
@@ -179,7 +179,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getvca
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getvca
     /// @param {string} path
     /// @param {FmodVca?} out_vca = undefined
     /// @param {FmlError?} error = undefined
@@ -197,7 +197,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getbank
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbank
     /// @param {string} path
     /// @param {FmodBank?} out_bank = undefined
     /// @param {FmlError?} error = undefined
@@ -215,7 +215,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_geteventbyid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_geteventbyid
     /// @param {FMOD_GUID} guid
     /// @param {FmodEventDescription?} out_event_description = undefined
     /// @param {FmlError?} error = undefined
@@ -233,7 +233,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getbusbyid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbusbyid
     /// @param {FMOD_GUID} guid
     /// @param {FmodBus?} out_bus = undefined
     /// @param {FmlError?} error = undefined
@@ -251,7 +251,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getvcabyid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getvcabyid
     /// @param {FMOD_GUID} guid
     /// @param {FmodVca?} out_vca = undefined
     /// @param {FmlError?} error = undefined
@@ -269,7 +269,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getbankbyid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbankbyid
     /// @param {FMOD_GUID} guid
     /// @param {FmodBank?} out_bank = undefined
     /// @param {FmlError?} error = undefined
@@ -287,10 +287,10 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getsoundinfo
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getsoundinfo
     static _get_sound_info = function() {}
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getparameterdescriptionbyname
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptionbyname
     /// @param {string} name
     /// @param {FMOD_STUDIO_PARAMETER_DESCRIPTION?} out_description = undefined
     /// @param {FmlError?} error = undefined
@@ -319,7 +319,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getparameterdescriptionbyid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptionbyid
     /// @param {FMOD_STUDIO_PARAMETER_ID} param_id
     /// @param {FMOD_STUDIO_PARAMETER_DESCRIPTION?} out_description = undefined
     /// @param {FmlError?} error = undefined
@@ -350,7 +350,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getparameterlabelbyname
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterlabelbyname
     /// @param {string} name
     /// @param {int} label_index
     /// @param {FmlError?} error = undefined
@@ -376,7 +376,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getparameterlabelbyid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterlabelbyid
     /// @param {FMOD_STUDIO_PARAMETER_ID} parameter_id
     /// @param {int} label_index
     /// @param {FmlError?} error = undefined
@@ -403,7 +403,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getparameterbyid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterbyid
     /// @param {FMOD_STUDIO_PARAMETER_ID} parameter_id
     /// @param {struct?} out_struct = undefined
     /// @param {FmlError?} error = undefined
@@ -426,7 +426,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_setparameterbyid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbyid
     /// @param {FMOD_STUDIO_PARAMETER_ID} parameter_id
     /// @param {number} value
     /// @param {bool?} ignore_seek_speed = false
@@ -440,7 +440,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_setparameterbyidwithlabel
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbyidwithlabel
     /// @param {FMOD_STUDIO_PARAMETER_ID} parameter_id
     /// @param {string} label
     /// @param {bool?} ignore_seek_speed = false
@@ -454,7 +454,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_setparametersbyids
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparametersbyids
     /// @param {FMOD_STUDIO_PARAMETER_ID[]} parameter_ids
     /// @param {number[]} values
     /// @param {bool?} ignore_seek_speed = false
@@ -475,7 +475,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getparameterbyname
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterbyname
     /// @param {string} name
     /// @param {struct?} out_struct = undefined
     /// @param {FmlError?} error = undefined
@@ -497,7 +497,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_setparameterbyname
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbyname
     /// @param {string} name
     /// @param {number} value
     /// @param {bool?} ignore_seek_speed = false
@@ -510,7 +510,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_setparameterbynamewithlabel
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setparameterbynamewithlabel
     /// @param {string} name
     /// @param {string} label
     /// @param {bool?} ignore_seek_speed = false
@@ -523,7 +523,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_lookupid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_lookupid
     /// @param {string} path
     /// @param {FMOD_GUID?} out_guid = undefined
     /// @param {FmlError?} error = undefined
@@ -542,7 +542,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_lookuppath
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_lookuppath
     /// @param {FMOD_GUID} guid
     /// @param {FmlError?} error = undefined
     /// @returns {string}
@@ -567,7 +567,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getnumlisteners
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getnumlisteners
     /// @param {FmlError?} error = undefined
     /// @returns {int}
     static get_num_listeners = function(error = undefined)
@@ -578,7 +578,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK) ? real(buffer_peek(out_buf, 0, buffer_u64)) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_setnumlisteners
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setnumlisteners
     /// @param {int} num_listeners
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
@@ -589,7 +589,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getlistenerattributes
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getlistenerattributes
     /// @param {int} listener
     /// @param {FMOD_3D_ATTRIBUTES?} out_attributes = undefined
     /// @param {FMOD_VECTOR?} out_attenuation_position = undefined
@@ -613,7 +613,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_setlistenerattributes
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setlistenerattributes
     /// @param {int} listener
     /// @param {FMOD_3D_ATTRIBUTES} attributes
     /// @param {FMOD_VECTOR?} attenuation_position
@@ -628,7 +628,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getlistenerweight
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getlistenerweight
     /// @param {int} listener
     /// @param {FmlError?} error = undefined
     /// @returns {number}
@@ -640,7 +640,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK) ? buffer_peek(out_buf, 0, buffer_f32) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_setlistenerweight
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setlistenerweight
     /// @param {int} listener
     /// @param {number} weight
     /// @param {FmlError?} error = undefined
@@ -652,7 +652,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_loadbankfile
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadbankfile
     /// @param {string}         filename
     /// @param {int}            flags  A bitmask of FMOD_STUDIO_LOAD_BANK_xx values.
     /// @param {FmodBank?}      out_bank = undefined
@@ -671,7 +671,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_loadbankmemory
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadbankmemory
     /// @param {buffer} bank_buffer
     /// @param {int} buffer_length
     /// @param {FMOD_STUDIO_LOAD_MEMORY_MODE} mode
@@ -696,10 +696,10 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_loadbankcustom
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadbankcustom
     static _load_bank_custom = function() {}
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_unloadall
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_unloadall
     /// @param {FmlError?} error = undefined
     /// @returns {FmodBank}
     static unload_all = function(error = undefined)
@@ -709,7 +709,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getbufferusage
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbufferusage
     /// @param {FMOD_STUDIO_BUFFER_USAGE?} out_usage = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {FMOD_STUDIO_BUFFER_USAGE}
@@ -727,7 +727,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_resetbufferusage
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_resetbufferusage
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static reset_buffer_usage = function(error = undefined)
@@ -737,10 +737,10 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_registerplugin
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_registerplugin
     static _register_plugin = function() {}
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_unregisterplugin
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_unregisterplugin
     /// @param {string} name
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
@@ -751,7 +751,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getbankcount
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbankcount
     /// @param {FmlError?} error = undefined
     /// @returns {int}
     static get_bank_count = function(error = undefined)
@@ -762,7 +762,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK) ? real(buffer_peek(out_buf, 0, buffer_u64)) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getbanklist
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getbanklist
     /// @param {FmlError?} error = undefined
     /// @returns {FmodBank[]}
     static get_bank_list = function(error = undefined)
@@ -792,7 +792,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getparameterdescriptioncount
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptioncount
     /// @param {FmlError?} error = undefined
     /// @returns {int}
     static get_parameter_description_count = function(error = undefined)
@@ -803,7 +803,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK) ? real(buffer_peek(out_buf, 0, buffer_u64)) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getparameterdescriptionlist
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getparameterdescriptionlist
     /// @param {FmlError?} error = undefined
     /// @returns {FMOD_STUDIO_PARAMETER_DESCRIPTION[]}
     static get_parameter_description_list = function(error = undefined)
@@ -836,7 +836,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_startcommandcapture
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_startcommandcapture
     /// @param {string} filename
     /// @param {int} flags
     /// @param {FmlError?} error = undefined
@@ -848,7 +848,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_stopcommandcapture
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_stopcommandcapture
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static stop_command_capture = function(error = undefined)
@@ -858,7 +858,7 @@ function FmodStudioSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_loadcommandreplay
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_loadcommandreplay
     /// @param {string} error = undefined
     /// @param {int} flags
     /// @param {FmodCommandReplay?} out_command_replay = undefined
@@ -877,7 +877,7 @@ function FmodStudioSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_setcallback
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setcallback
     /// @param {function<int, int, int?, void>} callback
     /// @param {int} callback_mask = FMOD_STUDIO_SYSTEM_CALLBACK_ALL A bitmask of FMOD_STUDIO_SYSTEM_CALLBACK_xx values.
     /// @param {FmlError?} error = undefined
@@ -893,12 +893,12 @@ function FmodStudioSystem() constructor
         return false;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getuserdata
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getuserdata
     static _get_user_data = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_setuserdata
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_setuserdata
     static _set_user_data = function() {}
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getcpuusage
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getcpuusage
     /// @param {FMOD_STUDIO_CPU_USAGE?} out_studio_usage = undefined
     /// @param {FMOD_CPU_USAGE?} out_core_usage = undefined
     /// @param {FmlError?} error = undefined
@@ -923,7 +923,7 @@ function FmodStudioSystem() constructor
         return false;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#studio_system_getmemoryusage
+    /// https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getmemoryusage
     /// @param {FMOD_STUDIO_MEMORY_USAGE?} out_usage = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {FMOD_STUDIO_MEMORY_USAGE}

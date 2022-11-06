@@ -1,10 +1,10 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html
+/// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html
 function FmodEventInstance() constructor
 {
     event_instance_index = 0;   /// @is {int}
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_isvalid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_isvalid
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static is_valid = function(error = undefined)
@@ -15,7 +15,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK) ? bool(buffer_peek(out_buf, 0, buffer_bool)) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_getdescription
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getdescription
     /// @param {FmodEventDescription?} out_description = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {FmodEventDescription}
@@ -32,7 +32,7 @@ function FmodEventInstance() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_getvolume
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getvolume
     /// @param {struct?} out_struct = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {struct}
@@ -53,7 +53,7 @@ function FmodEventInstance() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_setvolume
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setvolume
     /// @param {number} volume
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
@@ -64,7 +64,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_getpitch
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getpitch
     /// @param {struct?} out_struct = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {struct}
@@ -85,7 +85,7 @@ function FmodEventInstance() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_setpitch
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setpitch
     /// @param {number} pitch
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
@@ -96,7 +96,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_get3dattributes
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_get3dattributes
     /// @param {FMOD_3D_ATTRIBUTES?} out_attributes = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {FMOD_3D_ATTRIBUTES}
@@ -114,7 +114,7 @@ function FmodEventInstance() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_set3dattributes
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_set3dattributes
     /// @param {FMOD_3D_ATTRIBUTES} attributes
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
@@ -126,7 +126,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_getlistenermask
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getlistenermask
     /// @param {FmlError?} error = undefined
     /// @returns {int}
     static get_listener_mask = function(error = undefined)
@@ -137,7 +137,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK) ? buffer_peek(out_buf, 0, buffer_u32) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_setlistenermask
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setlistenermask
     /// @param {int} mask
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
@@ -148,7 +148,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_getproperty
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getproperty
     /// @param {FMOD_STUDIO_EVENT_PROPERTY} property
     /// @param {FmlError?} error = undefined
     /// @returns {number}
@@ -160,7 +160,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK) ? buffer_peek(out_buf, 0, buffer_f32) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_setproperty
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setproperty
     /// @param {FMOD_STUDIO_EVENT_PROPERTY} property
     /// @param {number} value
     /// @param {FmlError?} error = undefined
@@ -172,7 +172,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_getreverblevel
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getreverblevel
     /// @param {int} index
     /// @param {FmlError?} error = undefined
     /// @returns {number}
@@ -184,7 +184,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK) ? buffer_peek(out_buf, 0, buffer_f32) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_setreverblevel
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setreverblevel
     /// @param {int} index
     /// @param {number} level
     /// @param {FmlError?} error = undefined
@@ -196,7 +196,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_getpaused
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getpaused
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static get_paused = function(error = undefined)
@@ -207,7 +207,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK) ? bool(buffer_peek(out_buf, 0, buffer_bool)) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_setpaused
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setpaused
     /// @param {bool} paused
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
@@ -218,7 +218,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_start
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_start
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static start = function(error = undefined)
@@ -228,7 +228,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_stop
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_stop
     /// @param {FMOD_STUDIO_STOP_MODE} mode
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
@@ -239,7 +239,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_gettimelineposition
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_gettimelineposition
     /// @param {FmlError?} error = undefined
     /// @returns {number}
     static get_timeline_position = function(error = undefined)
@@ -250,7 +250,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK) ? buffer_peek(out_buf, 0, buffer_s32) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_settimelineposition
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_settimelineposition
     /// @param {number} position
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
@@ -261,7 +261,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_getplaybackstate
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getplaybackstate
     /// @param {FmlError?} error = undefined
     /// @returns {FMOD_STUDIO_PLAYBACK_STATE}
     static get_playback_state = function(error = undefined)
@@ -272,7 +272,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK) ? buffer_peek(out_buf, 0, buffer_s32) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_getchannelgroup
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getchannelgroup
     /// @param {FmodChannelGroup?} out_channel_group = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {FmodChannelGroup}
@@ -289,7 +289,7 @@ function FmodEventInstance() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_getminmaxdistance
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getminmaxdistance
     /// @param {struct?} out_struct = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {struct}
@@ -310,7 +310,7 @@ function FmodEventInstance() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_release
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_release
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static release = function(error = undefined)
@@ -320,7 +320,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_isvirtual
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_isvirtual
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static is_virtual = function(error = undefined)
@@ -331,7 +331,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK) ? bool(buffer_peek(out_buf, 0, buffer_bool)) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_getparameterbyid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getparameterbyid
     /// @param {FMOD_STUDIO_PARAMETER_ID} parameter_id
     /// @param {struct?} out_struct = undefined
     /// @param {FmlError?} error = undefined
@@ -354,7 +354,7 @@ function FmodEventInstance() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_setparameterbyid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setparameterbyid
     /// @param {FMOD_STUDIO_PARAMETER_ID} parameter_id
     /// @param {number} value
     /// @param {bool?} ignore_seek_speed = false
@@ -368,7 +368,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_setparameterbyidwithlabel
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setparameterbyidwithlabel
     /// @param {FMOD_STUDIO_PARAMETER_ID} parameter_id
     /// @param {string} label
     /// @param {bool?} ignore_seek_speed = false
@@ -382,7 +382,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_setparametersbyids
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setparametersbyids
     /// @param {FMOD_STUDIO_PARAMETER_ID[]} parameter_ids
     /// @param {number[]} values
     /// @param {bool?} ignore_seek_speed = false
@@ -403,7 +403,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_getparameterbyname
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getparameterbyname
     /// @param {string} name
     /// @param {struct?} out_struct = undefined
     /// @param {FmlError?} error = undefined
@@ -425,7 +425,7 @@ function FmodEventInstance() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_setparameterbyname
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setparameterbyname
     /// @param {string} name
     /// @param {number} value
     /// @param {bool?} ignore_seek_speed = false
@@ -438,7 +438,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_setparameterbynamewithlabel
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setparameterbynamewithlabel
     /// @param {string} name
     /// @param {string} label
     /// @param {bool?} ignore_seek_speed = false
@@ -451,7 +451,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_keyoff
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_keyoff
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static key_off = function(error = undefined)
@@ -461,7 +461,7 @@ function FmodEventInstance() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_getcpuusage
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getcpuusage
     /// @param {struct?} out_struct = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {struct}
@@ -482,7 +482,7 @@ function FmodEventInstance() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_getmemoryusage
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getmemoryusage
     /// @param {FMOD_STUDIO_MEMORY_USAGE?} out_usage = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {FMOD_STUDIO_MEMORY_USAGE}
@@ -500,7 +500,7 @@ function FmodEventInstance() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_setcallback
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setcallback
     /// @param {function<int, int, any, void>} callback
     /// @param {int} callback_mask = FMOD_STUDIO_EVENT_CALLBACK_ALL A bitmask of FMOD_STUDIO_EVENT_CALLBACK_xx values.
     /// @param {FmlError?} error = undefined
@@ -516,8 +516,8 @@ function FmodEventInstance() constructor
         return false;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_getuserdata
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_getuserdata
     static _get_user_data = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#studio_eventinstance_setuserdata
+    /// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#studio_eventinstance_setuserdata
     static _set_user_data = function() {}
 }

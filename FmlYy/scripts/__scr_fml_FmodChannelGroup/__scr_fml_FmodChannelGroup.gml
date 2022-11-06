@@ -1,5 +1,5 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-channelgroup.html
+/// https://www.fmod.com/docs/2.02/api/core-api-channelgroup.html
 function FmodChannelGroup() constructor
 {
     channel_group_index = 0;  /// @is {int}

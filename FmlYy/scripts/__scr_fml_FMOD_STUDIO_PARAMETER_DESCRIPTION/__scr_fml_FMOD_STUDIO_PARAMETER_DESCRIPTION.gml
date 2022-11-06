@@ -1,5 +1,5 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-common.html#fmod_studio_parameter_description
+/// https://www.fmod.com/docs/2.02/api/studio-api-common.html#fmod_studio_parameter_description
 function FMOD_STUDIO_PARAMETER_DESCRIPTION() constructor
 {
     name = "";                                  /// @is {string}

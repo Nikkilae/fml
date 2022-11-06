@@ -1,5 +1,5 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#fmod_studio_timeline_nested_beat_properties
+/// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#fmod_studio_timeline_nested_beat_properties
 function FMOD_STUDIO_TIMELINE_NESTED_BEAT_PROPERTIES() constructor
 {
     event_id = new FMOD_GUID();                                 /// @is {FMOD_GUID}

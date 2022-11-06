@@ -5,7 +5,7 @@
 
 > (none)
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-vca.html](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-vca.html)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-vca.html](https://www.fmod.com/docs/2.02/api/studio-api-vca.html)
 
 ---
 
@@ -20,7 +20,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-vca.html#studio_vca_isvalid](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-vca.html#studio_vca_isvalid)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_isvalid](https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_isvalid)
 
 ---
 
@@ -36,7 +36,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `FMOD_GUID`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-vca.html#studio_vca_getid](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-vca.html#studio_vca_getid)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_getid](https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_getid)
 
 ---
 
@@ -51,7 +51,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `string`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-vca.html#studio_vca_getpath](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-vca.html#studio_vca_getpath)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_getpath](https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_getpath)
 
 ---
 
@@ -67,7 +67,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `struct`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-vca.html#studio_vca_getvolume](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-vca.html#studio_vca_getvolume)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_getvolume](https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_getvolume)
 
 ---
 
@@ -83,7 +83,7 @@ FMOD API documentation: [https://www.fmod.com/resources/documentation-api?versio
 
 **Returns:** `bool`
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-vca.html#studio_vca_setvolume](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;studio-api-vca.html#studio_vca_setvolume)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_setvolume](https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_setvolume)
 
 ---
 

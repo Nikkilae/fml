@@ -3,7 +3,7 @@
 // This should match the definition of the same name in the FMOD API library that's included in this extension.
 #macro FMOD_VERSION 0x00020210
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-common.html#fmod_result
+/// https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_result
 /// A composite of FMOD's error code enum FMOD_RESULT and FML's custom error codes (the negative values).
 enum FML_RESULT
 {

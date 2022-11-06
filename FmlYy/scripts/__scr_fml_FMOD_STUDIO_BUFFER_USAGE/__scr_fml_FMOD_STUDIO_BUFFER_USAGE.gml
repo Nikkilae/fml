@@ -1,5 +1,5 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#fmod_studio_buffer_usage
+/// https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_buffer_usage
 function FMOD_STUDIO_BUFFER_USAGE() constructor
 {
     studiocommandqueue = new FMOD_STUDIO_BUFFER_INFO(); /// @is {FMOD_STUDIO_BUFFER_INFO}

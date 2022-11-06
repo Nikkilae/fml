@@ -1,5 +1,5 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_create
+/// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_create
 /// @param {int?} header_version = FMOD_VERSION
 /// @param {FmodSystem?} out_system = undefined
 /// @param {FmlError?} error = undefined
@@ -17,12 +17,12 @@ function FmodSystem_Create(header_version = FMOD_VERSION, out_system = undefined
     return undefined;
 }
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html
+/// https://www.fmod.com/docs/2.02/api/core-api-system.html
 function FmodSystem() constructor
 {
     core_system_index = 0;  /// @is {int}
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_release
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_release
     /// @param {FmlError} error = undefined
     /// @returns {bool}
     static release = function(error = undefined)
@@ -32,7 +32,7 @@ function FmodSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setoutput
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setoutput
     /// @param {FMOD_OUTPUTTYPE} output
     /// @param {FmlError} error = undefined
     /// @returns {bool}
@@ -43,7 +43,7 @@ function FmodSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getoutput
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getoutput
     /// @param {FmlError} error = undefined
     /// @returns {FMOD_OUTPUTTYPE}
     static get_output = function(error = undefined)
@@ -54,7 +54,7 @@ function FmodSystem() constructor
         return (res == FML_RESULT.OK) ? buffer_peek(out_buf, 0, buffer_s32) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getnumdrivers
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnumdrivers
     /// @param {FmlError} error = undefined
     /// @returns {int}
     static get_num_drivers = function(error = undefined)
@@ -65,7 +65,7 @@ function FmodSystem() constructor
         return (res == FML_RESULT.OK) ? real(buffer_peek(out_buf, 0, buffer_s32)) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getdriverinfo
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdriverinfo
     /// @param {int} id
     /// @param {FML_DRIVER_INFO?} out_driver_info = undefined
     /// @param {FmlError} error = undefined
@@ -96,7 +96,7 @@ function FmodSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setdriver
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setdriver
     /// @param {int} driver
     /// @param {FmlError} error = undefined
     /// @returns {bool}
@@ -107,7 +107,7 @@ function FmodSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getdriver
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdriver
     /// @param {FmlError} error = undefined
     /// @returns {int}
     static get_driver = function(error = undefined)
@@ -117,7 +117,7 @@ function FmodSystem() constructor
         return (res == FML_RESULT.OK) ? real(buffer_peek(out_buf, 0, buffer_s32)) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setsoftwarechannels
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setsoftwarechannels
     /// @param {int} num_software_channels
     /// @param {FmlError} error = undefined
     /// @returns {bool}
@@ -128,7 +128,7 @@ function FmodSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getsoftwarechannels
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getsoftwarechannels
     /// @param {FmlError} error = undefined
     /// @returns {int}
     static get_software_channels = function(error = undefined)
@@ -139,7 +139,7 @@ function FmodSystem() constructor
         return (res == FML_RESULT.OK) ? real(buffer_peek(out_buf, 0, buffer_s32)) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setsoftwareformat
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setsoftwareformat
     /// @param {int} sample_rate
     /// @param {FMOD_SPEAKERMODE} speaker_mode
     /// @param {int} num_raw_speakers
@@ -152,7 +152,7 @@ function FmodSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getsoftwareformat
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getsoftwareformat
     /// @param {FML_SOFTWARE_FORMAT?} out_software_format
     /// @param {FmlError} error = undefined
     /// @returns {FML_SOFTWARE_FORMAT}
@@ -172,7 +172,7 @@ function FmodSystem() constructor
     }
     
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setdspbuffersize
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setdspbuffersize
     /// @param {number} buffer_length
     /// @param {number} num_buffers
     /// @param {FmlError} error = undefined
@@ -183,7 +183,7 @@ function FmodSystem() constructor
         __fml_set_error(error, res);
         return (res == FML_RESULT.OK);
     }
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getdspbuffersize
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdspbuffersize
     /// @param {FML_DSP_BUFFER_SIZE?} out_dsp_buffer_size = undefined
     /// @param {FmlError} error = undefined
     /// @returns {FML_DSP_BUFFER_SIZE}
@@ -202,15 +202,15 @@ function FmodSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setfilesystem
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setfilesystem
     static _set_file_system = function() {}
     static _attach_file_system = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setadvancedsettings
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setadvancedsettings
     static _set_advanced_settings = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getadvancedsettings
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getadvancedsettings
     static _get_advanced_settings = function() {}
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setcallback
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setcallback
     /// @param {function<int, int, void>} callback
     /// @param {int} callback_mask = FMOD_SYSTEM_CALLBACK_ALL A bitmask of FMOD_SYSTEM_CALLBACK_xx values.
     /// @param {FmlError?} error = undefined
@@ -226,38 +226,38 @@ function FmodSystem() constructor
         return false;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setpluginpath
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setpluginpath
     static _set_plugin_path = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_loadplugin
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_loadplugin
     static _load_plugin = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_unloadplugin
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_unloadplugin
     static _unload_plugin = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getnumnestedplugins
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnumnestedplugins
     static _get_num_nested_plugins = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getnestedplugin
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnestedplugin
     static _get_nested_plugin = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getnumplugins
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnumplugins
     static _get_num_plugins = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getpluginhandle
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getpluginhandle
     static _get_plugin_handle = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getplugininfo
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getplugininfo
     static _get_plugin_info = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setoutputbyplugin
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setoutputbyplugin
     static _set_output_by_plugin = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getoutputbyplugin
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getoutputbyplugin
     static _get_output_by_plugin = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_createdspbyplugin
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createdspbyplugin
     static _create_dsp_by_plugin = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getdspinfobyplugin
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdspinfobyplugin
     static _get_dsp_info_by_plugin = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_registercodec
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_registercodec
     static _register_codec = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_registerdsp
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_registerdsp
     static _register_dsp = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_registeroutput
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_registeroutput
     static _register_output = function() {}
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_init
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_init
     /// @param {int} max_channels
     /// @param {int} flags A bitmask of FMOD_INIT_xx values.
     /// @param {FmlError?} error = undefined
@@ -269,7 +269,7 @@ function FmodSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_close
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_close
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static close = function(error = undefined)
@@ -279,7 +279,7 @@ function FmodSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_update
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_update
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static update = function(error = undefined)
@@ -289,16 +289,16 @@ function FmodSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setspeakerposition
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setspeakerposition
     static _set_speaker_position = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getspeakerposition
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getspeakerposition
     static _get_speaker_position = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setstreambuffersize
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setstreambuffersize
     static _set_stream_buffer_size = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getstreambuffersize
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getstreambuffersize
     static _get_stream_buffer_size = function() {}
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_set3dsettings
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_set3dsettings
     /// @param {number} doppler_scale
     /// @param {number} distance_factor
     /// @param {number} rolloff_scale
@@ -311,7 +311,7 @@ function FmodSystem() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_get3dsettings
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_get3dsettings
     /// @param {FML_3D_SETTINGS?} out_settings = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {FML_3D_SETTINGS}
@@ -330,26 +330,26 @@ function FmodSystem() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_set3dnumlisteners
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_set3dnumlisteners
     static _set_3d_num_listeners = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_get3dnumlisteners
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_get3dnumlisteners
     static _get_3d_num_listeners = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_set3dlistenerattributes
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_set3dlistenerattributes
     static _set_3d_listener_attributes = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_get3dlistenerattributes
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_get3dlistenerattributes
     static _get_3d_listener_attributes = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_set3drolloffcallback
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_set3drolloffcallback
     static _set_3d_rolloff_callback = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_mixersuspend
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_mixersuspend
     static _mixer_suspend = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_mixerresume
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_mixerresume
     static _mixer_resume = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getdefaultmixmatrix
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdefaultmixmatrix
     static _get_default_mix_matrix = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getspeakermodechannels
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getspeakermodechannels
     static _get_speaker_mode_channels = function() {}
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getversion
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getversion
     /// @param {FmlError} error = undefined
     /// @returns {int}
     static get_version = function(error = undefined)
@@ -360,83 +360,83 @@ function FmodSystem() constructor
         return (res == FML_RESULT.OK) ? buffer_peek(out_buf, 0, buffer_u32) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getoutputhandle
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getoutputhandle
     static _get_output_handle = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getchannelsplaying
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getchannelsplaying
     static _get_channels_playing = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getcpuusage
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getcpuusage
     static _get_cpu_usage = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getfileusage
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getfileusage
     static _get_file_usage = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_createsound
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createsound
     static _create_sound = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_createstream
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createstream
     static _create_stream = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_createdsp
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createdsp
     static _create_dsp = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_createdspbytype
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createdspbytype
     static _create_dsp_by_type = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_createchannelgroup
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createchannelgroup
     static _create_channel_group = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_createsoundgroup
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createsoundgroup
     static _create_sound_group = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_createreverb3d
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_createreverb3d
     static _create_reverb_3d = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_playsound
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_playsound
     static _play_sound = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_playdsp
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_playdsp
     static _play_dsp = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getchannel
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getchannel
     static _get_channel = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getdspinfobytype
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getdspinfobytype
     static _get_dsp_info_by_type = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getmasterchannelgroup
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getmasterchannelgroup
     static _get_master_channel_group = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getmastersoundgroup
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getmastersoundgroup
     static _get_master_sound_group = function() {}
     static _attach_channel_group_to_port = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_detachchannelgroupfromport
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_detachchannelgroupfromport
     static _detach_channel_group_from_port = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setreverbproperties
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setreverbproperties
     static _set_reverb_properties = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getreverbproperties
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getreverbproperties
     static _get_reverb_properties = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_lockdsp
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_lockdsp
     static _lock_dsp = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_unlockdsp
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_unlockdsp
     static _unlock_dsp = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getrecordnumdrivers
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getrecordnumdrivers
     static _get_record_num_drivers = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getrecorddriverinfo
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getrecorddriverinfo
     static _get_record_driver_info = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getrecordposition
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getrecordposition
     static _get_record_position = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_recordstart
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_recordstart
     static _record_start = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_recordstop
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_recordstop
     static _record_stop = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_isrecording
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_isrecording
     static _is_recording = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_creategeometry
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_creategeometry
     static _create_geometry = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setgeometrysettings
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setgeometrysettings
     static _set_geometry_settings = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getgeometrysettings
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getgeometrysettings
     static _get_geometry_settings = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_loadgeometry
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_loadgeometry
     static _load_geometry = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getgeometryocclusion
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getgeometryocclusion
     static _get_geometry_occlusion = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setnetworkproxy
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setnetworkproxy
     static _set_network_proxy = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getnetworkproxy
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnetworkproxy
     static _get_network_proxy = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setnetworktimeout
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setnetworktimeout
     static _set_network_timeout = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getnetworktimeout
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getnetworktimeout
     static _get_network_timeout = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_setuserdata
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_setuserdata
     static _set_user_data = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-system.html#system_getuserdata
+    /// https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getuserdata
     static _get_user_data = function() {}
 }

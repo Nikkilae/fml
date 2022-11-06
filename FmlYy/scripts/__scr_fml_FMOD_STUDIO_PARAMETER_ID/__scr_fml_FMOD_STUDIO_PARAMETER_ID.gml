@@ -1,5 +1,5 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-common.html#fmod_studio_parameter_id
+/// https://www.fmod.com/docs/2.02/api/studio-api-common.html#fmod_studio_parameter_id
 function FMOD_STUDIO_PARAMETER_ID() constructor
 {
     data1 = 0;  /// @is {int}

@@ -1,5 +1,5 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-system.html#fmod_studio_advancedsettings
+/// https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_advancedsettings
 function FMOD_STUDIO_ADVANCEDSETTINGS() constructor
 {
     commandqueuesize = 0;       /// @is {number}

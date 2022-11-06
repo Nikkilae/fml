@@ -1,5 +1,5 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=core-api-common.html#fmod_3d_attributes
+/// https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_3d_attributes
 function FMOD_3D_ATTRIBUTES() constructor
 {
     position = new FMOD_VECTOR();   /// @is {FMOD_VECTOR}

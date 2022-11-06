@@ -1,10 +1,10 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html
+/// https://www.fmod.com/docs/2.02/api/studio-api-bank.html
 function FmodBank() constructor
 {
     bank_index = 0; /// @is {int}
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_isvalid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_isvalid
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static is_valid = function(error = undefined)
@@ -15,7 +15,7 @@ function FmodBank() constructor
         return (res == FML_RESULT.OK) ? bool(buffer_peek(out_buf, 0, buffer_bool)) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_getid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getid
     /// @param {FMOD_GUID?} out_guid
     /// @param {FmlError?} error = undefined
     /// @returns {FMOD_GUID}
@@ -33,7 +33,7 @@ function FmodBank() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_getpath
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getpath
     /// @param {FmlError?} error = undefined
     /// @returns {string}
     static get_path = function(error = undefined)
@@ -57,7 +57,7 @@ function FmodBank() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_unload
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_unload
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static unload = function(error = undefined)
@@ -67,7 +67,7 @@ function FmodBank() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_loadsampledata
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_loadsampledata
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static load_sample_data = function(error = undefined)
@@ -77,7 +77,7 @@ function FmodBank() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_unloadsampledata
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_unloadsampledata
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static unload_sample_data = function(error = undefined)
@@ -87,7 +87,7 @@ function FmodBank() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_getloadingstate
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getloadingstate
     /// @param {FmlError?} error = undefined
     /// @returns {FMOD_STUDIO_LOADING_STATE}
     static get_loading_state = function(error = undefined)
@@ -101,7 +101,7 @@ function FmodBank() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_getsampleloadingstate
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getsampleloadingstate
     /// @param {FmlError?} error = undefined
     /// @returns {FMOD_STUDIO_LOADING_STATE}
     static get_sample_loading_state = function(error = undefined)
@@ -115,7 +115,7 @@ function FmodBank() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_getstringcount
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getstringcount
     /// @param {FmlError?} error = undefined
     /// @returns {int}
     static get_string_count = function(error = undefined)
@@ -129,7 +129,7 @@ function FmodBank() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_getstringinfo
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getstringinfo
     /// @param {int} index
     /// @param {FMOD_GUID?} out_guid = undefined
     /// @param {FmlError?} error = undefined
@@ -160,7 +160,7 @@ function FmodBank() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_geteventcount
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_geteventcount
     /// @param {FmlError?} error = undefined
     /// @returns {int}
     static get_event_count = function(error = undefined)
@@ -171,7 +171,7 @@ function FmodBank() constructor
         return (res == FML_RESULT.OK) ? buffer_peek(out_buf, 0, buffer_s32) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_geteventlist
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_geteventlist
     /// @param {FmlError?} error = undefined
     /// @returns {FmodEventDescription[]}
     static get_event_list = function(error = undefined)
@@ -204,7 +204,7 @@ function FmodBank() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_getbuscount
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getbuscount
     /// @param {FmlError?} error = undefined
     /// @returns {int}
     static get_bus_count = function(error = undefined)
@@ -215,7 +215,7 @@ function FmodBank() constructor
         return (res == FML_RESULT.OK) ? buffer_peek(out_buf, 0, buffer_s32) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_getbuslist
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getbuslist
     /// @param {FmlError?} error = undefined
     /// @returns {FmodBus[]}
     static get_bus_list = function(error = undefined)
@@ -248,7 +248,7 @@ function FmodBank() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_getvcacount
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getvcacount
     /// @param {FmlError?} error = undefined
     /// @returns {int}
     static get_vca_count = function(error = undefined)
@@ -259,7 +259,7 @@ function FmodBank() constructor
         return (res == FML_RESULT.OK) ? buffer_peek(out_buf, 0, buffer_s32) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_getvcalist
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getvcalist
     /// @param {FmlError?} error = undefined
     /// @returns {FmodVca[]}
     static get_vca_list = function(error = undefined)
@@ -292,8 +292,8 @@ function FmodBank() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_getuserdata
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getuserdata
     static _get_user_data = function() {}
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bank.html#studio_bank_setuserdata
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_setuserdata
     static _set_user_data = function() {}
 }

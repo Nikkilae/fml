@@ -9,7 +9,7 @@
 | `y = 0` | `number` |  |
 | `z = 0` | `number` |  |
 
-FMOD API documentation: [https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-common.html#fmod_vector](https://www.fmod.com/resources/documentation-api?version&#x3D;2.02&amp;page&#x3D;core-api-common.html#fmod_vector)
+FMOD API documentation: [https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_vector](https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_vector)
 
 ---
 

@@ -1,10 +1,10 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html
+/// https://www.fmod.com/docs/2.02/api/studio-api-bus.html
 function FmodBus() constructor
 {
     bus_index = 0;  /// @is {int}
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_isvalid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_isvalid
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static is_valid = function(error = undefined)
@@ -15,7 +15,7 @@ function FmodBus() constructor
         return (res == FML_RESULT.OK) ? bool(buffer_peek(out_buf, 0, buffer_bool)) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_getid
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getid
     /// @param {FMOD_GUID?} out_guid = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {FMOD_GUID}
@@ -33,7 +33,7 @@ function FmodBus() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_getpath
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getpath
     /// @param {FmlError?} error = undefined
     /// @returns {string}
     static get_path = function(error = undefined)
@@ -57,7 +57,7 @@ function FmodBus() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_getvolume
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getvolume
     /// @param {struct?} out_struct = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {struct}
@@ -78,7 +78,7 @@ function FmodBus() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_setvolume
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setvolume
     /// @param {number} volume
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
@@ -89,7 +89,7 @@ function FmodBus() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_getpaused
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getpaused
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static get_paused = function(error = undefined)
@@ -100,7 +100,7 @@ function FmodBus() constructor
         return (res == FML_RESULT.OK) ? bool(buffer_peek(out_buf, 0, buffer_bool)) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_setpaused
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setpaused
     /// @param {bool} paused
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
@@ -111,7 +111,7 @@ function FmodBus() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_getmute
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getmute
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static get_mute = function(error = undefined)
@@ -122,7 +122,7 @@ function FmodBus() constructor
         return (res == FML_RESULT.OK) ? bool(buffer_peek(out_buf, 0, buffer_bool)) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_setmute
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setmute
     /// @param {bool} mute
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
@@ -133,7 +133,7 @@ function FmodBus() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_stopallevents
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_stopallevents
     /// @param {FMOD_STUDIO_STOP_MODE} mode
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
@@ -144,7 +144,7 @@ function FmodBus() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_getportindex
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getportindex
     /// @param {FmlError?} error = undefined
     /// @returns {int}
     static get_port_index = function(error = undefined)
@@ -155,7 +155,7 @@ function FmodBus() constructor
         return (res == FML_RESULT.OK) ? buffer_peek(out_buf, 0, buffer_u64) : undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_setportindex
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_setportindex
     /// @param {int} index
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
@@ -166,7 +166,7 @@ function FmodBus() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_lockchannelgroup
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_lockchannelgroup
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static lock_channel_group = function(error = undefined)
@@ -176,7 +176,7 @@ function FmodBus() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_unlockchannelgroup
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_unlockchannelgroup
     /// @param {FmlError?} error = undefined
     /// @returns {bool}
     static unlock_channel_group = function(error = undefined)
@@ -186,7 +186,7 @@ function FmodBus() constructor
         return (res == FML_RESULT.OK);
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_getchannelgroup
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getchannelgroup
     /// @param {FmodChannelGroup?} out_channel_group = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {FmodChannelGroup}
@@ -203,7 +203,7 @@ function FmodBus() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_getcpuusage
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getcpuusage
     /// @param {struct?} out_struct = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {struct}
@@ -224,7 +224,7 @@ function FmodBus() constructor
         return undefined;
     }
     
-    /// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-bus.html#studio_bus_getmemoryusage
+    /// https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getmemoryusage
     /// @param {FMOD_STUDIO_MEMORY_USAGE?} out_usage = undefined
     /// @param {FmlError?} error = undefined
     /// @returns {FMOD_STUDIO_MEMORY_USAGE}

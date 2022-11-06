@@ -1,5 +1,5 @@
 
-/// https://www.fmod.com/resources/documentation-api?version=2.02&page=studio-api-eventinstance.html#fmod_studio_timeline_marker_properties
+/// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#fmod_studio_timeline_marker_properties
 function FMOD_STUDIO_TIMELINE_MARKER_PROPERTIES() constructor
 {
     name = "";      /// @is {string}
