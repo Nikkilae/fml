@@ -12,6 +12,18 @@ FML itself (excluding the included FMOD libraries) is licensed under the [MIT Li
 
 ---
 
+FMOD API coverage: Most of [FMOD Studio API](https://www.fmod.com/docs/2.02/api/studio-guide.html) and a little bit of [FMOD Core API](https://www.fmod.com/docs/2.02/api/core-guide.html).
+
+Supported GameMaker versions: **v2022.6.26** and beyond.
+<br/>*Maybe some previous versions too? I haven't tried but go for it!*
+
+Supported platforms: **Windows** and **Ubuntu** (VM & YYC, x64 only).
+<br/>*More platforms may be supported in the future but no promises. [Details](https://nikkilae.github.io/fml/#/README?id=state-of-development)*
+
+The project that is used to develop FML is on GameMaker IDE v2022.6.26, Runtime v2022.6.1.40, which means that that version of GameMaker works for sure. I've also tested it on the LTS IDE v2022.0.0.19, Runtime v2022.0.0.12 which works too, so I assume that any version between these two probably works.
+
+---
+
 There are two separate documentations depending on what you're looking for:
 
 
