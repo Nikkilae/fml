@@ -55,8 +55,8 @@ else()
     )
 endif()
 
-# Copy FMOD DLLs into the build directory so that the extension generator program
-# can later copy them from there to the actual extension.
+# Copy FMOD DLLs into the build directory just so it's easier to find them
+# after building, because they'll need to be copied into the extension manually.
 if (FML_IS_UBUNTU)
     configure_file(
         "${FML_FMOD_DIRECTORY}/api/core/lib/x86_64/libfmod.so.13"
