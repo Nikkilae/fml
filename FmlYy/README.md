@@ -1,7 +1,7 @@
 
 # `/FmlYy`
 
-This is a GameMaker project where the FML extension is created in and can be exported from. The local package exported from this project is the primary end product in an FML release.
+This is a GameMaker project where the FML extension is created in and can be exported from. The local package exported from this project is the primary end product of an FML release.
 
 Some files in this project are touched by [/fml-extension-generator](https://github.com/Nikkilae/fml/tree/main/fml-extension-generator). Namely, the generator fills the extension .yy file with all the provided function bindings.
 
