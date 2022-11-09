@@ -4,6 +4,8 @@ use std::fs::{File};
 use std::io::prelude::*;
 use std::error::Error;
 
+use serde::{Serialize};
+
 use regex::{Regex};
 use lazy_static::lazy_static;
 
@@ -92,6 +94,7 @@ impl FunctionLine {
     }
 }
 
+#[derive(Serialize, Debug)]
 struct ConstructorLine {
     name: String,
 }
@@ -109,6 +112,7 @@ impl ConstructorLine {
     }
 }
 
+#[derive(Serialize, Debug)]
 pub struct Constructor {
     pub name: String,
     pub parameters: Vec<Parameter>,
@@ -116,12 +120,16 @@ pub struct Constructor {
     pub description: String,
     pub fmod_docs_link: String,
 }
+
+#[derive(Serialize, Debug)]
 pub struct Parameter {
     pub type_name: String,
     pub name: String,
     pub description: String,
     pub default_value: String,
 }
+
+#[derive(Serialize, Debug)]
 pub struct Function {
     pub name: String,
     pub parameters: Vec<Parameter>,
@@ -129,11 +137,13 @@ pub struct Function {
     pub is_static: bool,
     pub description: String,
     pub fmod_docs_link: String,
+    pub implemented: bool,
 }
 
+#[derive(Serialize, Debug)]
 pub struct ParseResult {
     pub constructors: Vec<Constructor>,
-    pub global_functions: Vec<Function>,
+    pub functions: Vec<Function>,
 }
 
 const FMOD_DOCS_LINK_PREFIX: &'static str = "https://www.fmod.com";
@@ -208,6 +218,7 @@ pub fn parse_from_file(filename: &str) -> Result<ParseResult, Box<dyn Error>> {
             }
             let description = description_lines.join("\n").to_string();
 
+            let implemented = !function_line.name.starts_with("_");
             let function = Function {
                 name: function_line.name,
                 parameters,
@@ -215,15 +226,18 @@ pub fn parse_from_file(filename: &str) -> Result<ParseResult, Box<dyn Error>> {
                 is_static: function_line.is_static,
                 description,
                 fmod_docs_link,
+                implemented,
             };
-            if function.is_static {
-                match constructors.last_mut() {
-                    Some(c) => c.functions.push(function),
-                    None => global_functions.push(function),
-                };
-            }
-            else {
-                global_functions.push(function);
+            if implemented { // TODO: When no implemented, still produce it but annotate it differently in the docs.
+                if function.is_static {
+                    match constructors.last_mut() {
+                        Some(c) => c.functions.push(function),
+                        None => global_functions.push(function),
+                    };
+                }
+                else {
+                    global_functions.push(function);
+                }
             }
             parameters = Vec::new();
             return_type_name = None;
@@ -234,5 +248,5 @@ pub fn parse_from_file(filename: &str) -> Result<ParseResult, Box<dyn Error>> {
         }
     }
 
-    Ok(ParseResult { constructors, global_functions })
+    Ok(ParseResult { constructors, functions: global_functions })
 }
