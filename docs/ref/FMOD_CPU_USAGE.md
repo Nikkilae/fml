@@ -10,10 +10,6 @@ constructor <a href="/#/ref/FMOD_CPU_USAGE">FMOD_CPU_USAGE</a>()
 function <a href="/#/ref/FMOD_CPU_USAGE?id=FMOD_CPU_USAGE_serialize">FMOD_CPU_USAGE_serialize</a>(usage: <a href="/#/ref/FMOD_CPU_USAGE">FMOD_CPU_USAGE</a>, buf: buffer) -> void
 function <a href="/#/ref/FMOD_CPU_USAGE?id=FMOD_CPU_USAGE_deserialize">FMOD_CPU_USAGE_deserialize</a>(usage: <a href="/#/ref/FMOD_CPU_USAGE">FMOD_CPU_USAGE</a>, buf: buffer) -> void
 </pre>
-
----
-
-
 ### `FMOD_CPU_USAGE() constructor`
 
 **Parameters:**
@@ -21,8 +17,6 @@ function <a href="/#/ref/FMOD_CPU_USAGE?id=FMOD_CPU_USAGE_deserialize">FMOD_CPU_
 (none)
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_cpu_usage](https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_cpu_usage)
-
----
 
 
 ## `FMOD_CPU_USAGE_serialize(FMOD_CPU_USAGE usage, buffer buf) :id=FMOD_CPU_USAGE_serialize`

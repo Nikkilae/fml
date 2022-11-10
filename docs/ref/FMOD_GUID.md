@@ -13,10 +13,6 @@ function <a href="/#/ref/FMOD_GUID?id=FMOD_GUID_serialize">FMOD_GUID_serialize</
 function <a href="/#/ref/FMOD_GUID?id=FMOD_GUID_deserialize">FMOD_GUID_deserialize</a>(guid: <a href="/#/ref/FMOD_GUID">FMOD_GUID</a>, buf: buffer) -> void
 function <a href="/#/ref/FMOD_GUID?id=FMOD_GUID_as_buf_ptr">FMOD_GUID_as_buf_ptr</a>(guid: <a href="/#/ref/FMOD_GUID">FMOD_GUID</a>) -> pointer
 </pre>
-
----
-
-
 ### `FMOD_GUID() constructor`
 
 **Parameters:**
@@ -25,8 +21,8 @@ function <a href="/#/ref/FMOD_GUID?id=FMOD_GUID_as_buf_ptr">FMOD_GUID_as_buf_ptr
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_guid](https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_guid)
 
----
 
+---
 
 ### `.toString() :id=toString`
 
@@ -39,8 +35,6 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-common.
 
 
 <br/><br/>
-
----
 
 
 ## `FMOD_GUID_from_string(string guid_string, FMOD_GUID out_guid, FmlError? error) :id=FMOD_GUID_from_string`

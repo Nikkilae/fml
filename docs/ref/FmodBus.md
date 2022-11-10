@@ -25,10 +25,6 @@ constructor <a href="/#/ref/FmodBus">FmodBus</a>()
 }
 
 </pre>
-
----
-
-
 ### `FmodBus() constructor`
 
 **Parameters:**
@@ -37,8 +33,8 @@ constructor <a href="/#/ref/FmodBus">FmodBus</a>()
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html](https://www.fmod.com/docs/2.02/api/studio-api-bus.html)
 
----
 
+---
 
 ### `.is_valid(error) :id=is_valid`
 
@@ -54,8 +50,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_id(out_guid, error) :id=get_id`
 
@@ -72,8 +68,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_path(error) :id=get_path`
 
@@ -89,8 +85,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_volume(out_struct, error) :id=get_volume`
 
@@ -107,8 +103,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_volume(volume, error) :id=set_volume`
 
@@ -125,8 +121,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_paused(error) :id=get_paused`
 
@@ -142,8 +138,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_paused(paused, error) :id=set_paused`
 
@@ -160,8 +156,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_mute(error) :id=get_mute`
 
@@ -177,8 +173,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_mute(mute, error) :id=set_mute`
 
@@ -195,8 +191,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.stop_all_events(mode, error) :id=stop_all_events`
 
@@ -213,8 +209,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_port_index(error) :id=get_port_index`
 
@@ -230,8 +226,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_port_index(index, error) :id=set_port_index`
 
@@ -248,8 +244,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.lock_channel_group(error) :id=lock_channel_group`
 
@@ -265,8 +261,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.unlock_channel_group(error) :id=unlock_channel_group`
 
@@ -282,8 +278,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_channel_group(out_channel_group, error) :id=get_channel_group`
 
@@ -300,8 +296,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_cpu_usage(out_struct, error) :id=get_cpu_usage`
 
@@ -318,8 +314,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_memory_usage(out_usage, error) :id=get_memory_usage`
 
@@ -335,6 +331,4 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.h
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getmemoryusage](https://www.fmod.com/docs/2.02/api/studio-api-bus.html#studio_bus_getmemoryusage)
 
 <br/><br/>
-
----
 

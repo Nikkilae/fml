@@ -10,10 +10,6 @@ constructor <a href="/#/ref/FMOD_STUDIO_USER_PROPERTY">FMOD_STUDIO_USER_PROPERTY
 function <a href="/#/ref/FMOD_STUDIO_USER_PROPERTY?id=FMOD_STUDIO_USER_PROPERTY_serialize">FMOD_STUDIO_USER_PROPERTY_serialize</a>(property: <a href="/#/ref/FMOD_STUDIO_USER_PROPERTY">FMOD_STUDIO_USER_PROPERTY</a>, buf: buffer) -> void
 function <a href="/#/ref/FMOD_STUDIO_USER_PROPERTY?id=FMOD_STUDIO_USER_PROPERTY_deserialize">FMOD_STUDIO_USER_PROPERTY_deserialize</a>(property: <a href="/#/ref/FMOD_STUDIO_USER_PROPERTY">FMOD_STUDIO_USER_PROPERTY</a>, buf: buffer) -> void
 </pre>
-
----
-
-
 ### `FMOD_STUDIO_USER_PROPERTY() constructor`
 
 **Parameters:**
@@ -21,8 +17,6 @@ function <a href="/#/ref/FMOD_STUDIO_USER_PROPERTY?id=FMOD_STUDIO_USER_PROPERTY_
 (none)
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-eventdescription.html#fmod_studio_user_property](https://www.fmod.com/docs/2.02/api/studio-api-eventdescription.html#fmod_studio_user_property)
-
----
 
 
 ## `FMOD_STUDIO_USER_PROPERTY_serialize(FMOD_STUDIO_USER_PROPERTY property, buffer buf) :id=FMOD_STUDIO_USER_PROPERTY_serialize`

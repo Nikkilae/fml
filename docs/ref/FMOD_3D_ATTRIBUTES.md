@@ -11,10 +11,6 @@ function <a href="/#/ref/FMOD_3D_ATTRIBUTES?id=FMOD_3D_ATTRIBUTES_serialize">FMO
 function <a href="/#/ref/FMOD_3D_ATTRIBUTES?id=FMOD_3D_ATTRIBUTES_deserialize">FMOD_3D_ATTRIBUTES_deserialize</a>(attributes: <a href="/#/ref/FMOD_3D_ATTRIBUTES">FMOD_3D_ATTRIBUTES</a>, buf: buffer) -> void
 function <a href="/#/ref/FMOD_3D_ATTRIBUTES?id=FMOD_3D_ATTRIBUTES_as_buf_ptr">FMOD_3D_ATTRIBUTES_as_buf_ptr</a>(attributes: <a href="/#/ref/FMOD_3D_ATTRIBUTES">FMOD_3D_ATTRIBUTES</a>) -> pointer
 </pre>
-
----
-
-
 ### `FMOD_3D_ATTRIBUTES() constructor`
 
 **Parameters:**
@@ -22,8 +18,6 @@ function <a href="/#/ref/FMOD_3D_ATTRIBUTES?id=FMOD_3D_ATTRIBUTES_as_buf_ptr">FM
 (none)
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_3d_attributes](https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_3d_attributes)
-
----
 
 
 ## `FMOD_3D_ATTRIBUTES_serialize(FMOD_3D_ATTRIBUTES attributes, buffer buf) :id=FMOD_3D_ATTRIBUTES_serialize`

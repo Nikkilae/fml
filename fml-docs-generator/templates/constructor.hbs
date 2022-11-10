@@ -15,9 +15,9 @@
 
 {{#if constructor_fmod_docs_link}}FMOD API documentation:<br/>[{{constructor_fmod_docs_link}}]({{constructor_fmod_docs_link}}){{/if}}
 
----
-
 {{#each constructor_methods as |m|}}
+
+---
 
 ### `.{{m.name}}({{#each m.parameters as |p|}}{{p.name}}{{#unless @last}}, {{/unless}}{{/each}}) :id={{m.name}}`
 
@@ -38,7 +38,5 @@
 {{#if m.fmod_docs_link}}FMOD API documentation:<br/>[{{m.fmod_docs_link}}]({{m.fmod_docs_link}}){{/if}}
 
 <br/><br/>
-
----
 
 {{/each}}

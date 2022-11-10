@@ -6,5 +6,3 @@ This is a mostly full reference of the entirety of the FML API. It's partially a
 Because FML is a somewhat one-to-one reflection of the FMOD API, this documentation does not explain what the functions do. For each function of FML, there's very likely one with almost the same name in the FMOD API, so you can go and see its documentation in the FMOD API instead.
 
 This API reference currently only covers constructors and functions. It does not cover for example some enums and constants yet, but that'll probably come later! For now, because enums and constants are named mostly with the exact same name as they are in the FMOD C++ API, you can refer to the FMOD API for those.
-
----

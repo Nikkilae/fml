@@ -10,10 +10,6 @@ constructor <a href="/#/ref/FMOD_STUDIO_BUFFER_USAGE">FMOD_STUDIO_BUFFER_USAGE</
 function <a href="/#/ref/FMOD_STUDIO_BUFFER_USAGE?id=FMOD_STUDIO_BUFFER_USAGE_serialize">FMOD_STUDIO_BUFFER_USAGE_serialize</a>(usage: <a href="/#/ref/FMOD_STUDIO_BUFFER_USAGE">FMOD_STUDIO_BUFFER_USAGE</a>, buf: buffer) -> void
 function <a href="/#/ref/FMOD_STUDIO_BUFFER_USAGE?id=FMOD_STUDIO_BUFFER_USAGE_deserialize">FMOD_STUDIO_BUFFER_USAGE_deserialize</a>(usage: <a href="/#/ref/FMOD_STUDIO_BUFFER_USAGE">FMOD_STUDIO_BUFFER_USAGE</a>, buf: buffer) -> void
 </pre>
-
----
-
-
 ### `FMOD_STUDIO_BUFFER_USAGE() constructor`
 
 **Parameters:**
@@ -21,8 +17,6 @@ function <a href="/#/ref/FMOD_STUDIO_BUFFER_USAGE?id=FMOD_STUDIO_BUFFER_USAGE_de
 (none)
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_buffer_usage](https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_buffer_usage)
-
----
 
 
 ## `FMOD_STUDIO_BUFFER_USAGE_serialize(FMOD_STUDIO_BUFFER_USAGE usage, buffer buf) :id=FMOD_STUDIO_BUFFER_USAGE_serialize`

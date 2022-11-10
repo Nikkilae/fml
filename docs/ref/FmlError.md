@@ -11,10 +11,6 @@ constructor <a href="/#/ref/FmlError">FmlError</a>(result: FML_RESULT)
 function <a href="/#/ref/FmlError?id=fml_set_error_callback">fml_set_error_callback</a>(callback: function<FML_RESULT, void>?) -> function<FML_RESULT, void>?
 function <a href="/#/ref/FmlError?id=fml_get_result_string">fml_get_result_string</a>(result: FML_RESULT) -> string
 </pre>
-
----
-
-
 ### `FmlError(result) constructor`
 
 **Parameters:**
@@ -25,8 +21,8 @@ function <a href="/#/ref/FmlError?id=fml_get_result_string">fml_get_result_strin
 
 
 
----
 
+---
 
 ### `.toString() :id=toString`
 
@@ -39,8 +35,6 @@ function <a href="/#/ref/FmlError?id=fml_get_result_string">fml_get_result_strin
 
 
 <br/><br/>
-
----
 
 
 ## `fml_set_error_callback(function<FML_RESULT, void>? callback) :id=fml_set_error_callback`

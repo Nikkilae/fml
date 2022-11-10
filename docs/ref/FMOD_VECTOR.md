@@ -11,10 +11,6 @@ function <a href="/#/ref/FMOD_VECTOR?id=FMOD_VECTOR_serialize">FMOD_VECTOR_seria
 function <a href="/#/ref/FMOD_VECTOR?id=FMOD_VECTOR_deserialize">FMOD_VECTOR_deserialize</a>(vector: <a href="/#/ref/FMOD_VECTOR">FMOD_VECTOR</a>, buf: buffer) -> void
 function <a href="/#/ref/FMOD_VECTOR?id=FMOD_VECTOR_as_buf_ptr">FMOD_VECTOR_as_buf_ptr</a>(vector: <a href="/#/ref/FMOD_VECTOR">FMOD_VECTOR</a>?) -> pointer
 </pre>
-
----
-
-
 ### `FMOD_VECTOR(x, y, z) constructor`
 
 **Parameters:**
@@ -26,8 +22,6 @@ function <a href="/#/ref/FMOD_VECTOR?id=FMOD_VECTOR_as_buf_ptr">FMOD_VECTOR_as_b
 | `z = 0` | `number` |  |
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_vector](https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_vector)
-
----
 
 
 ## `FMOD_VECTOR_serialize(FMOD_VECTOR vector, buffer buf) :id=FMOD_VECTOR_serialize`

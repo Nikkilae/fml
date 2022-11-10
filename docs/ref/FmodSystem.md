@@ -29,10 +29,6 @@ constructor <a href="/#/ref/FmodSystem">FmodSystem</a>()
 
 function <a href="/#/ref/FmodSystem?id=FmodSystem_Create">FmodSystem_Create</a>(header_version: int?, out_system: <a href="/#/ref/FmodSystem">FmodSystem</a>?, error: <a href="/#/ref/FmlError">FmlError</a>?) -> <a href="/#/ref/FmodSystem">FmodSystem</a>
 </pre>
-
----
-
-
 ### `FmodSystem() constructor`
 
 **Parameters:**
@@ -41,8 +37,8 @@ function <a href="/#/ref/FmodSystem?id=FmodSystem_Create">FmodSystem_Create</a>(
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.html](https://www.fmod.com/docs/2.02/api/core-api-system.html)
 
----
 
+---
 
 ### `.release(error) :id=release`
 
@@ -58,8 +54,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_output(output, error) :id=set_output`
 
@@ -76,8 +72,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_output(error) :id=get_output`
 
@@ -93,8 +89,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_num_drivers(error) :id=get_num_drivers`
 
@@ -110,8 +106,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_driver_info(id, out_driver_info, error) :id=get_driver_info`
 
@@ -129,8 +125,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_driver(driver, error) :id=set_driver`
 
@@ -147,8 +143,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_driver(error) :id=get_driver`
 
@@ -164,8 +160,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_software_channels(num_software_channels, error) :id=set_software_channels`
 
@@ -182,8 +178,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_software_channels(error) :id=get_software_channels`
 
@@ -199,8 +195,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_software_format(sample_rate, speaker_mode, num_raw_speakers, error) :id=set_software_format`
 
@@ -219,8 +215,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_software_format(out_software_format, error) :id=get_software_format`
 
@@ -237,8 +233,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_dsp_buffer_size(buffer_length, num_buffers, error) :id=set_dsp_buffer_size`
 
@@ -256,8 +252,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_dsp_buffer_size(out_dsp_buffer_size, error) :id=get_dsp_buffer_size`
 
@@ -274,8 +270,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_callback(callback, callback_mask, error) :id=set_callback`
 
@@ -293,8 +289,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.init(max_channels, flags, error) :id=init`
 
@@ -312,8 +308,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.close(error) :id=close`
 
@@ -329,8 +325,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.update(error) :id=update`
 
@@ -346,8 +342,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_3d_settings(doppler_scale, distance_factor, rolloff_scale, error) :id=set_3d_settings`
 
@@ -366,8 +362,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_3d_settings(out_settings, error) :id=get_3d_settings`
 
@@ -384,8 +380,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_version(error) :id=get_version`
 
@@ -400,8 +396,6 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getversion](https://www.fmod.com/docs/2.02/api/core-api-system.html#system_getversion)
 
 <br/><br/>
-
----
 
 
 ## `FmodSystem_Create(int? header_version, FmodSystem? out_system, FmlError? error) :id=FmodSystem_Create`

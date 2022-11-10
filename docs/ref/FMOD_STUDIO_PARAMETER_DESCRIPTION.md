@@ -10,10 +10,6 @@ constructor <a href="/#/ref/FMOD_STUDIO_PARAMETER_DESCRIPTION">FMOD_STUDIO_PARAM
 function <a href="/#/ref/FMOD_STUDIO_PARAMETER_DESCRIPTION?id=FMOD_STUDIO_PARAMETER_DESCRIPTION_serialize">FMOD_STUDIO_PARAMETER_DESCRIPTION_serialize</a>(description: <a href="/#/ref/FMOD_STUDIO_PARAMETER_DESCRIPTION">FMOD_STUDIO_PARAMETER_DESCRIPTION</a>, buf: buffer) -> void
 function <a href="/#/ref/FMOD_STUDIO_PARAMETER_DESCRIPTION?id=FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize">FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize</a>(description: <a href="/#/ref/FMOD_STUDIO_PARAMETER_DESCRIPTION">FMOD_STUDIO_PARAMETER_DESCRIPTION</a>, buf: buffer) -> void
 </pre>
-
----
-
-
 ### `FMOD_STUDIO_PARAMETER_DESCRIPTION() constructor`
 
 **Parameters:**
@@ -21,8 +17,6 @@ function <a href="/#/ref/FMOD_STUDIO_PARAMETER_DESCRIPTION?id=FMOD_STUDIO_PARAME
 (none)
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-common.html#fmod_studio_parameter_description](https://www.fmod.com/docs/2.02/api/studio-api-common.html#fmod_studio_parameter_description)
-
----
 
 
 ## `FMOD_STUDIO_PARAMETER_DESCRIPTION_serialize(FMOD_STUDIO_PARAMETER_DESCRIPTION description, buffer buf) :id=FMOD_STUDIO_PARAMETER_DESCRIPTION_serialize`

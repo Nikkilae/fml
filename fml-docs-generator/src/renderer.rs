@@ -153,8 +153,8 @@ pub fn render_ref(all_pages: &Vec<Page>, out: &mut dyn std::io::Write) -> Result
     write!(out, "{}", ref_intro_md)?;
 
     for page in all_pages {
-        render_page_quickref(page, all_pages, out)?;
         write!(out, "\n---\n")?;
+        render_page_quickref(page, all_pages, out)?;
     }
 
     Ok(())
@@ -165,7 +165,6 @@ pub fn render_page(page: &Page, all_pages: &Vec<Page>, out: &mut dyn std::io::Wr
     write!(out, "# {}\n\n", page.title)?;
 
     render_page_quickref(page, all_pages, out)?;
-    write!(out, "\n\n---\n\n")?;
 
     for c in &page.parse_result.constructors {
         render_constructor(c, out)?;

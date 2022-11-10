@@ -13,10 +13,6 @@ constructor <a href="/#/ref/FmodVca">FmodVca</a>()
 }
 
 </pre>
-
----
-
-
 ### `FmodVca() constructor`
 
 **Parameters:**
@@ -25,8 +21,8 @@ constructor <a href="/#/ref/FmodVca">FmodVca</a>()
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-vca.html](https://www.fmod.com/docs/2.02/api/studio-api-vca.html)
 
----
 
+---
 
 ### `.is_valid(error) :id=is_valid`
 
@@ -42,8 +38,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-vca.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_id(out_guid, error) :id=get_id`
 
@@ -60,8 +56,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-vca.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_path(error) :id=get_path`
 
@@ -77,8 +73,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-vca.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_volume(out_struct, error) :id=get_volume`
 
@@ -95,8 +91,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-vca.h
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_volume(volume, error) :id=set_volume`
 
@@ -112,6 +108,4 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-vca.h
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_setvolume](https://www.fmod.com/docs/2.02/api/studio-api-vca.html#studio_vca_setvolume)
 
 <br/><br/>
-
----
 

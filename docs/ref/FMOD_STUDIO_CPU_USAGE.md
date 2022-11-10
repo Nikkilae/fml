@@ -9,10 +9,6 @@ constructor <a href="/#/ref/FMOD_STUDIO_CPU_USAGE">FMOD_STUDIO_CPU_USAGE</a>()
 
 function <a href="/#/ref/FMOD_STUDIO_CPU_USAGE?id=FMOD_STUDIO_CPU_USAGE_deserialize">FMOD_STUDIO_CPU_USAGE_deserialize</a>(usage: <a href="/#/ref/FMOD_STUDIO_CPU_USAGE">FMOD_STUDIO_CPU_USAGE</a>, buf: buffer) -> void
 </pre>
-
----
-
-
 ### `FMOD_STUDIO_CPU_USAGE() constructor`
 
 **Parameters:**
@@ -20,8 +16,6 @@ function <a href="/#/ref/FMOD_STUDIO_CPU_USAGE?id=FMOD_STUDIO_CPU_USAGE_deserial
 (none)
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_cpu_usage](https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_cpu_usage)
-
----
 
 
 ## `FMOD_STUDIO_CPU_USAGE_deserialize(FMOD_STUDIO_CPU_USAGE usage, buffer buf) :id=FMOD_STUDIO_CPU_USAGE_deserialize`

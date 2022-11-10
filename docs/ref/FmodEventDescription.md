@@ -38,10 +38,6 @@ constructor <a href="/#/ref/FmodEventDescription">FmodEventDescription</a>()
 }
 
 </pre>
-
----
-
-
 ### `FmodEventDescription() constructor`
 
 **Parameters:**
@@ -50,8 +46,8 @@ constructor <a href="/#/ref/FmodEventDescription">FmodEventDescription</a>()
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-eventdescription.html](https://www.fmod.com/docs/2.02/api/studio-api-eventdescription.html)
 
----
 
+---
 
 ### `.is_valid(error) :id=is_valid`
 
@@ -67,8 +63,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_id(out_guid, error) :id=get_id`
 
@@ -85,8 +81,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_path(error) :id=get_path`
 
@@ -102,8 +98,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_parameter_description_count(error) :id=get_parameter_description_count`
 
@@ -119,8 +115,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_parameter_description_by_index(index, out_description, error) :id=get_parameter_description_by_index`
 
@@ -138,8 +134,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_parameter_description_by_name(name, out_description, error) :id=get_parameter_description_by_name`
 
@@ -157,8 +153,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_parameter_description_by_id(param_id, out_description, error) :id=get_parameter_description_by_id`
 
@@ -176,8 +172,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_parameter_label_by_index(index, label_index, error) :id=get_parameter_label_by_index`
 
@@ -195,8 +191,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_parameter_label_by_name(name, label_index, error) :id=get_parameter_label_by_name`
 
@@ -214,8 +210,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_parameter_label_by_id(param_id, label_index, error) :id=get_parameter_label_by_id`
 
@@ -233,8 +229,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_user_property_count(error) :id=get_user_property_count`
 
@@ -250,8 +246,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_user_property_by_index(index, out_property, error) :id=get_user_property_by_index`
 
@@ -269,8 +265,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_user_property(name, out_property, error) :id=get_user_property`
 
@@ -288,8 +284,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_length(error) :id=get_length`
 
@@ -305,8 +301,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_min_max_distance(out_struct, error) :id=get_min_max_distance`
 
@@ -323,8 +319,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_sound_size(error) :id=get_sound_size`
 
@@ -340,8 +336,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.is_snapshot(error) :id=is_snapshot`
 
@@ -357,8 +353,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.is_oneshot(error) :id=is_oneshot`
 
@@ -374,8 +370,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.is_stream(error) :id=is_stream`
 
@@ -391,8 +387,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.is_3d(error) :id=is_3d`
 
@@ -408,8 +404,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.is_doppler_enabled(error) :id=is_doppler_enabled`
 
@@ -425,8 +421,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.has_sustain_point(error) :id=has_sustain_point`
 
@@ -442,8 +438,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.create_instance(out_event_instance, error) :id=create_instance`
 
@@ -460,8 +456,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_instance_count(error) :id=get_instance_count`
 
@@ -477,8 +473,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_instance_list(error) :id=get_instance_list`
 
@@ -494,8 +490,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.load_sample_data(error) :id=load_sample_data`
 
@@ -511,8 +507,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.unload_sample_data(error) :id=unload_sample_data`
 
@@ -528,8 +524,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_sample_loading_state(error) :id=get_sample_loading_state`
 
@@ -545,8 +541,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.release_all_instances(error) :id=release_all_instances`
 
@@ -562,8 +558,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_callback(callback, callback_mask, error) :id=set_callback`
 
@@ -580,6 +576,4 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-event
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-eventdescription.html#studio_eventdescription_setcallback](https://www.fmod.com/docs/2.02/api/studio-api-eventdescription.html#studio_eventdescription_setcallback)
 
 <br/><br/>
-
----
 

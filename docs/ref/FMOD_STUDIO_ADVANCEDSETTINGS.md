@@ -11,10 +11,6 @@ function <a href="/#/ref/FMOD_STUDIO_ADVANCEDSETTINGS?id=FMOD_STUDIO_ADVANCEDSET
 function <a href="/#/ref/FMOD_STUDIO_ADVANCEDSETTINGS?id=FMOD_STUDIO_ADVANCEDSETTINGS_deserialize">FMOD_STUDIO_ADVANCEDSETTINGS_deserialize</a>(settings: <a href="/#/ref/FMOD_STUDIO_ADVANCEDSETTINGS">FMOD_STUDIO_ADVANCEDSETTINGS</a>, buf: buffer) -> void
 function <a href="/#/ref/FMOD_STUDIO_ADVANCEDSETTINGS?id=FMOD_STUDIO_ADVANCEDSETTINGS_as_buf_ptr">FMOD_STUDIO_ADVANCEDSETTINGS_as_buf_ptr</a>(settings: <a href="/#/ref/FMOD_STUDIO_ADVANCEDSETTINGS">FMOD_STUDIO_ADVANCEDSETTINGS</a>) -> pointer
 </pre>
-
----
-
-
 ### `FMOD_STUDIO_ADVANCEDSETTINGS() constructor`
 
 **Parameters:**
@@ -22,8 +18,6 @@ function <a href="/#/ref/FMOD_STUDIO_ADVANCEDSETTINGS?id=FMOD_STUDIO_ADVANCEDSET
 (none)
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_advancedsettings](https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_advancedsettings)
-
----
 
 
 ## `FMOD_STUDIO_ADVANCEDSETTINGS_serialize(FMOD_STUDIO_ADVANCEDSETTINGS settings, buffer buf) :id=FMOD_STUDIO_ADVANCEDSETTINGS_serialize`

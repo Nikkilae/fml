@@ -61,10 +61,6 @@ constructor <a href="/#/ref/FmodStudioSystem">FmodStudioSystem</a>()
 
 function <a href="/#/ref/FmodStudioSystem?id=FmodStudioSystem_Create">FmodStudioSystem_Create</a>(header_version: int?, out_studio_system: <a href="/#/ref/FmodStudioSystem">FmodStudioSystem</a>?, error: <a href="/#/ref/FmlError">FmlError</a>?) -> <a href="/#/ref/FmodStudioSystem">FmodStudioSystem</a>
 </pre>
-
----
-
-
 ### `FmodStudioSystem() constructor`
 
 **Parameters:**
@@ -73,8 +69,8 @@ function <a href="/#/ref/FmodStudioSystem?id=FmodStudioSystem_Create">FmodStudio
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html](https://www.fmod.com/docs/2.02/api/studio-api-system.html)
 
----
 
+---
 
 ### `.set_advanced_settings(settings, error) :id=set_advanced_settings`
 
@@ -91,8 +87,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_advanced_settings(out_settings, error) :id=get_advanced_settings`
 
@@ -109,8 +105,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.initialize(max_channels, studio_flags, core_flags, error) :id=initialize`
 
@@ -129,8 +125,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.release(error) :id=release`
 
@@ -146,8 +142,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.is_valid(error) :id=is_valid`
 
@@ -163,8 +159,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.update(error) :id=update`
 
@@ -180,8 +176,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.flush_commands(error) :id=flush_commands`
 
@@ -197,8 +193,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.flush_sample_loading(error) :id=flush_sample_loading`
 
@@ -214,8 +210,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_core_system(out_system, error) :id=get_core_system`
 
@@ -232,8 +228,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_event(path, out_event_description, error) :id=get_event`
 
@@ -251,8 +247,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_bus(path, out_bus, error) :id=get_bus`
 
@@ -270,8 +266,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_vca(path, out_vca, error) :id=get_vca`
 
@@ -289,8 +285,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_bank(path, out_bank, error) :id=get_bank`
 
@@ -308,8 +304,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_event_by_id(guid, out_event_description, error) :id=get_event_by_id`
 
@@ -327,8 +323,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_bus_by_id(guid, out_bus, error) :id=get_bus_by_id`
 
@@ -346,8 +342,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_vca_by_id(guid, out_vca, error) :id=get_vca_by_id`
 
@@ -365,8 +361,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_bank_by_id(guid, out_bank, error) :id=get_bank_by_id`
 
@@ -384,8 +380,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_parameter_description_by_name(name, out_description, error) :id=get_parameter_description_by_name`
 
@@ -403,8 +399,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_parameter_description_by_id(param_id, out_description, error) :id=get_parameter_description_by_id`
 
@@ -422,8 +418,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_parameter_label_by_name(name, label_index, error) :id=get_parameter_label_by_name`
 
@@ -441,8 +437,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_parameter_label_by_id(parameter_id, label_index, error) :id=get_parameter_label_by_id`
 
@@ -460,8 +456,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_parameter_by_id(parameter_id, out_struct, error) :id=get_parameter_by_id`
 
@@ -479,8 +475,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_parameter_by_id(parameter_id, value, ignore_seek_speed, error) :id=set_parameter_by_id`
 
@@ -499,8 +495,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_parameter_by_id_with_label(parameter_id, label, ignore_seek_speed, error) :id=set_parameter_by_id_with_label`
 
@@ -519,8 +515,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_parameters_by_ids(parameter_ids, values, ignore_seek_speed, error) :id=set_parameters_by_ids`
 
@@ -539,8 +535,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_parameter_by_name(name, out_struct, error) :id=get_parameter_by_name`
 
@@ -558,8 +554,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_parameter_by_name(name, value, ignore_seek_speed, error) :id=set_parameter_by_name`
 
@@ -578,8 +574,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_parameter_by_name_with_label(name, label, ignore_seek_speed, error) :id=set_parameter_by_name_with_label`
 
@@ -598,8 +594,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.lookup_id(path, out_guid, error) :id=lookup_id`
 
@@ -617,8 +613,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.lookup_path(guid, error) :id=lookup_path`
 
@@ -635,8 +631,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_num_listeners(error) :id=get_num_listeners`
 
@@ -652,8 +648,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_num_listeners(num_listeners, error) :id=set_num_listeners`
 
@@ -670,8 +666,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_listener_attributes(listener, out_attributes, out_attenuation_position, error) :id=get_listener_attributes`
 
@@ -690,8 +686,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_listener_attributes(listener, attributes, attenuation_position, error) :id=set_listener_attributes`
 
@@ -710,8 +706,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_listener_weight(listener, error) :id=get_listener_weight`
 
@@ -728,8 +724,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_listener_weight(listener, weight, error) :id=set_listener_weight`
 
@@ -747,8 +743,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.load_bank_file(filename, flags, out_bank, error) :id=load_bank_file`
 
@@ -767,8 +763,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.load_bank_memory(bank_buffer, buffer_length, mode, flags, out_bank, error) :id=load_bank_memory`
 
@@ -789,8 +785,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.unload_all(error) :id=unload_all`
 
@@ -806,8 +802,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_buffer_usage(out_usage, error) :id=get_buffer_usage`
 
@@ -824,8 +820,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.reset_buffer_usage(error) :id=reset_buffer_usage`
 
@@ -841,8 +837,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.unregister_plugin(name, error) :id=unregister_plugin`
 
@@ -859,8 +855,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_bank_count(error) :id=get_bank_count`
 
@@ -876,8 +872,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_bank_list(error) :id=get_bank_list`
 
@@ -893,8 +889,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_parameter_description_count(error) :id=get_parameter_description_count`
 
@@ -910,8 +906,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_parameter_description_list(error) :id=get_parameter_description_list`
 
@@ -927,8 +923,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.start_command_capture(filename, flags, error) :id=start_command_capture`
 
@@ -946,8 +942,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.stop_command_capture(error) :id=stop_command_capture`
 
@@ -963,8 +959,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.load_command_replay(error, flags, out_command_replay, error) :id=load_command_replay`
 
@@ -983,8 +979,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.set_callback(callback, callback_mask, error) :id=set_callback`
 
@@ -1002,8 +998,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_cpu_usage(out_studio_usage, out_core_usage, error) :id=get_cpu_usage`
 
@@ -1021,8 +1017,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_memory_usage(out_usage, error) :id=get_memory_usage`
 
@@ -1038,8 +1034,6 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-syste
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getmemoryusage](https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_getmemoryusage)
 
 <br/><br/>
-
----
 
 
 ## `FmodStudioSystem_Create(int? header_version, FmodStudioSystem? out_studio_system, FmlError? error) :id=FmodStudioSystem_Create`

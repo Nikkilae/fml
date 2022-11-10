@@ -10,10 +10,6 @@ constructor <a href="/#/ref/FMOD_STUDIO_BUFFER_INFO">FMOD_STUDIO_BUFFER_INFO</a>
 function <a href="/#/ref/FMOD_STUDIO_BUFFER_INFO?id=FMOD_STUDIO_BUFFER_INFO_serialize">FMOD_STUDIO_BUFFER_INFO_serialize</a>(info: <a href="/#/ref/FMOD_STUDIO_BUFFER_INFO">FMOD_STUDIO_BUFFER_INFO</a>, buf: buffer) -> void
 function <a href="/#/ref/FMOD_STUDIO_BUFFER_INFO?id=FMOD_STUDIO_BUFFER_INFO_deserialize">FMOD_STUDIO_BUFFER_INFO_deserialize</a>(info: <a href="/#/ref/FMOD_STUDIO_BUFFER_INFO">FMOD_STUDIO_BUFFER_INFO</a>, buf: buffer) -> void
 </pre>
-
----
-
-
 ### `FMOD_STUDIO_BUFFER_INFO() constructor`
 
 **Parameters:**
@@ -21,8 +17,6 @@ function <a href="/#/ref/FMOD_STUDIO_BUFFER_INFO?id=FMOD_STUDIO_BUFFER_INFO_dese
 (none)
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_buffer_info](https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_buffer_info)
-
----
 
 
 ## `FMOD_STUDIO_BUFFER_INFO_serialize(FMOD_STUDIO_BUFFER_INFO info, buffer buf) :id=FMOD_STUDIO_BUFFER_INFO_serialize`

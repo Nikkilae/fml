@@ -11,10 +11,6 @@ function <a href="/#/ref/FMOD_STUDIO_PARAMETER_ID?id=FMOD_STUDIO_PARAMETER_ID_se
 function <a href="/#/ref/FMOD_STUDIO_PARAMETER_ID?id=FMOD_STUDIO_PARAMETER_ID_deserialize">FMOD_STUDIO_PARAMETER_ID_deserialize</a>(parameter_id: <a href="/#/ref/FMOD_STUDIO_PARAMETER_ID">FMOD_STUDIO_PARAMETER_ID</a>, buf: buffer) -> void
 function <a href="/#/ref/FMOD_STUDIO_PARAMETER_ID?id=FMOD_STUDIO_PARAMETER_ID_as_buf_ptr">FMOD_STUDIO_PARAMETER_ID_as_buf_ptr</a>(parameter_id: <a href="/#/ref/FMOD_STUDIO_PARAMETER_ID">FMOD_STUDIO_PARAMETER_ID</a>) -> pointer
 </pre>
-
----
-
-
 ### `FMOD_STUDIO_PARAMETER_ID() constructor`
 
 **Parameters:**
@@ -22,8 +18,6 @@ function <a href="/#/ref/FMOD_STUDIO_PARAMETER_ID?id=FMOD_STUDIO_PARAMETER_ID_as
 (none)
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-common.html#fmod_studio_parameter_id](https://www.fmod.com/docs/2.02/api/studio-api-common.html#fmod_studio_parameter_id)
-
----
 
 
 ## `FMOD_STUDIO_PARAMETER_ID_serialize(FMOD_STUDIO_PARAMETER_ID parameter_id, buffer buf) :id=FMOD_STUDIO_PARAMETER_ID_serialize`

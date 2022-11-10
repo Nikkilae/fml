@@ -53,14 +53,4 @@ If you use FML in your project, you're not obligated to give credit at all (exce
 
 ## Support
 
-Got a feature request, a bug report or a question? 
-
-[github.com/Nikkilae/fml/issues](https://github.com/Nikkilae/fml/issues)
-
-## Links
-
-Source code and downloads on Github: [github.com/Nikkilae/fml](https://github.com/Nikkilae/fml)
-
-Developer: [riuku.net](https://riuku.net/) | [@riuku_](https://twitter.com/riuku_)
-
-Docs created with [docsify](https://docsify.js.org/#/)
+Got a feature request, a bug report or a question? Use the Issues page: [github.com/Nikkilae/fml/issues](https://github.com/Nikkilae/fml/issues)

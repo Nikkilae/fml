@@ -24,10 +24,6 @@ constructor <a href="/#/ref/FmodBank">FmodBank</a>()
 }
 
 </pre>
-
----
-
-
 ### `FmodBank() constructor`
 
 **Parameters:**
@@ -36,8 +32,8 @@ constructor <a href="/#/ref/FmodBank">FmodBank</a>()
 
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.html](https://www.fmod.com/docs/2.02/api/studio-api-bank.html)
 
----
 
+---
 
 ### `.is_valid(error) :id=is_valid`
 
@@ -53,8 +49,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_id(out_guid, error) :id=get_id`
 
@@ -71,8 +67,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_path(error) :id=get_path`
 
@@ -88,8 +84,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.
 
 <br/><br/>
 
----
 
+---
 
 ### `.unload(error) :id=unload`
 
@@ -105,8 +101,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.
 
 <br/><br/>
 
----
 
+---
 
 ### `.load_sample_data(error) :id=load_sample_data`
 
@@ -122,8 +118,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.
 
 <br/><br/>
 
----
 
+---
 
 ### `.unload_sample_data(error) :id=unload_sample_data`
 
@@ -139,8 +135,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_loading_state(error) :id=get_loading_state`
 
@@ -156,8 +152,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_sample_loading_state(error) :id=get_sample_loading_state`
 
@@ -173,8 +169,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_string_count(error) :id=get_string_count`
 
@@ -190,8 +186,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_string_info(index, out_guid, error) :id=get_string_info`
 
@@ -209,8 +205,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_event_count(error) :id=get_event_count`
 
@@ -226,8 +222,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_event_list(error) :id=get_event_list`
 
@@ -243,8 +239,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_bus_count(error) :id=get_bus_count`
 
@@ -260,8 +256,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_bus_list(error) :id=get_bus_list`
 
@@ -277,8 +273,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_vca_count(error) :id=get_vca_count`
 
@@ -294,8 +290,8 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.
 
 <br/><br/>
 
----
 
+---
 
 ### `.get_vca_list(error) :id=get_vca_list`
 
@@ -310,6 +306,4 @@ FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.
 FMOD API documentation:<br/>[https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getvcalist](https://www.fmod.com/docs/2.02/api/studio-api-bank.html#studio_bank_getvcalist)
 
 <br/><br/>
-
----
 

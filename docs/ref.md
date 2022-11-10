@@ -360,4 +360,3 @@ function <a href="/#/ref/FMOD_VECTOR?id=FMOD_VECTOR_serialize">FMOD_VECTOR_seria
 function <a href="/#/ref/FMOD_VECTOR?id=FMOD_VECTOR_deserialize">FMOD_VECTOR_deserialize</a>(vector: <a href="/#/ref/FMOD_VECTOR">FMOD_VECTOR</a>, buf: buffer) -> void
 function <a href="/#/ref/FMOD_VECTOR?id=FMOD_VECTOR_as_buf_ptr">FMOD_VECTOR_as_buf_ptr</a>(vector: <a href="/#/ref/FMOD_VECTOR">FMOD_VECTOR</a>?) -> pointer
 </pre>
----
