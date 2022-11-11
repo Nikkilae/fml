@@ -12,7 +12,7 @@ use serde_json::{json};
 use regex;
 
 use crate::parser;
-use parser::{Function, Constructor};
+use parser::{Function, Constructor, Enum};
 use crate::pages;
 use pages::{Page};
 
@@ -64,6 +64,17 @@ fn map_from_constructor(constructor: &Constructor) -> Map<String, Value> {
     map
 }
 
+fn map_from_enum(en: &Enum) -> Map<String, Value> {
+
+    let mut map = Map::new();
+
+    map.insert("name".to_string(), to_json(&en.name));
+    map.insert("fmod_docs_link".to_string(), to_json(&en.fmod_docs_link));
+    map.insert("description".to_string(), to_json(&en.description));
+
+    map
+}
+
 fn map_from_page(page: &Page) -> Map<String, Value> {
 
     let mut map = Map::new();
@@ -74,6 +85,8 @@ fn map_from_page(page: &Page) -> Map<String, Value> {
     map.insert("constructors".to_string(), to_json(&constructor_maps));
     let function_maps: Vec<Map<String, Value>> = page.parse_result.functions.iter().map(map_from_function).collect();
     map.insert("functions".to_string(), to_json(&function_maps));
+    let enum_maps: Vec<Map<String, Value>> = page.parse_result.enums.iter().map(map_from_enum).collect();
+    map.insert("enums".to_string(), to_json(&enum_maps));
 
     map
 }
@@ -160,17 +173,43 @@ pub fn render_ref(all_pages: &Vec<Page>, out: &mut dyn std::io::Write) -> Result
     Ok(())
 }
 
+pub fn render_enum(en: &Enum, out: &mut dyn std::io::Write) -> Result<(), Box<dyn Error>> {
+
+    let mut template = String::new();
+    File::open("templates/enum.hbs")?.read_to_string(&mut template)?;
+
+    let data = map_from_enum(en);
+    let hbs = Handlebars::new();
+    let rendered = hbs.render_template(&template, &data)?;
+    write!(out, "{}", &rendered)?;
+
+    Ok(())
+}
+
 pub fn render_page(page: &Page, all_pages: &Vec<Page>, out: &mut dyn std::io::Write) -> Result<(), Box<dyn Error>> {
 
-    write!(out, "# {}\n\n", page.title)?;
+    write!(out, "# {}\n\n<br/>", page.title)?;
 
     render_page_quickref(page, all_pages, out)?;
 
-    for c in &page.parse_result.constructors {
-        render_constructor(c, out)?;
+    write!(out, "\n\n---\n\n")?;
+
+    if !page.parse_result.constructors.is_empty() {
+        for constructor in &page.parse_result.constructors {
+            render_constructor(constructor, out)?;
+        }
     }
-    for f in &page.parse_result.functions {
-        render_function(f, out)?;
+    if !page.parse_result.functions.is_empty() {
+        write!(out, "\n---\n")?;
+        for function in &page.parse_result.functions {
+            render_function(function, out)?;
+        }
+    }
+    if !page.parse_result.enums.is_empty() {
+        for en in &page.parse_result.enums {
+            render_enum(en, out)?;
+            write!(out, "{}", "\n")?;
+        }
     }
 
     Ok(())

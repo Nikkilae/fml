@@ -141,6 +141,7 @@ enum FML_RESULT
 #macro FMOD_DEBUG_DISPLAY_LINENUMBERS              0x00020000
 #macro FMOD_DEBUG_DISPLAY_THREAD                   0x00040000
 
+/// https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_debug_mode
 enum FMOD_DEBUG_MODE
 {
     TTY = 0,
@@ -148,6 +149,7 @@ enum FMOD_DEBUG_MODE
     CALLBACK,
 }
 
+/// https://www.fmod.com/docs/2.02/api/studio-api-common.html#fmod_studio_parameter_type
 enum FMOD_STUDIO_PARAMETER_TYPE
 {
     GAME_CONTROLLED = 0,
@@ -164,6 +166,7 @@ enum FMOD_STUDIO_PARAMETER_TYPE
     MAX,
 }
 
+/// https://www.fmod.com/docs/2.02/api/studio-api-common.html#fmod_studio_loading_state
 enum FMOD_STUDIO_LOADING_STATE
 {
     UNLOADING = 0,
@@ -173,6 +176,7 @@ enum FMOD_STUDIO_LOADING_STATE
     ERROR,
 }
 
+/// https://www.fmod.com/docs/2.02/api/studio-api-eventdescription.html#fmod_studio_user_property_type
 enum FMOD_STUDIO_USER_PROPERTY_TYPE
 {
     INTEGER = 0,
@@ -181,6 +185,7 @@ enum FMOD_STUDIO_USER_PROPERTY_TYPE
     STRING,
 }
 
+/// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#fmod_studio_event_property
 enum FMOD_STUDIO_EVENT_PROPERTY
 {
     CHANNELPRIORITY = 0,
@@ -192,12 +197,14 @@ enum FMOD_STUDIO_EVENT_PROPERTY
     MAX,
 }
 
+/// https://www.fmod.com/docs/2.02/api/studio-api-eventinstance.html#fmod_studio_stop_mode
 enum FMOD_STUDIO_STOP_MODE
 {
     ALLOWFADEOUT = 0,
     IMMEDIATE,
 }
 
+/// https://www.fmod.com/docs/2.02/api/studio-api-common.html#fmod_studio_playback_state
 enum FMOD_STUDIO_PLAYBACK_STATE
 {
     PLAYING = 0,
@@ -207,6 +214,7 @@ enum FMOD_STUDIO_PLAYBACK_STATE
     STOPPING,
 }
 
+/// https://www.fmod.com/docs/2.02/api/core-api-system.html#fmod_outputtype
 enum FMOD_OUTPUTTYPE
 {
     AUTODETECT = 0,
@@ -231,6 +239,7 @@ enum FMOD_OUTPUTTYPE
     MAX,
 }
 
+/// https://www.fmod.com/docs/2.02/api/core-api-common.html#fmod_speakermode
 enum FMOD_SPEAKERMODE
 {
     DEFAULT = 0,
@@ -294,6 +303,7 @@ enum FMOD_SPEAKERMODE
 #macro FMOD_SYSTEM_CALLBACK_RECORDPOSITIONCHANGED  0x00010000
 #macro FMOD_SYSTEM_CALLBACK_ALL                    0xFFFFFFFF
 
+/// https://www.fmod.com/docs/2.02/api/studio-api-system.html#fmod_studio_load_memory_mode
 enum FMOD_STUDIO_LOAD_MEMORY_MODE
 {
     MEMORY = 0,

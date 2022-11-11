@@ -1,20 +1,15 @@
+<div class="fmod-docs-link-wrapper">
 
-## `{{name}}({{#each parameters as |p|}}{{{p.type}}} {{p.name}}{{#unless @last}}, {{/unless}}{{/each}}) :id={{name}}`
-
-**Parameters:**
+### `{{name}}({{#each parameters as |p|}}{{{p.type}}} {{p.name}}{{#unless @last}}, {{/unless}}{{/each}}) :id={{name}}`
+{{#if fmod_docs_link}}<a class="fmod-docs-link" href="{{{fmod_docs_link}}}"><img src="/img/link.png" /> FMOD API</a>{{/if}}
+</div>
 
 {{#if parameters}}
-> | Name | Type | Description |
-  |:-|:-|:-|
+| Parameter | Type | Description |
+|:-|:-|:-|
 {{#each parameters as |p|}}
-  | `{{p.name}}{{#if p.default_value}} = {{p.default_value}}{{/if}}` | `{{{p.type}}}` | {{p.description}} |
+| <pre>{{p.name}}{{#if p.default_value}} = {{p.default_value}}{{/if}}</pre> | <pre>{{{p.type}}}</pre> | {{p.description}} |
 {{/each}}
 {{/if}}
 
-**Returns:** `{{{return_type}}}`
-
-{{#if fmod_docs_link}}FMOD API documentation:<br/>[{{fmod_docs_link}}]({{fmod_docs_link}}){{/if}}
-
-<br/><br/>
-
----
+**Returns:** <pre>{{{return_type}}}</pre>

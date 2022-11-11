@@ -28,7 +28,7 @@ function FmodStudioSystem() constructor
     /// @returns {bool}
     static set_advanced_settings = function(settings, error = undefined)
     {
-        var buf_ptr = FMOD_STUDIO_ADVANCEDSETTINGS_as_buf_ptr(settings);
+        var buf_ptr = __FMOD_STUDIO_ADVANCEDSETTINGS_as_buf_ptr(settings);
         var res = __FML_Studio_System_setAdvancedSettings(studio_system_index, buf_ptr);
         __fml_set_error(error, res);
         return (res == FML_RESULT.OK);
@@ -50,7 +50,7 @@ function FmodStudioSystem() constructor
             if (res == FML_RESULT.OK) {
                 buffer_seek(out_buf, buffer_seek_start, 0);
                 if (out_settings == undefined) out_settings = new FMOD_STUDIO_ADVANCEDSETTINGS();
-                FMOD_STUDIO_ADVANCEDSETTINGS_deserialize(out_settings, out_buf);
+                __FMOD_STUDIO_ADVANCEDSETTINGS_deserialize(out_settings, out_buf);
                 __fml_set_error(error, res);
                 return out_settings;
             }
@@ -223,7 +223,7 @@ function FmodStudioSystem() constructor
     static get_event_by_id = function(guid, out_event_description = undefined, error = undefined)
     {
         var out_buf = __fml_buffers_fixed[@ buffer_u64];
-        var res = __FML_Studio_System_getEventByID(studio_system_index, FMOD_GUID_as_buf_ptr(guid), buffer_get_address(out_buf));
+        var res = __FML_Studio_System_getEventByID(studio_system_index, __FMOD_GUID_as_buf_ptr(guid), buffer_get_address(out_buf));
         __fml_set_error(error, res);
         if (res == FML_RESULT.OK) {
             if (out_event_description == undefined) out_event_description = new FmodEventDescription();
@@ -241,7 +241,7 @@ function FmodStudioSystem() constructor
     static get_bus_by_id = function(guid, out_bus = undefined, error = undefined)
     {
         var out_buf = __fml_buffers_fixed[@ buffer_u64];
-        var res = __FML_Studio_System_getBusByID(studio_system_index, FMOD_GUID_as_buf_ptr(guid), buffer_get_address(out_buf));
+        var res = __FML_Studio_System_getBusByID(studio_system_index, __FMOD_GUID_as_buf_ptr(guid), buffer_get_address(out_buf));
         __fml_set_error(error, res);
         if (res == FML_RESULT.OK) {
             if (out_bus == undefined) out_bus = new FmodBus();
@@ -259,7 +259,7 @@ function FmodStudioSystem() constructor
     static get_vca_by_id = function(guid, out_vca = undefined, error = undefined)
     {
         var out_buf = __fml_buffers_fixed[@ buffer_u64];
-        var res = __FML_Studio_System_getVCAByID(studio_system_index, FMOD_GUID_as_buf_ptr(guid), buffer_get_address(out_buf));
+        var res = __FML_Studio_System_getVCAByID(studio_system_index, __FMOD_GUID_as_buf_ptr(guid), buffer_get_address(out_buf));
         __fml_set_error(error, res);
         if (res == FML_RESULT.OK) {
             if (out_vca == undefined) out_vca = new FmodVca();
@@ -277,7 +277,7 @@ function FmodStudioSystem() constructor
     static get_bank_by_id = function(guid, out_bank = undefined, error = undefined)
     {
         var out_buf = __fml_buffers_fixed[@ buffer_u64];
-        var res = __FML_Studio_System_getBankByID(studio_system_index, FMOD_GUID_as_buf_ptr(guid), buffer_get_address(out_buf));
+        var res = __FML_Studio_System_getBankByID(studio_system_index, __FMOD_GUID_as_buf_ptr(guid), buffer_get_address(out_buf));
         __fml_set_error(error, res);
         if (res == FML_RESULT.OK) {
             if (out_bank == undefined) out_bank = new FmodBank();
@@ -307,7 +307,7 @@ function FmodStudioSystem() constructor
             if (res == FML_RESULT.OK) {
                 buffer_seek(out_buf, buffer_seek_start, 0);
                 if (out_description == undefined) out_description = new FMOD_STUDIO_PARAMETER_DESCRIPTION();
-                FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize(out_description, out_buf);
+                __FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize(out_description, out_buf);
                 __fml_set_error(error, res);
                 return out_description;
             }
@@ -333,12 +333,12 @@ function FmodStudioSystem() constructor
             buffer_resize(out_buf, size);
             buffer_seek(out_buf, buffer_seek_start, 0);
             buffer_poke(out_buf, 0, __FML_BUFFER_SIZE_HINT_TYPE, size);
-            var param_id_buf_ptr = FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(param_id);
+            var param_id_buf_ptr = __FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(param_id);
             res = __FML_Studio_System_getParameterDescriptionByID(studio_system_index, param_id_buf_ptr, buffer_get_address(out_buf));
             if (res == FML_RESULT.OK) {
                 buffer_seek(out_buf, buffer_seek_start, 0);
                 if (out_description == undefined) out_description = new FMOD_STUDIO_PARAMETER_DESCRIPTION();
-                FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize(out_description, out_buf);
+                __FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize(out_description, out_buf);
                 __fml_set_error(error, res);
                 return out_description;
             }
@@ -384,7 +384,7 @@ function FmodStudioSystem() constructor
     static get_parameter_label_by_id = function(parameter_id, label_index, error = undefined)
     {
         static out_buf = buffer_create(0, buffer_fixed, 1);
-        var id_buf_ptr = FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(parameter_id);
+        var id_buf_ptr = __FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(parameter_id);
         var res = undefined;
         for (var i = 0; i < 8; ++i) {
             var size = 32 * power(2, i);
@@ -411,7 +411,7 @@ function FmodStudioSystem() constructor
     static get_parameter_by_id = function(parameter_id, out_struct = undefined, error = undefined)
     {
         var out_buf = buffer_create(8, buffer_fixed, 4);
-        var id_buf_ptr = FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(parameter_id);
+        var id_buf_ptr = __FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(parameter_id);
         var res = __FML_Studio_System_getParameterByID(studio_system_index, id_buf_ptr, buffer_get_address(out_buf));
         __fml_set_error(error, res);
         var value = buffer_read(out_buf, buffer_f32);
@@ -434,7 +434,7 @@ function FmodStudioSystem() constructor
     /// @returns {bool}
     static set_parameter_by_id = function(parameter_id, value, ignore_seek_speed = false, error = undefined)
     {
-        var id_buf_ptr = FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(parameter_id);
+        var id_buf_ptr = __FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(parameter_id);
         var res = __FML_Studio_System_setParameterByID(studio_system_index, id_buf_ptr, value, ignore_seek_speed);
         __fml_set_error(error, res);
         return (res == FML_RESULT.OK);
@@ -448,7 +448,7 @@ function FmodStudioSystem() constructor
     /// @returns {bool}
     static set_parameter_by_id_with_label = function(parameter_id, label, ignore_seek_speed = false, error = undefined)
     {
-        var id_buf_ptr = FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(parameter_id);
+        var id_buf_ptr = __FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(parameter_id);
         var res = __FML_Studio_System_setParameterByIDWithLabel(studio_system_index, id_buf_ptr, label, ignore_seek_speed);
         __fml_set_error(error, res);
         return (res == FML_RESULT.OK);
@@ -466,7 +466,7 @@ function FmodStudioSystem() constructor
         var buf_size = count * (8 + 4); // count times size of parameter id and size of value
         var ids_and_values_buf = buffer_create(buf_size, buffer_fixed, 4);
         for (var i = 0; i < count; ++i) {
-            FMOD_STUDIO_PARAMETER_ID_serialize(parameter_ids[@ i], ids_and_values_buf);
+            __FMOD_STUDIO_PARAMETER_ID_serialize(parameter_ids[@ i], ids_and_values_buf);
             buffer_write(ids_and_values_buf, buffer_f32, values[@ i]);
         }
         var res = __FML_Studio_System_setParametersByIDs(studio_system_index, buffer_get_address(ids_and_values_buf), count, ignore_seek_speed);
@@ -536,7 +536,7 @@ function FmodStudioSystem() constructor
         if (res == FML_RESULT.OK) {
             if (out_guid == undefined) out_guid = new FMOD_GUID();
             buffer_seek(out_buf, buffer_seek_start, 0);
-            FMOD_GUID_deserialize(out_guid, out_buf);
+            __FMOD_GUID_deserialize(out_guid, out_buf);
             return out_guid;
         }
         return undefined;
@@ -554,7 +554,7 @@ function FmodStudioSystem() constructor
             var size = 32 * power(2, i);
             buffer_resize(out_buf, size);
             buffer_poke(out_buf, 0, __FML_BUFFER_SIZE_HINT_TYPE, size);
-            res = __FML_Studio_System_lookupPath(studio_system_index, FMOD_GUID_as_buf_ptr(guid), buffer_get_address(out_buf));
+            res = __FML_Studio_System_lookupPath(studio_system_index, __FMOD_GUID_as_buf_ptr(guid), buffer_get_address(out_buf));
             if (res == FML_RESULT.OK) {
                 __fml_set_error(error, res);
                 return buffer_peek(out_buf, buffer_sizeof(__FML_BUFFER_SIZE_HINT_TYPE), buffer_string);
@@ -604,10 +604,10 @@ function FmodStudioSystem() constructor
         if (res == FML_RESULT.OK) {
             if (out_attributes == undefined) out_attributes = new FMOD_3D_ATTRIBUTES();
             buffer_seek(attr_out_buf, buffer_seek_start, 0);
-            FMOD_3D_ATTRIBUTES_deserialize(out_attributes, attr_out_buf);
+            __FMOD_3D_ATTRIBUTES_deserialize(out_attributes, attr_out_buf);
             if (out_attenuation_position == undefined) out_attenuation_position = new FMOD_VECTOR();
             buffer_seek(atte_out_buf, buffer_seek_start, 0);
-            FMOD_VECTOR_deserialize(out_attenuation_position, atte_out_buf);
+            __FMOD_VECTOR_deserialize(out_attenuation_position, atte_out_buf);
             return out_attributes;
         }
         return undefined;
@@ -621,8 +621,8 @@ function FmodStudioSystem() constructor
     /// @returns {bool}
     static set_listener_attributes = function(listener, attributes, attenuation_position, error = undefined)
     {
-        var attr_buf_ptr = FMOD_3D_ATTRIBUTES_as_buf_ptr(attributes);
-        var atte_buf_ptr = FMOD_VECTOR_as_buf_ptr(attenuation_position);
+        var attr_buf_ptr = __FMOD_3D_ATTRIBUTES_as_buf_ptr(attributes);
+        var atte_buf_ptr = __FMOD_VECTOR_as_buf_ptr(attenuation_position);
         var res = __FML_Studio_System_setListenerAttributes(studio_system_index, listener, attr_buf_ptr, atte_buf_ptr);
         __fml_set_error(error, res);
         return (res == FML_RESULT.OK);
@@ -721,7 +721,7 @@ function FmodStudioSystem() constructor
         if (res == FML_RESULT.OK) {
             buffer_seek(out_buf, buffer_seek_start, 0);
             if (out_usage == undefined) out_usage = new FMOD_STUDIO_BUFFER_USAGE();
-            FMOD_STUDIO_BUFFER_USAGE_deserialize(out_usage, out_buf);
+            __FMOD_STUDIO_BUFFER_USAGE_deserialize(out_usage, out_buf);
             return out_usage;
         }
         return undefined;
@@ -823,7 +823,7 @@ function FmodStudioSystem() constructor
                 var descriptions = array_create(count);
                 for (var j = 0; j < count; ++j) {
                     var description = new FMOD_STUDIO_PARAMETER_DESCRIPTION();
-                    FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize(description, descriptions_out_buf);
+                    __FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize(description, descriptions_out_buf);
                     descriptions[@ j] = description;
                 }
                 return descriptions;
@@ -912,11 +912,11 @@ function FmodStudioSystem() constructor
         if (res == FML_RESULT.OK) {
             if (out_studio_usage != undefined) {
                 buffer_seek(studio_buf, buffer_seek_start, 0);
-                FMOD_STUDIO_CPU_USAGE_deserialize(out_studio_usage, studio_buf);
+                __FMOD_STUDIO_CPU_USAGE_deserialize(out_studio_usage, studio_buf);
             }
             if (out_core_usage != undefined) {
                 buffer_seek(core_buf, buffer_seek_start, 0);
-                FMOD_CPU_USAGE_deserialize(out_core_usage, core_buf);
+                __FMOD_CPU_USAGE_deserialize(out_core_usage, core_buf);
             }
             return true;
         }
@@ -935,7 +935,7 @@ function FmodStudioSystem() constructor
         if (res == FML_RESULT.OK) {
             buffer_seek(out_buf, buffer_seek_start, 0);
             if (out_usage == undefined) out_usage = new FMOD_STUDIO_MEMORY_USAGE();
-            FMOD_STUDIO_MEMORY_USAGE_deserialize(out_usage, out_buf);
+            __FMOD_STUDIO_MEMORY_USAGE_deserialize(out_usage, out_buf);
             return out_usage;
         }
         return undefined;

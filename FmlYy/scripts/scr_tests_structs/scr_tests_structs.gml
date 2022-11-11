@@ -13,10 +13,10 @@ function make_test_suite_Structs()
         attributes_1.up       = new FMOD_VECTOR(10, 11, 12);
         var buf = __fml_buffers_3d_attributes;
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_3D_ATTRIBUTES_serialize(attributes_1, buf);
+        __FMOD_3D_ATTRIBUTES_serialize(attributes_1, buf);
         var attributes_2 = new FMOD_3D_ATTRIBUTES();
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_3D_ATTRIBUTES_deserialize(attributes_2, buf);
+        __FMOD_3D_ATTRIBUTES_deserialize(attributes_2, buf);
         
         ASSERT_STRUCT_DEEP_EQUALS(attributes_1, attributes_2);
         
@@ -33,10 +33,10 @@ function make_test_suite_Structs()
         cpu_usage_1.convolution2 = 6;
         var buf = __fml_buffers_core_cpu_usage;
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_CPU_USAGE_serialize(cpu_usage_1, buf);
+        __FMOD_CPU_USAGE_serialize(cpu_usage_1, buf);
         var cpu_usage_2 = new FMOD_CPU_USAGE();
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_CPU_USAGE_deserialize(cpu_usage_2, buf);
+        __FMOD_CPU_USAGE_deserialize(cpu_usage_2, buf);
         
         ASSERT_STRUCT_DEEP_EQUALS(cpu_usage_1, cpu_usage_2);
         
@@ -53,10 +53,10 @@ function make_test_suite_Structs()
         }
         var buf = __fml_buffers_guid;
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_GUID_serialize(guid_1, buf);
+        __FMOD_GUID_serialize(guid_1, buf);
         var guid_2 = new FMOD_GUID();
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_GUID_deserialize(guid_2, buf);
+        __FMOD_GUID_deserialize(guid_2, buf);
         
         ASSERT_STRUCT_DEEP_EQUALS(guid_1, guid_2);
         
@@ -73,10 +73,10 @@ function make_test_suite_Structs()
         as_1.encryptionkey = "abcdefg";
         
         var buf = buffer_create(0, buffer_grow, 1);
-        FMOD_STUDIO_ADVANCEDSETTINGS_serialize(as_1, buf);
+        __FMOD_STUDIO_ADVANCEDSETTINGS_serialize(as_1, buf);
         var as_2 = new FMOD_STUDIO_ADVANCEDSETTINGS();
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_STUDIO_ADVANCEDSETTINGS_deserialize(as_2, buf);
+        __FMOD_STUDIO_ADVANCEDSETTINGS_deserialize(as_2, buf);
         
         ASSERT_STRUCT_DEEP_EQUALS(as_1, as_2);
         
@@ -94,10 +94,10 @@ function make_test_suite_Structs()
         buf_info_1.stalltime = 5;
         var buf = __fml_buffers_buffer_info;
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_STUDIO_BUFFER_INFO_serialize(buf_info_1, buf);
+        __FMOD_STUDIO_BUFFER_INFO_serialize(buf_info_1, buf);
         var buf_info_2 = new FMOD_STUDIO_BUFFER_INFO();
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_STUDIO_BUFFER_INFO_deserialize(buf_info_2, buf);
+        __FMOD_STUDIO_BUFFER_INFO_deserialize(buf_info_2, buf);
         
         ASSERT_STRUCT_DEEP_EQUALS(buf_info_1, buf_info_2);
         
@@ -119,10 +119,10 @@ function make_test_suite_Structs()
         
         var buf = __fml_buffers_buffer_usage;
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_STUDIO_BUFFER_USAGE_serialize(buf_usage_1, buf);
+        __FMOD_STUDIO_BUFFER_USAGE_serialize(buf_usage_1, buf);
         var buf_usage_2 = new FMOD_STUDIO_BUFFER_USAGE();
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_STUDIO_BUFFER_USAGE_deserialize(buf_usage_2, buf);
+        __FMOD_STUDIO_BUFFER_USAGE_deserialize(buf_usage_2, buf);
         
         ASSERT_STRUCT_DEEP_EQUALS(buf_usage_1, buf_usage_2);
         
@@ -137,10 +137,10 @@ function make_test_suite_Structs()
         
         var buf = __fml_buffers_studio_memory_usage;
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_STUDIO_MEMORY_USAGE_serialize(mem_usage_1, buf);
+        __FMOD_STUDIO_MEMORY_USAGE_serialize(mem_usage_1, buf);
         var mem_usage_2 = new FMOD_STUDIO_MEMORY_USAGE();
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_STUDIO_MEMORY_USAGE_deserialize(mem_usage_2, buf);
+        __FMOD_STUDIO_MEMORY_USAGE_deserialize(mem_usage_2, buf);
         
         ASSERT_STRUCT_DEEP_EQUALS(mem_usage_1, mem_usage_2);
         
@@ -165,10 +165,10 @@ function make_test_suite_Structs()
         }
         
         var buf = buffer_create(0, buffer_grow, 1);
-        FMOD_STUDIO_PARAMETER_DESCRIPTION_serialize(param_desc_1, buf);
+        __FMOD_STUDIO_PARAMETER_DESCRIPTION_serialize(param_desc_1, buf);
         var param_desc_2 = new FMOD_STUDIO_PARAMETER_DESCRIPTION();
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize(param_desc_2, buf);
+        __FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize(param_desc_2, buf);
         
         ASSERT_STRUCT_DEEP_EQUALS(param_desc_1, param_desc_2);
         
@@ -182,10 +182,10 @@ function make_test_suite_Structs()
         
         var buf = __fml_buffers_parameter_id;
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_STUDIO_PARAMETER_ID_serialize(param_id_1, buf);
+        __FMOD_STUDIO_PARAMETER_ID_serialize(param_id_1, buf);
         var param_id_2 = new FMOD_STUDIO_PARAMETER_ID();
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_STUDIO_PARAMETER_ID_deserialize(param_id_2, buf);
+        __FMOD_STUDIO_PARAMETER_ID_deserialize(param_id_2, buf);
         
         ASSERT_STRUCT_DEEP_EQUALS(param_id_1, param_id_2);
         
@@ -212,10 +212,10 @@ function make_test_suite_Structs()
                 case FMOD_STUDIO_USER_PROPERTY_TYPE.STRING: prop_1.value = "hijklmn"; break;
             }
             var buf = buffer_create(0, buffer_grow, 1);
-            FMOD_STUDIO_USER_PROPERTY_serialize(prop_1, buf);
+            __FMOD_STUDIO_USER_PROPERTY_serialize(prop_1, buf);
             var prop_2 = new FMOD_STUDIO_USER_PROPERTY();
             buffer_seek(buf, buffer_seek_start, 0);
-            FMOD_STUDIO_USER_PROPERTY_deserialize(prop_2, buf);
+            __FMOD_STUDIO_USER_PROPERTY_deserialize(prop_2, buf);
             
             ASSERT_STRUCT_DEEP_EQUALS(prop_1, prop_2);
             
@@ -230,10 +230,10 @@ function make_test_suite_Structs()
         var vec_1 = new FMOD_VECTOR(1, 2, 3);
         var buf = __fml_buffers_vector;
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_VECTOR_serialize(vec_1, buf);
+        __FMOD_VECTOR_serialize(vec_1, buf);
         var vec_2 = new FMOD_VECTOR();
         buffer_seek(buf, buffer_seek_start, 0);
-        FMOD_VECTOR_deserialize(vec_2, buf);
+        __FMOD_VECTOR_deserialize(vec_2, buf);
         
         ASSERT_STRUCT_DEEP_EQUALS(vec_1, vec_2);
         

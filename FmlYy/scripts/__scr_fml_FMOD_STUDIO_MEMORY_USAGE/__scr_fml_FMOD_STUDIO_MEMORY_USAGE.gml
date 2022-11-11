@@ -9,7 +9,7 @@ function FMOD_STUDIO_MEMORY_USAGE() constructor
 
 /// @param {FMOD_STUDIO_MEMORY_USAGE} usage
 /// @param {buffer} buf
-function FMOD_STUDIO_MEMORY_USAGE_serialize(usage, buf)
+function __FMOD_STUDIO_MEMORY_USAGE_serialize(usage, buf)
 {
     buffer_write(buf, buffer_s32, usage.exclusive);
     buffer_write(buf, buffer_s32, usage.inclusive);
@@ -18,7 +18,7 @@ function FMOD_STUDIO_MEMORY_USAGE_serialize(usage, buf)
 
 /// @param {FMOD_STUDIO_MEMORY_USAGE} usage
 /// @param {buffer} buf
-function FMOD_STUDIO_MEMORY_USAGE_deserialize(usage, buf)
+function __FMOD_STUDIO_MEMORY_USAGE_deserialize(usage, buf)
 {
     usage.exclusive  = real(buffer_read(buf, buffer_s32));
     usage.inclusive  = real(buffer_read(buf, buffer_s32));

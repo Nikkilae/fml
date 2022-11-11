@@ -1,42 +1,35 @@
+<div class="fmod-docs-link-wrapper">
 
-### `{{constructor_name}}({{#each constructor_parameters as |p|}}{{p.name}}{{#unless @last}}, {{/unless}}{{/each}}) constructor`
-
-**Parameters:**
+### `{{constructor_name}}({{#each constructor_parameters as |p|}}{{p.name}}{{#unless @last}}, {{/unless}}{{/each}}) constructor` :id={{constructor_name}}
+{{#if constructor_fmod_docs_link}}<a class="fmod-docs-link" href="{{{constructor_fmod_docs_link}}}"><img src="/img/link.png" /> FMOD API</a>{{/if}}
+</div>
 
 {{#if constructor_parameters}}
-| Name | Type | Description |
+| Parameter | Type | Description |
 |:-|:-|:-|
 {{#each constructor_parameters as |p|}}
-| `{{p.name}}{{#if p.default_value}} = {{p.default_value}}{{/if}}` | `{{{p.type}}}` | {{p.description}} |
+| <pre>{{p.name}}{{#if p.default_value}} = {{p.default_value}}{{/if}}</pre> | <pre></pre>{{{p.type}}}</pre> | {{p.description}} |
 {{/each}}
-{{else}}
-(none)
 {{/if}}
-
-{{#if constructor_fmod_docs_link}}FMOD API documentation:<br/>[{{constructor_fmod_docs_link}}]({{constructor_fmod_docs_link}}){{/if}}
 
 {{#each constructor_methods as |m|}}
 
----
+<br/>
 
-### `.{{m.name}}({{#each m.parameters as |p|}}{{p.name}}{{#unless @last}}, {{/unless}}{{/each}}) :id={{m.name}}`
+<div class="fmod-docs-link-wrapper">
 
-**Parameters:**
+#### `.{{m.name}}({{#each m.parameters as |p|}}{{p.name}}{{#unless @last}}, {{/unless}}{{/each}})` :id={{m.name}}
+{{#if m.fmod_docs_link}}<a class="fmod-docs-link" href="{{{m.fmod_docs_link}}}"><img src="/img/link.png" /> FMOD API</a>{{/if}}
+</div>
 
 {{#if m.parameters}}
-| Name | Type | Description |
-  |:-|:-|:-|
+| Parameter | Type | Description |
+|:-|:-|:-|
 {{#each m.parameters as |p|}}
-  | `{{p.name}}{{#if p.default_value}} = {{p.default_value}}{{/if}}` | `{{{p.type}}}` | {{p.description}} |
+| <pre>{{p.name}}{{#if p.default_value}} = {{p.default_value}}{{/if}}</pre> | <pre>{{{p.type}}}</pre> | {{p.description}} |
 {{/each}}
-{{else}}
-(none)
 {{/if}}
 
-**Returns:** `{{{m.return_type}}}`
-
-{{#if m.fmod_docs_link}}FMOD API documentation:<br/>[{{m.fmod_docs_link}}]({{m.fmod_docs_link}}){{/if}}
-
-<br/><br/>
+<pre>Returns: {{{m.return_type}}}</pre>
 
 {{/each}}

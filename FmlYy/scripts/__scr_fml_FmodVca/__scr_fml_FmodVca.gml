@@ -27,7 +27,7 @@ function FmodVca() constructor
         if (res == FML_RESULT.OK) {
             if (out_guid == undefined) out_guid = new FMOD_GUID();
             buffer_seek(out_buf, buffer_seek_start, 0);
-            FMOD_GUID_deserialize(out_guid, out_buf);
+            __FMOD_GUID_deserialize(out_guid, out_buf);
             return out_guid;
         }
         return undefined;

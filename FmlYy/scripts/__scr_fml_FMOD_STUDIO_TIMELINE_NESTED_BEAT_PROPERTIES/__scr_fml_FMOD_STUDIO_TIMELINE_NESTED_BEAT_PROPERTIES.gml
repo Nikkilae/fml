@@ -10,6 +10,6 @@ function FMOD_STUDIO_TIMELINE_NESTED_BEAT_PROPERTIES() constructor
 /// @param {buffer} buf
 function FMOD_STUDIO_TIMELINE_NESTED_BEAT_PROPERTIES_deserialize(properties, buf)
 {
-    FMOD_GUID_deserialize(properties.event_id, buf);
+    __FMOD_GUID_deserialize(properties.event_id, buf);
     FMOD_STUDIO_TIMELINE_BEAT_PROPERTIES_deserialize(properties.properties, buf);
 }

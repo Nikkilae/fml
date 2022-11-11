@@ -12,7 +12,7 @@ function FMOD_VECTOR(_x = 0, _y = 0, _z = 0) constructor
 
 /// @param {FMOD_VECTOR} vector
 /// @param {buffer} buf
-function FMOD_VECTOR_serialize(vector, buf)
+function __FMOD_VECTOR_serialize(vector, buf)
 {
     buffer_write(buf, buffer_f32, vector.x);
     buffer_write(buf, buffer_f32, vector.y);
@@ -21,7 +21,7 @@ function FMOD_VECTOR_serialize(vector, buf)
 
 /// @param {FMOD_VECTOR} vector
 /// @param {buffer} buf
-function FMOD_VECTOR_deserialize(vector, buf)
+function __FMOD_VECTOR_deserialize(vector, buf)
 {
     vector.x = buffer_read(buf, buffer_f32);
     vector.y = buffer_read(buf, buffer_f32);
@@ -30,13 +30,13 @@ function FMOD_VECTOR_deserialize(vector, buf)
 
 /// @param {FMOD_VECTOR?} vector
 /// @returns {pointer}
-function FMOD_VECTOR_as_buf_ptr(vector)
+function __FMOD_VECTOR_as_buf_ptr(vector)
 {
     if (vector == undefined) {
         return pointer_null;
     }
     var buf = __fml_buffers_vector;
     buffer_seek(buf, buffer_seek_start, 0);
-    FMOD_VECTOR_serialize(vector, buf);
+    __FMOD_VECTOR_serialize(vector, buf);
     return buffer_get_address(buf);
 }

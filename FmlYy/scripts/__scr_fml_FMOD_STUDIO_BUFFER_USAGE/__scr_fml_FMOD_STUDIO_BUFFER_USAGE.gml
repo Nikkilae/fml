@@ -8,16 +8,16 @@ function FMOD_STUDIO_BUFFER_USAGE() constructor
 
 /// @param {FMOD_STUDIO_BUFFER_USAGE} usage
 /// @param {buffer} buf
-function FMOD_STUDIO_BUFFER_USAGE_serialize(usage, buf)
+function __FMOD_STUDIO_BUFFER_USAGE_serialize(usage, buf)
 {
-    FMOD_STUDIO_BUFFER_INFO_serialize(usage.studiocommandqueue, buf);
-    FMOD_STUDIO_BUFFER_INFO_serialize(usage.studiohandle, buf);
+    __FMOD_STUDIO_BUFFER_INFO_serialize(usage.studiocommandqueue, buf);
+    __FMOD_STUDIO_BUFFER_INFO_serialize(usage.studiohandle, buf);
 }
 
 /// @param {FMOD_STUDIO_BUFFER_USAGE} usage
 /// @param {buffer} buf
-function FMOD_STUDIO_BUFFER_USAGE_deserialize(usage, buf)
+function __FMOD_STUDIO_BUFFER_USAGE_deserialize(usage, buf)
 {
-    FMOD_STUDIO_BUFFER_INFO_deserialize(usage.studiocommandqueue, buf);
-    FMOD_STUDIO_BUFFER_INFO_deserialize(usage.studiohandle, buf);
+    __FMOD_STUDIO_BUFFER_INFO_deserialize(usage.studiocommandqueue, buf);
+    __FMOD_STUDIO_BUFFER_INFO_deserialize(usage.studiohandle, buf);
 }

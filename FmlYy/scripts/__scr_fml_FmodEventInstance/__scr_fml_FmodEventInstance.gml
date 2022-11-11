@@ -108,7 +108,7 @@ function FmodEventInstance() constructor
         if (res == FML_RESULT.OK) {
             if (out_attributes == undefined) out_attributes = new FMOD_3D_ATTRIBUTES();
             buffer_seek(out_buf, buffer_seek_start, 0);
-            FMOD_3D_ATTRIBUTES_deserialize(out_attributes, out_buf);
+            __FMOD_3D_ATTRIBUTES_deserialize(out_attributes, out_buf);
             return out_attributes;
         }
         return undefined;
@@ -120,7 +120,7 @@ function FmodEventInstance() constructor
     /// @returns {bool}
     static set_3d_attributes = function(attributes, error = undefined)
     {
-        var attributes_buf_ptr = FMOD_3D_ATTRIBUTES_as_buf_ptr(attributes);
+        var attributes_buf_ptr = __FMOD_3D_ATTRIBUTES_as_buf_ptr(attributes);
         var res = __FML_Studio_EventInstance_set3DAttributes(event_instance_index, attributes_buf_ptr);
         __fml_set_error(error, res);
         return (res == FML_RESULT.OK);
@@ -339,7 +339,7 @@ function FmodEventInstance() constructor
     static get_parameter_by_id = function(parameter_id, out_struct = undefined, error = undefined)
     {
         var out_buf = buffer_create(8, buffer_fixed, 4);
-        var id_buf_ptr = FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(parameter_id);
+        var id_buf_ptr = __FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(parameter_id);
         var res = __FML_Studio_EventInstance_getParameterByID(event_instance_index, id_buf_ptr, buffer_get_address(out_buf));
         __fml_set_error(error, res);
         var value = buffer_read(out_buf, buffer_f32);
@@ -362,7 +362,7 @@ function FmodEventInstance() constructor
     /// @returns {bool}
     static set_parameter_by_id = function(parameter_id, value, ignore_seek_speed = false, error = undefined)
     {
-        var id_buf_ptr = FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(parameter_id);
+        var id_buf_ptr = __FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(parameter_id);
         var res = __FML_Studio_EventInstance_setParameterByID(event_instance_index, id_buf_ptr, value, ignore_seek_speed);
         __fml_set_error(error, res);
         return (res == FML_RESULT.OK);
@@ -376,7 +376,7 @@ function FmodEventInstance() constructor
     /// @returns {bool}
     static set_parameter_by_id_with_label = function(parameter_id, label, ignore_seek_speed = false, error = undefined)
     {
-        var id_buf_ptr = FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(parameter_id);
+        var id_buf_ptr = __FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(parameter_id);
         var res = __FML_Studio_EventInstance_setParameterByIDWithLabel(event_instance_index, id_buf_ptr, label, ignore_seek_speed);
         __fml_set_error(error, res);
         return (res == FML_RESULT.OK);
@@ -394,7 +394,7 @@ function FmodEventInstance() constructor
         var buf_size = count * (8 + 4); // count times size of parameter id and size of value
         var ids_and_values_buf = buffer_create(buf_size, buffer_fixed, 4);
         for (var i = 0; i < count; ++i) {
-            FMOD_STUDIO_PARAMETER_ID_serialize(parameter_ids[@ i], ids_and_values_buf);
+            __FMOD_STUDIO_PARAMETER_ID_serialize(parameter_ids[@ i], ids_and_values_buf);
             buffer_write(ids_and_values_buf, buffer_f32, values[@ i]);
         }
         var res = __FML_Studio_EventInstance_setParametersByIDs(event_instance_index, buffer_get_address(ids_and_values_buf), count, ignore_seek_speed);
@@ -494,7 +494,7 @@ function FmodEventInstance() constructor
         if (res == FML_RESULT.OK) {
             buffer_seek(out_buf, buffer_seek_start, 0);
             if (out_usage == undefined) out_usage = new FMOD_STUDIO_MEMORY_USAGE();
-            FMOD_STUDIO_MEMORY_USAGE_deserialize(out_usage, out_buf);
+            __FMOD_STUDIO_MEMORY_USAGE_deserialize(out_usage, out_buf);
             return out_usage;
         }
         return undefined;

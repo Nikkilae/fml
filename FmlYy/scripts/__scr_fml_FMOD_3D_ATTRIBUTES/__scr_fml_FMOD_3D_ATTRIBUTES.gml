@@ -10,30 +10,30 @@ function FMOD_3D_ATTRIBUTES() constructor
 
 /// @param {FMOD_3D_ATTRIBUTES} attributes
 /// @param {buffer} buf
-function FMOD_3D_ATTRIBUTES_serialize(attributes, buf)
+function __FMOD_3D_ATTRIBUTES_serialize(attributes, buf)
 {
-    FMOD_VECTOR_serialize(attributes.position, buf);
-    FMOD_VECTOR_serialize(attributes.velocity, buf);
-    FMOD_VECTOR_serialize(attributes.forward, buf);
-    FMOD_VECTOR_serialize(attributes.up, buf);
+    __FMOD_VECTOR_serialize(attributes.position, buf);
+    __FMOD_VECTOR_serialize(attributes.velocity, buf);
+    __FMOD_VECTOR_serialize(attributes.forward, buf);
+    __FMOD_VECTOR_serialize(attributes.up, buf);
 }
 
 /// @param {FMOD_3D_ATTRIBUTES} attributes
 /// @param {buffer} buf
-function FMOD_3D_ATTRIBUTES_deserialize(attributes, buf)
+function __FMOD_3D_ATTRIBUTES_deserialize(attributes, buf)
 {
-    FMOD_VECTOR_deserialize(attributes.position, buf);
-    FMOD_VECTOR_deserialize(attributes.velocity, buf);
-    FMOD_VECTOR_deserialize(attributes.forward, buf);
-    FMOD_VECTOR_deserialize(attributes.up, buf);
+    __FMOD_VECTOR_deserialize(attributes.position, buf);
+    __FMOD_VECTOR_deserialize(attributes.velocity, buf);
+    __FMOD_VECTOR_deserialize(attributes.forward, buf);
+    __FMOD_VECTOR_deserialize(attributes.up, buf);
 }
 
 /// @param {FMOD_3D_ATTRIBUTES} attributes
 /// @returns {pointer}
-function FMOD_3D_ATTRIBUTES_as_buf_ptr(attributes)
+function __FMOD_3D_ATTRIBUTES_as_buf_ptr(attributes)
 {
     var buf = __fml_buffers_3d_attributes;
     buffer_seek(buf, buffer_seek_start, 0);
-    FMOD_3D_ATTRIBUTES_serialize(attributes, buf);
+    __FMOD_3D_ATTRIBUTES_serialize(attributes, buf);
     return buffer_get_address(buf);
 }

@@ -11,7 +11,7 @@ function FMOD_STUDIO_BUFFER_INFO() constructor
 
 /// @param {FMOD_STUDIO_BUFFER_INFO} info
 /// @param {buffer} buf
-function FMOD_STUDIO_BUFFER_INFO_serialize(info, buf)
+function __FMOD_STUDIO_BUFFER_INFO_serialize(info, buf)
 {
     buffer_write(buf, buffer_s32, info.currentusage);
     buffer_write(buf, buffer_s32, info.peakusage);
@@ -22,7 +22,7 @@ function FMOD_STUDIO_BUFFER_INFO_serialize(info, buf)
 
 /// @param {FMOD_STUDIO_BUFFER_INFO} info
 /// @param {buffer} buf
-function FMOD_STUDIO_BUFFER_INFO_deserialize(info, buf)
+function __FMOD_STUDIO_BUFFER_INFO_deserialize(info, buf)
 {
     info.currentusage   = real(buffer_read(buf, buffer_s32));
     info.peakusage      = real(buffer_read(buf, buffer_s32));

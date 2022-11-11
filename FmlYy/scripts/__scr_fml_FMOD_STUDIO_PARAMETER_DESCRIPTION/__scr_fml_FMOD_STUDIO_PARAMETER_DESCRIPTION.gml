@@ -14,28 +14,28 @@ function FMOD_STUDIO_PARAMETER_DESCRIPTION() constructor
 
 /// @param {FMOD_STUDIO_PARAMETER_DESCRIPTION} description
 /// @param {buffer} buf
-function FMOD_STUDIO_PARAMETER_DESCRIPTION_serialize(description, buf)
+function __FMOD_STUDIO_PARAMETER_DESCRIPTION_serialize(description, buf)
 {
     buffer_write(buf, buffer_string, description.name);
-    FMOD_STUDIO_PARAMETER_ID_serialize(description.id, buf);
+    __FMOD_STUDIO_PARAMETER_ID_serialize(description.id, buf);
     buffer_write(buf, buffer_f32, description.minimum);
     buffer_write(buf, buffer_f32, description.maximum);
     buffer_write(buf, buffer_f32, description.defaultvalue);
     buffer_write(buf, buffer_s32, description.type);
     buffer_write(buf, buffer_s32, description.flags);
-    FMOD_GUID_serialize(description.guid, buf);
+    __FMOD_GUID_serialize(description.guid, buf);
 }
 
 /// @param {FMOD_STUDIO_PARAMETER_DESCRIPTION} description
 /// @param {buffer} buf
-function FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize(description, buf)
+function __FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize(description, buf)
 {
     description.name            = buffer_read(buf, buffer_string);
-    FMOD_STUDIO_PARAMETER_ID_deserialize(description.id, buf);
+    __FMOD_STUDIO_PARAMETER_ID_deserialize(description.id, buf);
     description.minimum         = buffer_read(buf, buffer_f32);
     description.maximum         = buffer_read(buf, buffer_f32);
     description.defaultvalue    = buffer_read(buf, buffer_f32);
     description.type            = int64(buffer_read(buf, buffer_s32));
     description.flags           = int64(buffer_read(buf, buffer_s32));
-    FMOD_GUID_deserialize(description.guid, buf);
+    __FMOD_GUID_deserialize(description.guid, buf);
 }

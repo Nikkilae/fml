@@ -7,7 +7,7 @@ function FMOD_STUDIO_CPU_USAGE() constructor
 
 /// @param {FMOD_STUDIO_CPU_USAGE} usage
 /// @param {buffer} buf
-function FMOD_STUDIO_CPU_USAGE_deserialize(usage, buf)
+function __FMOD_STUDIO_CPU_USAGE_deserialize(usage, buf)
 {
     usage.update = buffer_read(buf, buffer_f32);
 }

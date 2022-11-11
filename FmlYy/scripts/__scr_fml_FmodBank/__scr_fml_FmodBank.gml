@@ -27,7 +27,7 @@ function FmodBank() constructor
         if (res == FML_RESULT.OK) {
             if (out_guid == undefined) out_guid = new FMOD_GUID();
             buffer_seek(out_buf, buffer_seek_start, 0);
-            FMOD_GUID_deserialize(out_guid, out_buf);
+            __FMOD_GUID_deserialize(out_guid, out_buf);
             return out_guid;
         }
         return undefined;
@@ -147,7 +147,7 @@ function FmodBank() constructor
             if (res == FML_RESULT.OK) {
                 if (out_guid != undefined) {
                     buffer_seek(guid_out_buf, buffer_seek_start, 0);
-                    FMOD_GUID_deserialize(out_guid, guid_out_buf);
+                    __FMOD_GUID_deserialize(out_guid, guid_out_buf);
                 }
                 __fml_set_error(error, res);
                 return buffer_peek(path_out_buf, buffer_sizeof(__FML_BUFFER_SIZE_HINT_TYPE), buffer_string);

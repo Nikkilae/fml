@@ -10,7 +10,7 @@ function FMOD_GUID() constructor
     /// @returns {string}
     static toString = function()
     {
-        return __FML_UTIL_guidToString(FMOD_GUID_as_buf_ptr(self));
+        return __FML_UTIL_guidToString(__FMOD_GUID_as_buf_ptr(self));
     }
 }
 
@@ -26,7 +26,7 @@ function FMOD_GUID_from_string(guid_string, out_guid = undefined, error = undefi
     if (res == FML_RESULT.OK) {
         if (out_guid == undefined) out_guid = new FMOD_GUID();
         buffer_seek(out_buf, buffer_seek_start, 0);
-        FMOD_GUID_deserialize(out_guid, out_buf);
+        __FMOD_GUID_deserialize(out_guid, out_buf);
         return out_guid;
     }
     return undefined;
@@ -34,7 +34,7 @@ function FMOD_GUID_from_string(guid_string, out_guid = undefined, error = undefi
 
 /// @param {FMOD_GUID} guid
 /// @param {buffer} buf
-function FMOD_GUID_serialize(guid, buf)
+function __FMOD_GUID_serialize(guid, buf)
 {
     buffer_write(buf, buffer_u32, guid.Data1);
     buffer_write(buf, buffer_u16, guid.Data2);
@@ -46,7 +46,7 @@ function FMOD_GUID_serialize(guid, buf)
 
 /// @param {FMOD_GUID} guid
 /// @param {buffer} buf
-function FMOD_GUID_deserialize(guid, buf)
+function __FMOD_GUID_deserialize(guid, buf)
 {
     guid.Data1 = int64(buffer_read(buf, buffer_u32));
     guid.Data2 = int64(buffer_read(buf, buffer_u16));
@@ -58,10 +58,10 @@ function FMOD_GUID_deserialize(guid, buf)
 
 /// @param {FMOD_GUID} guid
 /// @returns {pointer}
-function FMOD_GUID_as_buf_ptr(guid)
+function __FMOD_GUID_as_buf_ptr(guid)
 {
     var buf = __fml_buffers_guid;
     buffer_seek(buf, buffer_seek_start, 0);
-    FMOD_GUID_serialize(guid, buf);
+    __FMOD_GUID_serialize(guid, buf);
     return buffer_get_address(buf);
 }

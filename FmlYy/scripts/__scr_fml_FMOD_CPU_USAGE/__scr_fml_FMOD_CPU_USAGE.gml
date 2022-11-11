@@ -12,7 +12,7 @@ function FMOD_CPU_USAGE() constructor
 
 /// @param {FMOD_CPU_USAGE} usage
 /// @param {buffer} buf
-function FMOD_CPU_USAGE_serialize(usage, buf)
+function __FMOD_CPU_USAGE_serialize(usage, buf)
 {
     buffer_write(buf, buffer_f32, usage.dsp);
     buffer_write(buf, buffer_f32, usage.stream);
@@ -24,7 +24,7 @@ function FMOD_CPU_USAGE_serialize(usage, buf)
 
 /// @param {FMOD_CPU_USAGE} usage
 /// @param {buffer} buf
-function FMOD_CPU_USAGE_deserialize(usage, buf)
+function __FMOD_CPU_USAGE_deserialize(usage, buf)
 {
     usage.dsp           = buffer_read(buf, buffer_f32);
     usage.stream        = buffer_read(buf, buffer_f32);

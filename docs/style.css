@@ -1,0 +1,74 @@
+
+:root {
+    --theme-hue:                339;
+    --theme-saturation:         100%;
+    --theme-lightness:          82%;
+
+    --content-max-width:        65em;
+
+    --base-background-color:    #292929;
+
+    --sidebar-background:       #222222;
+    --sidebar-width:            30rem;
+
+    --code-theme-background:    #222222;
+    --code-theme-comment:       #5b995b;
+    --code-theme-function:      #feb771;
+    --code-theme-keyword:       #ffb871;
+    --code-theme-operator:      #c0c0c0;
+    --code-theme-punctuation:   #c0c0c0;
+    --code-theme-selection:     #444444;
+    --code-theme-selector:      #fbfb00;
+    --code-theme-tag:           #ff8080;
+    --code-theme-text:          #fff899;
+    --code-theme-variable:      #fff899;
+
+    --table-body-border-color:      #00000000;
+    --table-cell-border-color:      #00000000;
+    --table-head-background:        #383838;
+    --table-head-border-color:      #00000000;
+    --table-row-even-background:    #383838;
+    --table-row-odd-background:     #303030;
+
+    --heading-h1-border-color: #70555e;
+    --heading-h2-border-color: #70555e;
+    --heading-h3-border-color: #70555e;
+    --heading-h4-border-color: #70555e;
+    --heading-h5-border-color: #70555e;
+    --heading-h6-border-color: #70555e;
+
+    --blockquote-background: #313131;
+
+    --hr-border:                1px solid #cf7695;
+
+    --link-color:               #dfb1c2;
+
+    --search-input-background-color: #1e1e1e;
+    --search-input-border-color: #333333;
+}
+
+pre {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+td, th, tr {
+    padding: 0.5rem !important;
+}
+
+.fmod-docs-link-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.fmod-docs-link {
+    color: #bbbbbb !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid #bbbbbb !important;
+    font-size: 0.75rem;
+}
+
+.fmod-docs-link img {
+    height: 0.75rem;
+}

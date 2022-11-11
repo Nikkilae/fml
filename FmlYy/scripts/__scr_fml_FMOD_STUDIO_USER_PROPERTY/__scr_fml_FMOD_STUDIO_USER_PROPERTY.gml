@@ -9,7 +9,7 @@ function FMOD_STUDIO_USER_PROPERTY() constructor
 
 /// @param {FMOD_STUDIO_USER_PROPERTY} property
 /// @param {buffer} buf
-function FMOD_STUDIO_USER_PROPERTY_serialize(property, buf)
+function __FMOD_STUDIO_USER_PROPERTY_serialize(property, buf)
 {
     buffer_write(buf, buffer_string, property.name);
     buffer_write(buf, buffer_s32, property.type);
@@ -23,7 +23,7 @@ function FMOD_STUDIO_USER_PROPERTY_serialize(property, buf)
 
 /// @param {FMOD_STUDIO_USER_PROPERTY} property
 /// @param {buffer} buf
-function FMOD_STUDIO_USER_PROPERTY_deserialize(property, buf)
+function __FMOD_STUDIO_USER_PROPERTY_deserialize(property, buf)
 {
     property.name = buffer_read(buf, buffer_string);
     property.type = int64(buffer_read(buf, buffer_s32));

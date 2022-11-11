@@ -1,14 +1,24 @@
 <pre>
 {{#each constructors as |c|}}
 constructor {{c.constructor_name}}({{#each c.constructor_parameters as |p|}}{{p.name}}: {{{p.type}}}{{#unless @last}}, {{/unless}}{{/each}})
+{{#if c.constructor_methods}}
 {
     {{#each c.constructor_methods as |m|}}
     .<a href="/#/ref/{{../constructor_name}}?id={{m.name}}">{{m.name}}</a>({{#each m.parameters as |p|}}{{p.name}}: {{{p.type}}}{{#unless @last}}, {{/unless}}{{/each}}) -> {{{m.return_type}}}
     {{/each}}
 }
+{{else}}
+{ }
+{{/if}}
+
 {{/each}}
 
 {{#each functions as |f|}}
 function <a href="/#/ref/{{../title}}?id={{f.name}}">{{f.name}}</a>({{#each f.parameters as |p|}}{{p.name}}: {{{p.type}}}{{#unless @last}}, {{/unless}}{{/each}}) -> {{{f.return_type}}}
 {{/each}}
+
+{{#each enums as |e|}}
+enum {{e.name}}
+{{/each}}
+
 </pre>

@@ -13,7 +13,7 @@ function FML_DRIVER_INFO() constructor
 function __FML_DRIVER_INFO_deserialize(driver_info, buf)
 {
     driver_info.name                    = buffer_read(buf, buffer_string);
-    FMOD_GUID_deserialize(driver_info.guid, buf);
+    __FMOD_GUID_deserialize(driver_info.guid, buf);
     driver_info.system_rate             = buffer_read(buf, buffer_s32);
     driver_info.speaker_mode            = buffer_read(buf, buffer_s32);
     driver_info.speaker_mode_channels   = buffer_read(buf, buffer_s32);

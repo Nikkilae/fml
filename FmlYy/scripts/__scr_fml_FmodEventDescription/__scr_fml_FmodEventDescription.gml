@@ -27,7 +27,7 @@ function FmodEventDescription() constructor
         if (res == FML_RESULT.OK) {
             if (out_guid == undefined) out_guid = new FMOD_GUID();
             buffer_seek(out_buf, buffer_seek_start, 0);
-            FMOD_GUID_deserialize(out_guid, out_buf);
+            __FMOD_GUID_deserialize(out_guid, out_buf);
             return out_guid;
         }
         return undefined;
@@ -85,7 +85,7 @@ function FmodEventDescription() constructor
             if (res == FML_RESULT.OK) {
                 buffer_seek(out_buf, buffer_seek_start, buffer_sizeof(__FML_BUFFER_SIZE_HINT_TYPE));
                 if (out_description == undefined) out_description = new FMOD_STUDIO_PARAMETER_DESCRIPTION();
-                FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize(out_description, out_buf);
+                __FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize(out_description, out_buf);
                 __fml_set_error(error, res);
                 return out_description;
             }
@@ -114,7 +114,7 @@ function FmodEventDescription() constructor
             if (res == FML_RESULT.OK) {
                 buffer_seek(out_buf, buffer_seek_start, buffer_sizeof(__FML_BUFFER_SIZE_HINT_TYPE));
                 if (out_description == undefined) out_description = new FMOD_STUDIO_PARAMETER_DESCRIPTION();
-                FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize(out_description, out_buf);
+                __FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize(out_description, out_buf);
                 __fml_set_error(error, res);
                 return out_description;
             }
@@ -139,12 +139,12 @@ function FmodEventDescription() constructor
             var size = 64 * power(2, i);
             buffer_resize(out_buf, size);
             buffer_poke(out_buf, 0, __FML_BUFFER_SIZE_HINT_TYPE, size);
-            var param_id_buf_ptr = FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(param_id);
+            var param_id_buf_ptr = __FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(param_id);
             res = __FML_Studio_EventDescription_getParameterDescriptionByID(event_description_index, param_id_buf_ptr, buffer_get_address(out_buf));
             if (res == FML_RESULT.OK) {
                 buffer_seek(out_buf, buffer_seek_start, buffer_sizeof(__FML_BUFFER_SIZE_HINT_TYPE));
                 if (out_description == undefined) out_description = new FMOD_STUDIO_PARAMETER_DESCRIPTION();
-                FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize(out_description, out_buf);
+                __FMOD_STUDIO_PARAMETER_DESCRIPTION_deserialize(out_description, out_buf);
                 __fml_set_error(error, res);
                 return out_description;
             }
@@ -221,7 +221,7 @@ function FmodEventDescription() constructor
             var size = 32 * power(2, i);
             buffer_resize(out_buf, size);
             buffer_poke(out_buf, 0, __FML_BUFFER_SIZE_HINT_TYPE, size);
-            var param_id_buf_ptr = FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(param_id);
+            var param_id_buf_ptr = __FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(param_id);
             res = __FML_Studio_EventDescription_getParameterLabelByID(event_description_index, param_id_buf_ptr, label_index, buffer_get_address(out_buf));
             if (res == FML_RESULT.OK) {
                 __fml_set_error(error, res);
@@ -263,7 +263,7 @@ function FmodEventDescription() constructor
             if (res == FML_RESULT.OK) {
                 buffer_seek(out_buf, buffer_seek_start, buffer_sizeof(__FML_BUFFER_SIZE_HINT_TYPE));
                 if (out_property == undefined) out_property = new FMOD_STUDIO_USER_PROPERTY();
-                FMOD_STUDIO_USER_PROPERTY_deserialize(out_property, out_buf);
+                __FMOD_STUDIO_USER_PROPERTY_deserialize(out_property, out_buf);
                 __fml_set_error(error, res);
                 return out_property;
             }
@@ -292,7 +292,7 @@ function FmodEventDescription() constructor
             if (res == FML_RESULT.OK) {
                 buffer_seek(out_buf, buffer_seek_start, buffer_sizeof(__FML_BUFFER_SIZE_HINT_TYPE));
                 if (out_property == undefined) out_property = new FMOD_STUDIO_USER_PROPERTY();
-                FMOD_STUDIO_USER_PROPERTY_deserialize(out_property, out_buf);
+                __FMOD_STUDIO_USER_PROPERTY_deserialize(out_property, out_buf);
                 __fml_set_error(error, res);
                 return out_property;
             }

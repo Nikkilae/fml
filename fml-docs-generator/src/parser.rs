@@ -113,6 +113,24 @@ impl ConstructorLine {
 }
 
 #[derive(Serialize, Debug)]
+struct EnumLine {
+    name: String,
+}
+impl EnumLine {
+    fn parse_from(line: &str) -> Option<EnumLine> {
+        lazy_static! {
+            static ref REGEX: Regex = Regex::new(r"^\s*enum\s([[[:alpha:]]_[0-9]]+)").unwrap();
+        }
+        match REGEX.captures(line) {
+            Some(caps) => Some(EnumLine {
+                name: caps.get(1).unwrap().as_str().to_string(),
+            }),
+            None => None,
+        }
+    }
+}
+
+#[derive(Clone, Serialize, Debug)]
 pub struct Constructor {
     pub name: String,
     pub parameters: Vec<Parameter>,
@@ -121,7 +139,7 @@ pub struct Constructor {
     pub fmod_docs_link: String,
 }
 
-#[derive(Serialize, Debug)]
+#[derive(Clone, Serialize, Debug)]
 pub struct Parameter {
     pub type_name: String,
     pub name: String,
@@ -129,7 +147,7 @@ pub struct Parameter {
     pub default_value: String,
 }
 
-#[derive(Serialize, Debug)]
+#[derive(Clone, Serialize, Debug)]
 pub struct Function {
     pub name: String,
     pub parameters: Vec<Parameter>,
@@ -140,10 +158,34 @@ pub struct Function {
     pub implemented: bool,
 }
 
-#[derive(Serialize, Debug)]
+#[derive(Clone, Serialize, Debug)]
+pub struct Enum {
+    pub name: String,
+    pub fmod_docs_link: String,
+    pub description: String,
+}
+
+#[derive(Clone, Serialize, Debug)]
 pub struct ParseResult {
     pub constructors: Vec<Constructor>,
     pub functions: Vec<Function>,
+    pub enums: Vec<Enum>,
+}
+impl ParseResult {
+    pub fn empty() -> Self {
+        Self {
+            constructors: Vec::new(),
+            functions: Vec::new(),
+            enums: Vec::new(),
+        }
+    }
+    pub fn merge(result1: ParseResult, result2: ParseResult) -> ParseResult {
+        ParseResult {
+            constructors: [ result1.constructors, result2.constructors ].concat().into(),
+            functions: [ result1.functions, result2.functions ].concat().into(),
+            enums: [ result1.enums, result2.enums ].concat().into(),
+        }
+    }
 }
 
 const FMOD_DOCS_LINK_PREFIX: &'static str = "https://www.fmod.com";
@@ -158,7 +200,8 @@ pub fn parse_from_file(filename: &str) -> Result<ParseResult, Box<dyn Error>> {
     let mut description_lines: Vec<String> = Vec::new();
 
     let mut constructors = Vec::new();
-    let mut global_functions = Vec::new();
+    let mut functions = Vec::new();
+    let mut enums = Vec::new();
 
     for line in br.lines() {
         let line = line?;
@@ -188,6 +231,30 @@ pub fn parse_from_file(filename: &str) -> Result<ParseResult, Box<dyn Error>> {
                 fmod_docs_link,
             });
             parameters = Vec::new();
+            description_lines = Vec::new();
+        }
+        else if let Some(enum_line) = EnumLine::parse_from(&line) {
+            let mut fmod_docs_link = String::new();
+            let mut i = 0;
+            while i < description_lines.len() {
+                let trimmed = description_lines[i].trim();
+                if trimmed.starts_with(FMOD_DOCS_LINK_PREFIX) {
+                    fmod_docs_link = trimmed.to_string();
+                    break;
+                }
+                i += 1;
+            }
+            if i < description_lines.len() {
+                description_lines.remove(i);
+            }
+            let description = description_lines.join("\n").to_string();
+
+            enums.push(Enum {
+                name: enum_line.name,
+                fmod_docs_link,
+                description,
+            });
+
             description_lines = Vec::new();
         }
         else if let Some(param_line) = JSDocParameterLine::parse_from(&line) {
@@ -232,11 +299,11 @@ pub fn parse_from_file(filename: &str) -> Result<ParseResult, Box<dyn Error>> {
                 if function.is_static {
                     match constructors.last_mut() {
                         Some(c) => c.functions.push(function),
-                        None => global_functions.push(function),
+                        None => functions.push(function),
                     };
                 }
                 else {
-                    global_functions.push(function);
+                    functions.push(function);
                 }
             }
             parameters = Vec::new();
@@ -248,5 +315,5 @@ pub fn parse_from_file(filename: &str) -> Result<ParseResult, Box<dyn Error>> {
         }
     }
 
-    Ok(ParseResult { constructors, functions: global_functions })
+    Ok(ParseResult { constructors, functions, enums })
 }

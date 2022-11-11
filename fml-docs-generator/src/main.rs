@@ -37,6 +37,11 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     let all_pages = pages::parse_pages(&args.yy_directory, &args.docs_directory);
 
+    let autogen_refs_dir = Path::new(&args.docs_directory).join("ref");
+    println!("Deleting directory {}...", autogen_refs_dir.display());
+    fs::remove_dir_all(autogen_refs_dir)?;
+
+    println!("Rendering {} API ref pages...", all_pages.len());
     for page in &all_pages {
         fs::create_dir_all(page.doc_filename.parent().unwrap())?;
         let mut page_bw = BufWriter::new(File::create(&page.doc_filename)?);

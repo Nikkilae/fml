@@ -8,7 +8,7 @@ function FMOD_STUDIO_PARAMETER_ID() constructor
 
 /// @param {FMOD_STUDIO_PARAMETER_ID} parameter_id
 /// @param {buffer} buf
-function FMOD_STUDIO_PARAMETER_ID_serialize(parameter_id, buf)
+function __FMOD_STUDIO_PARAMETER_ID_serialize(parameter_id, buf)
 {
     buffer_write(buf, buffer_u32, parameter_id.data1);
     buffer_write(buf, buffer_u32, parameter_id.data2);
@@ -16,7 +16,7 @@ function FMOD_STUDIO_PARAMETER_ID_serialize(parameter_id, buf)
 
 /// @param {FMOD_STUDIO_PARAMETER_ID} parameter_id
 /// @param {buffer} buf
-function FMOD_STUDIO_PARAMETER_ID_deserialize(parameter_id, buf)
+function __FMOD_STUDIO_PARAMETER_ID_deserialize(parameter_id, buf)
 {
     parameter_id.data1 = buffer_read(buf, buffer_u32);
     parameter_id.data2 = buffer_read(buf, buffer_u32);
@@ -24,10 +24,10 @@ function FMOD_STUDIO_PARAMETER_ID_deserialize(parameter_id, buf)
 
 /// @param {FMOD_STUDIO_PARAMETER_ID} parameter_id
 /// @returns {pointer}
-function FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(parameter_id)
+function __FMOD_STUDIO_PARAMETER_ID_as_buf_ptr(parameter_id)
 {
     var buf = __fml_buffers_parameter_id;
     buffer_seek(buf, buffer_seek_start, 0);
-    FMOD_STUDIO_PARAMETER_ID_serialize(parameter_id, buf);
+    __FMOD_STUDIO_PARAMETER_ID_serialize(parameter_id, buf);
     return buffer_get_address(buf);
 }
