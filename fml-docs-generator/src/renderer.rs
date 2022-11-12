@@ -31,6 +31,7 @@ fn map_from_function(function: &Function) -> Map<String, Value> {
     })).collect();
     map.insert("parameters".to_string(), params);
     map.insert("fmod_docs_link".to_string(), to_json(&function.fmod_docs_link));
+    map.insert("description".to_string(), to_json(&function.description));
 
     map
 }
@@ -60,6 +61,7 @@ fn map_from_constructor(constructor: &Constructor) -> Map<String, Value> {
     })).collect();
     map.insert("constructor_methods".to_string(), methods);
     map.insert("constructor_fmod_docs_link".to_string(), to_json(&constructor.fmod_docs_link));
+    map.insert("constructor_description".to_string(), to_json(&constructor.description));
 
     map
 }

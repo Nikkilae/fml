@@ -1,5 +1,4 @@
-
-## What
+# About
 
 **FML** is a [GameMaker](https://gamemaker.io) extension that provides GML bindings to the [FMOD](https://www.fmod.com/) API.
 

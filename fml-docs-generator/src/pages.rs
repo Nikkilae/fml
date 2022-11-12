@@ -24,6 +24,17 @@ pub fn parse_pages(yy_directory: &str, docs_directory: &str) -> Vec<Page> {
 
 }
 
+pub fn find_macro_in_pages<'a>(pages: &'a [Page], name: &str) -> Option<&'a parser::Macro> {
+    for page in pages {
+        for m in &page.parse_result.macros {
+            if m.name == name {
+                return Some(&m);
+            }
+        }
+    }
+    None
+}
+
 fn get_page_definitions<'a>() -> Vec<(&'a str, &'a str, Vec<&'a str>)> {
     vec![(
             "FmodBank",
@@ -75,7 +86,7 @@ fn get_page_definitions<'a>() -> Vec<(&'a str, &'a str, Vec<&'a str>)> {
             ],
         ), (
             "Miscellaneous structs",
-            "Structs.md",
+            "Struct.md",
             vec![
                 "scripts\\__scr_fml_FMOD_3D_ATTRIBUTES\\__scr_fml_FMOD_3D_ATTRIBUTES.gml",
                 "scripts\\__scr_fml_FMOD_CPU_USAGE\\__scr_fml_FMOD_CPU_USAGE.gml",
@@ -96,6 +107,12 @@ fn get_page_definitions<'a>() -> Vec<(&'a str, &'a str, Vec<&'a str>)> {
             vec![
                 "scripts\\__scr_fml_fmod_constants\\__scr_fml_fmod_constants.gml",
             ],
-        ),
+        ), (
+            "Other",
+            "Other.md",
+            vec![
+                "scripts\\__scr_fml_misc\\__scr_fml_misc.gml",
+            ]
+        )
     ]
 }

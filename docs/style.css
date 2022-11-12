@@ -72,3 +72,14 @@ td, th, tr {
 .fmod-docs-link img {
     height: 0.75rem;
 }
+
+.title-version {
+    color: #cccccc;
+    font-size: 1em;
+}
+
+.title-description {
+    color: #cccccc;
+    font-size: 0.8em;
+    font-style: italic;
+}

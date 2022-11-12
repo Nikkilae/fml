@@ -16,7 +16,7 @@ struct JSDocParameterLine {
     default_value_name: String,
 }
 impl JSDocParameterLine {
-    fn parse_from(line: &str) -> Option<JSDocParameterLine> {
+    fn parse_from(line: &str) -> Option<Self> {
         lazy_static! {
             static ref REGEX: Regex = Regex::new(r"\s*///\s*@param\s*\{\s*(.+)\s*\}\s*([[[:alpha:]]_[0-9]]+)\s*(=\s(\S*))?\s?(.*)?").unwrap();
         }
@@ -36,7 +36,7 @@ struct JSDOcReturnLine {
     type_name: String,
 }
 impl JSDOcReturnLine {
-    fn parse_from(line: &str) -> Option<JSDOcReturnLine> {
+    fn parse_from(line: &str) -> Option<Self> {
         lazy_static! {
             static ref REGEX: Regex = Regex::new(r"\s*///\s*@(return|returns)\s*\{\s*(.+)\s*\}").unwrap();
         }
@@ -53,7 +53,7 @@ struct JSDocNoTagLine {
     text: String,
 }
 impl JSDocNoTagLine {
-    fn parse_from(line: &str) -> Option<JSDocNoTagLine> {
+    fn parse_from(line: &str) -> Option<Self> {
         lazy_static! {
             static ref REGEX: Regex = Regex::new(r"\s*///\s*(.*)").unwrap();
         }
@@ -71,7 +71,7 @@ struct FunctionLine {
     is_static: bool,
 }
 impl FunctionLine {
-    fn parse_from(ilne: &str) -> Option<FunctionLine> {
+    fn parse_from(ilne: &str) -> Option<Self> {
         lazy_static! {
             static ref REGEX_STATIC: Regex = Regex::new(r"\s*static\s*([[[:alpha:]]_[0-9]]+)\s*=\s*function").unwrap();
             static ref REGEX_NON_STATIC: Regex = Regex::new(r"\s*function\s*([[[:alpha:]]_[0-9]]+)\s*\(.*\)").unwrap();
@@ -99,7 +99,7 @@ struct ConstructorLine {
     name: String,
 }
 impl ConstructorLine {
-    fn parse_from(line: &str) -> Option<ConstructorLine> {
+    fn parse_from(line: &str) -> Option<Self> {
         lazy_static! {
             static ref REGEX: Regex = Regex::new(r"\s*function\s([[[:alpha:]]_[0-9]]+)\s*\(.*\)\s*constructor*").unwrap();
         }
@@ -117,13 +117,33 @@ struct EnumLine {
     name: String,
 }
 impl EnumLine {
-    fn parse_from(line: &str) -> Option<EnumLine> {
+    fn parse_from(line: &str) -> Option<Self> {
         lazy_static! {
             static ref REGEX: Regex = Regex::new(r"^\s*enum\s([[[:alpha:]]_[0-9]]+)").unwrap();
         }
         match REGEX.captures(line) {
             Some(caps) => Some(EnumLine {
                 name: caps.get(1).unwrap().as_str().to_string(),
+            }),
+            None => None,
+        }
+    }
+}
+
+#[derive(Serialize, Debug)]
+struct MacroLine {
+    name: String,
+    value: String,
+}
+impl MacroLine {
+    fn parse_from(line: &str) -> Option<Self> {
+        lazy_static! {
+            static ref REGEX: Regex = Regex::new(r"^\s*#macro\s([[[:alpha:]]_[0-9]]+)\s*(.*)$").unwrap();
+        }
+        match REGEX.captures(line) {
+            Some(caps) => Some(MacroLine {
+                name: caps.get(1).unwrap().as_str().to_string(),
+                value: caps.get(2).unwrap().as_str().to_string(),
             }),
             None => None,
         }
@@ -166,10 +186,19 @@ pub struct Enum {
 }
 
 #[derive(Clone, Serialize, Debug)]
+pub struct Macro {
+    pub name: String,
+    pub value: String,
+    pub fmod_docs_link: String,
+    pub description: String,
+}
+
+#[derive(Clone, Serialize, Debug)]
 pub struct ParseResult {
     pub constructors: Vec<Constructor>,
     pub functions: Vec<Function>,
     pub enums: Vec<Enum>,
+    pub macros: Vec<Macro>,
 }
 impl ParseResult {
     pub fn empty() -> Self {
@@ -177,6 +206,7 @@ impl ParseResult {
             constructors: Vec::new(),
             functions: Vec::new(),
             enums: Vec::new(),
+            macros: Vec::new(),
         }
     }
     pub fn merge(result1: ParseResult, result2: ParseResult) -> ParseResult {
@@ -184,6 +214,7 @@ impl ParseResult {
             constructors: [ result1.constructors, result2.constructors ].concat().into(),
             functions: [ result1.functions, result2.functions ].concat().into(),
             enums: [ result1.enums, result2.enums ].concat().into(),
+            macros: [ result1.macros, result2.macros ].concat().into(),
         }
     }
 }
@@ -202,6 +233,7 @@ pub fn parse_from_file(filename: &str) -> Result<ParseResult, Box<dyn Error>> {
     let mut constructors = Vec::new();
     let mut functions = Vec::new();
     let mut enums = Vec::new();
+    let mut macros = Vec::new();
 
     for line in br.lines() {
         let line = line?;
@@ -255,6 +287,29 @@ pub fn parse_from_file(filename: &str) -> Result<ParseResult, Box<dyn Error>> {
                 description,
             });
 
+            description_lines = Vec::new();
+        }
+        else if let Some(macro_line) = MacroLine::parse_from(&line) {
+            let mut fmod_docs_link = String::new();
+            let mut i = 0;
+            while i < description_lines.len() {
+                let trimmed = description_lines[i].trim();
+                if trimmed.starts_with(FMOD_DOCS_LINK_PREFIX) {
+                    fmod_docs_link = trimmed.to_string();
+                    break;
+                }
+                i += 1;
+            }
+            if i < description_lines.len() {
+                description_lines.remove(i);
+            }
+            let description = description_lines.join("\n").to_string();
+            macros.push(Macro {
+                name: macro_line.name,
+                value: macro_line.value,
+                fmod_docs_link,
+                description,
+            });
             description_lines = Vec::new();
         }
         else if let Some(param_line) = JSDocParameterLine::parse_from(&line) {
@@ -315,5 +370,5 @@ pub fn parse_from_file(filename: &str) -> Result<ParseResult, Box<dyn Error>> {
         }
     }
 
-    Ok(ParseResult { constructors, functions, enums })
+    Ok(ParseResult { constructors, functions, enums, macros })
 }
