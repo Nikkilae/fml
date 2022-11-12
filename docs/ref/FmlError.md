@@ -44,7 +44,7 @@ function <a href="/#/ref/FmlError?id=fml_get_result_string">fml_get_result_strin
 
 <div class="fmod-docs-link-wrapper">
 
-### `fml_set_error_callback(function<FML_RESULT, void>? callback) :id=fml_set_error_callback`
+### `fml_set_error_callback(callback) :id=fml_set_error_callback`
 
 </div>
 
@@ -59,7 +59,7 @@ function <a href="/#/ref/FmlError?id=fml_get_result_string">fml_get_result_strin
 <br/>
 <div class="fmod-docs-link-wrapper">
 
-### `fml_get_result_string(FML_RESULT result) :id=fml_get_result_string`
+### `fml_get_result_string(result) :id=fml_get_result_string`
 
 </div>
 

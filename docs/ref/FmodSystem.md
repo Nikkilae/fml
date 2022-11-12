@@ -367,7 +367,7 @@ function <a href="/#/ref/FmodSystem?id=FmodSystem_Create">FmodSystem_Create</a>(
 
 <div class="fmod-docs-link-wrapper">
 
-### `FmodSystem_Create(int? header_version, FmodSystem? out_system, FmlError? error) :id=FmodSystem_Create`
+### `FmodSystem_Create(header_version, out_system, error) :id=FmodSystem_Create`
 <a class="fmod-docs-link" href="https://www.fmod.com/docs/2.02/api/core-api-system.html#system_create"><img src="/img/link.png" /> FMOD API</a>
 </div>
 

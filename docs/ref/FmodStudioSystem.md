@@ -941,7 +941,7 @@ function <a href="/#/ref/FmodStudioSystem?id=FmodStudioSystem_Create">FmodStudio
 
 <div class="fmod-docs-link-wrapper">
 
-### `FmodStudioSystem_Create(int? header_version, FmodStudioSystem? out_studio_system, FmlError? error) :id=FmodStudioSystem_Create`
+### `FmodStudioSystem_Create(header_version, out_studio_system, error) :id=FmodStudioSystem_Create`
 <a class="fmod-docs-link" href="https://www.fmod.com/docs/2.02/api/studio-api-system.html#studio_system_create"><img src="/img/link.png" /> FMOD API</a>
 </div>
 

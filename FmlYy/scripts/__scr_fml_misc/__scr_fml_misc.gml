@@ -57,6 +57,7 @@ function fml_fmod_version_to_string(version_number)
 
 global.__fml_callbacks = ds_map_create();   /// @is {ds_map<int, function>}
 
+/// Processes all pending FMOD callbacks, calling them and clearing the queue.
 function fml_update_callbacks()
 {
     static initial_buf_size = 128;

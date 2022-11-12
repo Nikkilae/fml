@@ -18,7 +18,7 @@ struct JSDocParameterLine {
 impl JSDocParameterLine {
     fn parse_from(line: &str) -> Option<Self> {
         lazy_static! {
-            static ref REGEX: Regex = Regex::new(r"\s*///\s*@param\s*\{\s*(.+)\s*\}\s*([[[:alpha:]]_[0-9]]+)\s*(=\s(\S*))?\s?(.*)?").unwrap();
+            static ref REGEX: Regex = Regex::new(r"^\s*///\s*@param\s*\{\s*(.+)\s*\}\s*([[[:alpha:]]_[0-9]]+)\s*(=\s(\S*))?\s?(.*)?").unwrap();
         }
         match REGEX.captures(&line) {
             Some(caps) => Some(JSDocParameterLine {
@@ -38,7 +38,7 @@ struct JSDOcReturnLine {
 impl JSDOcReturnLine {
     fn parse_from(line: &str) -> Option<Self> {
         lazy_static! {
-            static ref REGEX: Regex = Regex::new(r"\s*///\s*@(return|returns)\s*\{\s*(.+)\s*\}").unwrap();
+            static ref REGEX: Regex = Regex::new(r"^\s*///\s*@(return|returns)\s*\{\s*(.+)\s*\}").unwrap();
         }
         match REGEX.captures(line) {
             Some(caps) => Some(JSDOcReturnLine {
@@ -55,7 +55,7 @@ struct JSDocNoTagLine {
 impl JSDocNoTagLine {
     fn parse_from(line: &str) -> Option<Self> {
         lazy_static! {
-            static ref REGEX: Regex = Regex::new(r"\s*///\s*(.*)").unwrap();
+            static ref REGEX: Regex = Regex::new(r"^\s*///\s*(.*)").unwrap();
         }
         match REGEX.captures(line) {
             Some(caps) => Some(JSDocNoTagLine {

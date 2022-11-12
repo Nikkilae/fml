@@ -155,7 +155,7 @@ function <a href="/#/ref/Miscellaneous structs?id=FMOD_GUID_from_string">FMOD_GU
 
 <div class="fmod-docs-link-wrapper">
 
-### `FMOD_GUID_from_string(string guid_string, FMOD_GUID out_guid, FmlError? error) :id=FMOD_GUID_from_string`
+### `FMOD_GUID_from_string(guid_string, out_guid, error) :id=FMOD_GUID_from_string`
 
 </div>
 

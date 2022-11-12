@@ -21,7 +21,7 @@ function <a href="/#/ref/Other?id=fml_update_callbacks">fml_update_callbacks</a>
 
 <div class="fmod-docs-link-wrapper">
 
-### `fml_fmod_version_from_parts(int product, int major, int minor) :id=fml_fmod_version_from_parts`
+### `fml_fmod_version_from_parts(product, major, minor) :id=fml_fmod_version_from_parts`
 
 </div>
 
@@ -38,7 +38,7 @@ function <a href="/#/ref/Other?id=fml_update_callbacks">fml_update_callbacks</a>
 <br/>
 <div class="fmod-docs-link-wrapper">
 
-### `fml_fmod_version_get_product(int version_number) :id=fml_fmod_version_get_product`
+### `fml_fmod_version_get_product(version_number) :id=fml_fmod_version_get_product`
 
 </div>
 
@@ -53,7 +53,7 @@ function <a href="/#/ref/Other?id=fml_update_callbacks">fml_update_callbacks</a>
 <br/>
 <div class="fmod-docs-link-wrapper">
 
-### `fml_fmod_version_get_major(int version_number) :id=fml_fmod_version_get_major`
+### `fml_fmod_version_get_major(version_number) :id=fml_fmod_version_get_major`
 
 </div>
 
@@ -68,7 +68,7 @@ function <a href="/#/ref/Other?id=fml_update_callbacks">fml_update_callbacks</a>
 <br/>
 <div class="fmod-docs-link-wrapper">
 
-### `fml_fmod_version_get_minor(int version_number) :id=fml_fmod_version_get_minor`
+### `fml_fmod_version_get_minor(version_number) :id=fml_fmod_version_get_minor`
 
 </div>
 
@@ -83,7 +83,7 @@ function <a href="/#/ref/Other?id=fml_update_callbacks">fml_update_callbacks</a>
 <br/>
 <div class="fmod-docs-link-wrapper">
 
-### `fml_fmod_version_to_string(int version_number) :id=fml_fmod_version_to_string`
+### `fml_fmod_version_to_string(version_number) :id=fml_fmod_version_to_string`
 
 </div>
 
@@ -105,6 +105,6 @@ function <a href="/#/ref/Other?id=fml_update_callbacks">fml_update_callbacks</a>
 
 <pre>Returns: void</pre>
 
-<p>@is {ds_map&lt;int, function&gt;}</p>
+<p>Processes all pending FMOD callbacks, calling them and clearing the queue.</p>
 
 <br/>
