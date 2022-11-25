@@ -45,7 +45,7 @@ Here's how to 1) update the system and 2) play the event we loaded previously:
 system.update();
 
 if (keyboard_check_pressed(vk_space)) {
-    // 2) Create and instance of the event description and play it.
+    // 2) Create an instance of the event description and play it.
     example_event_description.create_instance().start()
 }
 ```
