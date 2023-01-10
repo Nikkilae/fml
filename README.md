@@ -35,7 +35,7 @@ There are two separate documentations depending on what you're looking for:
 
 | <u>[Repository documentation](/repo_docs.md)</u> |
 | :--- |
-| The repository documentation for you if you wish to know about the source code of the FML extension itself. |
+| The repository documentation is for you if you wish to know about the source code of the FML extension itself. |
 
 ---
 
