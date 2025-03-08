@@ -4,6 +4,12 @@
 
 <br/>
 
+
+> [!IMPORTANT]
+> This library is no longer being maintained. It has effectively been superseded by [YoYoGames' official FMOD extension](https://github.com/YoYoGames/GMEXT-FMOD). The official extension is in most ways better than FML. It covers more of the API, supports more platforms and supports recent GameMaker versions.
+
+---
+
 FML is an extension for [GameMaker](https://gamemaker.io) that provides GML bindings to a subset of the [FMOD](https://www.fmod.com/) API.
 
 It's a set of one-to-one bindings to the FMOD API, focusing on covering the [FMOD Studio API](https://www.fmod.com/docs/2.02/api/studio-guide.html) but also providing a small subset of the [FMOD Core API](https://www.fmod.com/docs/2.02/api/core-guide.html).
